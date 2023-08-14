@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="98259024-9005-4acc-9331-f4bae29d2b27" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/atkinson-bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/atkinson-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/BlogPost.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/BlogPost.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/about.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/about.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blog/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog/index.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.astro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +103,8 @@
       <workItem from="1691928979429" duration="2229000" />
       <workItem from="1691939935984" duration="2424000" />
       <workItem from="1691949058617" duration="403000" />
-      <workItem from="1691949559964" duration="2297000" />
+      <workItem from="1691949559964" duration="2546000" />
+      <workItem from="1692038151036" duration="838000" />
     </task>
     <servers />
   </component>

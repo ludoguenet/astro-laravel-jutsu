@@ -18,11 +18,10 @@ const posts = (await getCollection('blog')).sort(
 	</head>
 	<body>
 		<Header />
+
 		<div class="bg-white">
 			<div class="mx-auto max-w-7xl px-6 lg:px-8">
 				<div class="mx-auto">
-					<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">From the blog</h2>
-					<p class="mt-2 text-lg leading-8 text-gray-600">Learn how to grow your business with our expert advice.</p>
 					<div class="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
 						{
 							posts.map((post) => (
@@ -49,15 +48,15 @@ const posts = (await getCollection('blog')).sort(
 										</div>
 										<div class="mt-6 flex border-t border-gray-900/5 pt-6">
 											<div class="relative flex items-center gap-x-4">
-												<img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="h-10 w-10 rounded-full bg-gray-50">
+												<img src="/blog-avatar.jpg" alt="" class="h-10 w-10 rounded-full bg-gray-50">
 												<div class="text-sm leading-6">
 													<p class="font-semibold text-gray-900">
 														<a href="#">
 															<span class="absolute inset-0"></span>
-															Michael Foster
+															Ludovic Guénet
 														</a>
 													</p>
-													<p class="text-gray-600">Co-Founder / CTO</p>
+													<p class="text-gray-600">Laravel & Vue enthusiast</p>
 												</div>
 											</div>
 										</div>
@@ -69,6 +68,7 @@ const posts = (await getCollection('blog')).sort(
 				</div>
 			</div>
 		</div>
+
 		<Footer />
 	</body>
 </html>

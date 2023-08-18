@@ -1,11 +1,13 @@
 ---
-title: 'Markdown Style Guide'
-description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
-pubDate: 'Jul 07 2023'
+title: 'Les Capsules Laravel'
+description: 'Découvrons ensemble le nouveau concept des Capsules Laravel qui est tourné tout particulièrement vers les développeurs junior avide de créer une application professionnelle avec Laravel.'
+category: 'Laravel'
+tagColor: 'red'
+pubDate: 'Aug 18 2023'
 heroImage: '/laravel-capsule.png'
 ---
 
-# Les Capsules Laravel : Développement pas à pas d'applications web
+# 1, 2, 3... Initialisation du Projet Laravel 10
 
 Bienvenue à tous dans cette nouvelle série où nous vous présentons un format unique : les **Capsules Laravel**. Dans cet article d'introduction, nous allons explorer en quoi consistent ces capsules et comment elles peuvent bénéficier aux développeurs juniors ainsi qu'à toute personne intéressée par le développement d'applications web.
 
@@ -15,14 +17,21 @@ Une capsule Laravel est un épisode où nous allons plonger dans le développeme
 
 L'objectif principal de ces capsules est de fournir des bases solides pour le développement web avec Laravel. Nous allons aborder divers aspects du développement, vous montrant comment créer des fonctionnalités, gérer des données, mettre en place l'authentification et bien plus encore. Chaque capsule se concentrera sur un thème particulier, permettant à chacun d'assimiler progressivement des connaissances essentielles.
 
-## La Capsule Inaugurale : Initialisation du Projet Laravel
+## Contenu de la vidéo
 
-Pour donner un aperçu concret de ce que nous allons explorer, prenons l'exemple de notre première capsule. Dans cette capsule d'ouverture, nous allons plonger directement dans l'initialisation d'un projet Laravel. Cette étape est cruciale pour garantir la stabilité, la cohérence et la propreté du code tout au long du processus de développement.
+<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/YiiJeqMLOcw" frameborder="0" allowfullscreen></iframe>
 
-**Contenu de la Première Capsule :**
-- Configuration et installation de "Pint" : Nous allons installer un outil nommé "Pint" qui est un linter pour Laravel. Il nous permettra d'uniformiser la syntaxe dans tout le projet, contribuant ainsi à la lisibilité et à la cohérence du code.
-- Utilisation de "Pint" pour maintenir la qualité : Nous montrerons comment exécuter "Pint" et comment il peut détecter et corriger automatiquement certaines erreurs de syntaxe.
-- Astuce : Créer un raccourci pour "Pint" : Pour gagner du temps, nous apprendrons à créer un raccourci pratique pour exécuter "Pint" sans avoir à retaper la commande complète à chaque fois.
+Dans cette première étape, je vais vous guider à travers la configuration et l'installation de trois outils essentiels : **Pint**, **Larastan** et **PestPHP**. Chacun de ces outils jouera un rôle crucial dans notre démarche de développement.
+
+- **Pint** : Nous allons installer Pint, un outil qui va grandement contribuer à maintenir la cohérence et la propreté de notre code. Grâce à Pint, nous serons en mesure de garantir des normes uniformes dans l'ensemble de notre projet.
+
+- **Larastan** : Ce puissant outil se concentrera sur l'analyse statique de notre code. Il nous permettra de détecter d'éventuelles erreurs ou incohérences avant même l'exécution de notre application.
+
+- **PestPHP** : Pour assurer une qualité logicielle constante tout au long de nos capsules, nous allons utiliser PestPHP pour des tests automatisés. Pest simplifie l'écriture de tests et garantit que notre application fonctionne comme prévu.
+
+Pour donner une orientation concrète à notre développement, nous allons construire la logique métier autour de la gestion des étudiants et de leurs fiches.
+
+### Astuce : Simplifier les actions avec des Raccourcis
 
 ```json
 "pint": [

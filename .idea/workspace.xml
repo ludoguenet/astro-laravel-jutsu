@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98259024-9005-4acc-9331-f4bae29d2b27" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/banner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BaseHead.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BaseHead.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/astro.config.mjs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +112,7 @@
       <workItem from="1692163488375" duration="67000" />
       <workItem from="1692297893335" duration="642000" />
       <workItem from="1692298552586" duration="2716000" />
-      <workItem from="1692386154871" duration="6132000" />
+      <workItem from="1692386154871" duration="6363000" />
     </task>
     <servers />
   </component>

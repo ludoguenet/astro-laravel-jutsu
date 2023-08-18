@@ -6,7 +6,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com',
+  site: 'https://laraveljutsu.net',
   integrations: [mdx(), sitemap(), tailwind()],
   experimental: {
     viewTransitions: true

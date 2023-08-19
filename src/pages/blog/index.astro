@@ -35,7 +35,7 @@ const posts = (await getCollection('blog')).sort(
 											<time datetime="2020-03-16" class="text-gray-500">
 												<FormattedDate date={post.data.pubDate} />
 											</time>
-											{post.data.category && <span class="relative z-10 rounded-full bg-amber-50 px-3 py-1.5 font-medium text-amber-600">{post.data.category}</span>}
+											{post.data.category && <span class="inline-flex items-center gap-x-1.5 rounded-md px-2 py-1 text-xs font-medium text-gray-900 ring-1 ring-inset ring-gray-200"><svg class="h-1.5 w-1.5 fill-yellow-500" viewBox="0 0 6 6" aria-hidden="true"><circle cx="3" cy="3" r="3" /></svg>{post.data.category}</span>}
 										</div>
 										<div class="group relative max-w-xl">
 											<h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">

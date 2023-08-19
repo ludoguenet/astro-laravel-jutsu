@@ -5,15 +5,13 @@ import HeaderLink from './HeaderLink.astro';
 <header
 	class="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8"
 >
-	<nav class="flex py-3 space-x-5">
+	<nav class="flex items-center py-3 space-x-3">
 		<h2>
 			<a href="/">
 				<img src="/logo.png" alt="logo" class="w-6">
 			</a>
 		</h2>
-		<div class="space-x-1.5">
-			<HeaderLink href="/" class="text-sm">Accueil</HeaderLink>
-			<HeaderLink href="/blog" class="text-sm">Blog</HeaderLink>
-		</div>
+		<HeaderLink href="/" class="text-sm">Accueil</HeaderLink>
+		<HeaderLink href="/blog" class="text-sm">Blog</HeaderLink>
 	</nav>
 </header>

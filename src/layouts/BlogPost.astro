@@ -9,15 +9,16 @@ const { title, description, pubDate, heroImage } = Astro.props;
 
 <html lang="fr">
 	<head>
-		<BaseHead title={title} description={description} />
+		<BaseHead title={title} description={description} image={heroImage} />
 	</head>
 
 	<body>
 		<Header />
+
 		<main class="mx-auto max-w-7xl px-6 md:flex md:items-center md:justify-between lg:px-8">
 			<article>
 				<figure class="mt-8 lg:mt-10">
-					{heroImage && <img src={heroImage} class="rounded-xl bg-gray-50 object-cover" alt="image du post" />
+					{heroImage && <img src={heroImage} class="rounded-xl bg-gray-50 object-cover" alt="image du post" />}
 				</figure>
 
 				<div class="flex items-center block text-sm leading-6 text-gray-600 my-10">
@@ -29,6 +30,7 @@ const { title, description, pubDate, heroImage } = Astro.props;
 				</div>
 			</article>
 		</main>
+
 		<Footer />
 	</body>
 </html>

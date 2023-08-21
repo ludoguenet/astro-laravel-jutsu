@@ -2,12 +2,11 @@
 title: 'Les Capsules Laravel'
 description: 'Découvrons ensemble le nouveau concept des Capsules Laravel qui est tourné tout particulièrement vers les développeurs junior avide de créer une application professionnelle avec Laravel.'
 category: 'Laravel'
-tagColor: 'red'
 pubDate: 'Aug 18 2023'
-heroImage: '/laravel-capsule.png'
+heroImage: '/posts/laravel-capsule.png'
 ---
 
-# 1, 2, 3... Initialisation du Projet Laravel 10
+# 1, 2, 3... Initialisation du projet Laravel 10
 
 Bienvenue à tous dans cette nouvelle série où nous vous présentons un format unique : les **Capsules Laravel**. Dans cet article d'introduction, nous allons explorer en quoi consistent ces capsules et comment elles peuvent bénéficier aux développeurs juniors ainsi qu'à toute personne intéressée par le développement d'applications web.
 
@@ -31,7 +30,7 @@ Dans cette première étape, je vais vous guider à travers la configuration et 
 
 Pour donner une orientation concrète à notre développement, nous allons construire la logique métier autour de la gestion des étudiants et de leurs fiches.
 
-### Astuce : Simplifier les actions avec des Raccourcis
+### Astuce : Simplifier les actions avec des raccourcis
 
 ```json
 "pint": [
@@ -50,10 +49,10 @@ Pour donner une orientation concrète à notre développement, nous allons const
 ]
 ```
 
-## L'Application en Développement : Gestion d'Étudiants
+## Une application de gestion d'étudiants
 
 Dans le cadre de cette série, nous allons développer ensemble une application de gestion d'étudiants. Tout au long des différentes capsules, nous aborderons des sujets tels que la gestion des médias, les permissions, les rôles, l'authentification, ainsi que l'utilisation de bibliothèques importantes.
 
 ## Conclusion
 
-Nous espérons que cette brève introduction vous a donné un aperçu clair de ce à quoi vous pouvez vous attendre dans les Capsules Laravel. Que vous soyez un développeur junior souhaitant explorer le développement web ou quelqu'un avec une passion pour la création d'applications, ces capsules sont conçues pour vous fournir des connaissances pratiques et essentielles. Rejoignez-nous dans la prochaine capsule où nous plongerons directement dans l'initialisation de notre premier projet Laravel. Restez à l'écoute pour en savoir plus !
+J'espère que cette brève introduction vous a donné un aperçu clair de ce à quoi vous pouvez vous attendre dans les Capsules Laravel. Que vous soyez un développeur junior souhaitant explorer le développement web ou quelqu'un avec une passion pour la création d'applications, ces capsules sont conçues pour vous fournir des connaissances pratiques et essentielles. Retrouvez toutes les capsules sur [la chaîne YouTube](https://www.youtube.com/@LaravelJutsu) et abonnez-vous pour ne rien louper !

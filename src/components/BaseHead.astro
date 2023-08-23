@@ -18,8 +18,20 @@ const { title, description, image = '/banner.jpg' } = Astro.props;
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="icon" type="image/png" href="/favicon.png" />
 <meta name="generator" content={Astro.generator} />
+<meta name="theme-color" content="#fdcc66">
+<meta name="msapplication-TileColor" content="#ec5f53">
+
+<!-- Favicons -->
+<link rel="icon" type="image/png" href="/favicon.png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2.0.0" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicon-32x32.png?v=2.0.0" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png?v=2.0.0" sizes="16x16">
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+<link rel="shortcut icon" href="/favicon.ico?v=2.0.0">
+
+<!-- Sitemaps -->
+<link rel="sitemap" href="/sitemap-index.xml" />
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />

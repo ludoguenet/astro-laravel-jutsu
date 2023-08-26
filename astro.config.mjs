@@ -8,6 +8,13 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   site: 'https://laraveljutsu.net',
   integrations: [mdx(), sitemap(), tailwind()],
+  markdown: {
+    shikiConfig: {
+      theme: 'material-theme',
+      langs: [],
+      wrap: false,
+    },
+  },
   experimental: {
     viewTransitions: true
   }

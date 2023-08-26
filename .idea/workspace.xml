@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="98259024-9005-4acc-9331-f4bae29d2b27" name="Changes" comment="" />
+    <list default="true" id="98259024-9005-4acc-9331-f4bae29d2b27" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/posts/test-php-simple-pest.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/blog/tester-php-simplement-avec-pest.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/astro.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +50,7 @@
     &quot;RunOnceActivity.laravel-idea.search-composer-json&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/nordcoders/Sites/laraveljutsu/public&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/nordcoders/Sites/laraveljutsu/public/posts&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -57,9 +63,9 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/public/posts" />
       <recent name="$PROJECT_DIR$/src/content/blog" />
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="$PROJECT_DIR$/src/layouts" />
     </key>
@@ -131,7 +137,11 @@
       <workItem from="1692687594979" duration="15000" />
       <workItem from="1692816709044" duration="810000" />
       <workItem from="1692817538208" duration="3202000" />
-      <workItem from="1692888404539" duration="1066000" />
+      <workItem from="1692888404539" duration="1288000" />
+      <workItem from="1692905393142" duration="2091000" />
+      <workItem from="1692988064592" duration="6068000" />
+      <workItem from="1692998416184" duration="7000" />
+      <workItem from="1693033480875" duration="3388000" />
     </task>
     <servers />
   </component>

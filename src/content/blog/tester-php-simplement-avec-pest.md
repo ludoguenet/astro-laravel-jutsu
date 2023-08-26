@@ -16,7 +16,7 @@ De plus, il est très régulièrement mis à jour, preuve de l'excellente santé
 
 Si vous n'avez jamais exploré le monde des tests PHP et que l'envie vous démange, tout d'abord : Bravo ! C'est une étape cruciale, et même si ça demande un peu d'apprentissage, c'est le genre de pratique qui devient rapidement un réflexe super utile. D'ailleurs, il y a quelque temps, j'ai fait une vidéo pour vous présenter ce Framework sympa :
 
-<iframe class="w-1/2 aspect-video" src="https://www.youtube.com/embed/WYC_H9lR7Rw?si=it8mp9H3kXB1T2b2" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/WYC_H9lR7Rw?si=it8mp9H3kXB1T2b2" frameborder="0" allowfullscreen></iframe>
 
 ## Les plugins Laravel
 

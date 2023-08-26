@@ -8,7 +8,7 @@ heroImage: '/posts/test-php-simple-pest.png'
 
 # Qu'est-ce que Pest ?
 
-Pest, c'est la touche de simplicité **utile** à laquelle [Nuno Maduro](https://twitter.com/enunomaduro) a donné vie pour tester votre code PHP. Il mise tout sur la simplicité. Et devinez quoi ? Pas besoin de le coller obligatoirement à un projet Laravel. Même si, avouons-le, vous rateriez une occasion rêvée d'utiliser ses plugins incroyables. Pest, c'est un peu comme le nappage chocolat sur le gâteau 🍰 PHPUnit.
+Pest, c'est la touche de simplicité **utile** à laquelle [Nuno Maduro](https://twitter.com/enunomaduro) a donné vie pour tester votre code PHP. Il mise avant tout sur la clarté. Et devinez quoi ? Pas besoin de le coller obligatoirement à un projet Laravel. Même si, avouons-le, vous rateriez une occasion rêvée d'utiliser ses plugins incroyables. Pest, c'est un peu comme le nappage chocolat sur le gâteau 🍰 PHPUnit.
 
 De plus, il est très régulièrement mis à jour, preuve de l'excellente santé du package.
 
@@ -139,8 +139,7 @@ test('admin can create a member', function ($admin) {
     actingAs($admin);
     
     // Test connecté avec un administrateur
-})
-    ->with('admin');
+})->with('admin');
 ```
 
  <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">

@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98259024-9005-4acc-9331-f4bae29d2b27" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/posts/test-php-simple-pest.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/blog/tester-php-simplement-avec-pest.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/astro.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/blog/tester-php-simplement-avec-pest.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/blog/tester-php-simplement-avec-pest.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +138,7 @@
       <workItem from="1692905393142" duration="2091000" />
       <workItem from="1692988064592" duration="6068000" />
       <workItem from="1692998416184" duration="7000" />
-      <workItem from="1693033480875" duration="3388000" />
+      <workItem from="1693033480875" duration="4001000" />
     </task>
     <servers />
   </component>

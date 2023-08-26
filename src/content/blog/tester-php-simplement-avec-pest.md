@@ -1,6 +1,6 @@
 ---
 title: 'Apprendre à tester avec Pest'
-description: "Quand on veut assurer une qualité logiciel minimum, on se doit d'écrire des tests automatisés : ça tombe bien, Pest nous simplifie le travail !"
+description: "Quand on veut assurer une qualité logicielle, on se doit d'écrire des tests automatisés : ça tombe bien, Pest nous simplifie le travail !"
 category: 'Pest'
 pubDate: 'Aug 25 2023'
 heroImage: '/posts/test-php-simple-pest.png'

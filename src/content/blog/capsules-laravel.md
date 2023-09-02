@@ -1,9 +1,9 @@
 ---
-title: 'Les Capsules Laravel'
-description: 'Découvrons ensemble le nouveau concept des Capsules Laravel qui est tourné tout particulièrement vers les développeurs junior avide de créer une application professionnelle avec Laravel.'
-category: 'Laravel'
-pubDate: 'Aug 18 2023'
-heroImage: '/posts/laravel-capsule.png'
+title: Les Capsules Laravel
+description: Découvrons ensemble le nouveau concept des Capsules Laravel qui est tourné tout particulièrement vers les développeurs junior avide de créer une application professionnelle avec Laravel.
+category: Laravel
+pubDate: Aug 18 2023
+heroImage: ./images/laravel-capsule.png
 ---
 
 # 1, 2, 3... Initialisation du projet Laravel 10

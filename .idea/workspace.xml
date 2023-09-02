@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="98259024-9005-4acc-9331-f4bae29d2b27" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blog/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog/index.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/astro.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +33,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2Snr0j1ujAXHGiafVTAcDT1Sdwk" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -143,7 +146,17 @@
       <workItem from="1693033480875" duration="4109000" />
       <workItem from="1693042944311" duration="128000" />
       <workItem from="1693075299398" duration="6270000" />
-      <workItem from="1693141494234" duration="7826000" />
+      <workItem from="1693141494234" duration="7934000" />
+      <workItem from="1693333490027" duration="373000" />
+      <workItem from="1693333887797" duration="67000" />
+      <workItem from="1693333970108" duration="34000" />
+      <workItem from="1693334428325" duration="83000" />
+      <workItem from="1693336068177" duration="102000" />
+      <workItem from="1693336344929" duration="9000" />
+      <workItem from="1693339314766" duration="115000" />
+      <workItem from="1693339463411" duration="59000" />
+      <workItem from="1693509771436" duration="78000" />
+      <workItem from="1693639703452" duration="255000" />
     </task>
     <servers />
   </component>

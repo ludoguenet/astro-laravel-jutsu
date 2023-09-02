@@ -6,17 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="98259024-9005-4acc-9331-f4bae29d2b27" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/posts/laravel-capsule.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/blog/images/laravel-capsule.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/posts/laravel-rule-foreach.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/blog/images/laravel-rule-foreach.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/posts/test-php-simple-pest.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/blog/images/test-php-simple-pest.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/blog/capsules-laravel.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/blog/capsules-laravel.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/blog/for-each-rules.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/blog/for-each-rules.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/blog/tester-php-simplement-avec-pest.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/blog/tester-php-simplement-avec-pest.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layouts/BlogPost.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/BlogPost.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blog/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog/index.astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +156,8 @@
       <workItem from="1693339314766" duration="115000" />
       <workItem from="1693339463411" duration="59000" />
       <workItem from="1693509771436" duration="78000" />
-      <workItem from="1693639703452" duration="2461000" />
+      <workItem from="1693639703452" duration="4438000" />
+      <workItem from="1693652579844" duration="281000" />
     </task>
     <servers />
   </component>

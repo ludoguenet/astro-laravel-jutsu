@@ -14,6 +14,8 @@ Mais ce n'est pas tout, elle exploite également les attributs de PHP 8, vous pe
 
 Alors, lançons-nous dans cet article pour explorer toutes les fonctionnalités que **Lift** met à votre disposition.
 
+Pour les utilisateurs de **PHPStorm**, le plugin **Laravel Idea** apportera également un [support partiel](https://github.com/WendellAdriel/laravel-lift/pull/42).
+
 ## Mise en place
 
 L'installation se fait, comme toujours, par le biais de Composer.
@@ -93,7 +95,7 @@ La définition des méthodes ne bouge pas et accept les mêmes paramètres que l
 
 ## Les clés primaires
 
-J'ai volontairement pris l'exemple d'une clé primaire ***UUID*** pour montrer qu'on peut l'intégrer facilement avec **Lift**. En effet, cette dernière sera une ***chaîne de caractères*** qui ne doit pas s'incrémenter.
+J'ai volontairement pris l'exemple d'une clé primaire **UUID** pour montrer qu'on peut l'intégrer facilement avec **Lift**. En effet, cette dernière sera une **chaîne de caractères** qui ne doit pas s'incrémenter.
 
 ```php
 use WendellAdriel\Lift\Lift;
@@ -103,7 +105,7 @@ class Post extends Model
 {
     use Lift;
    
-     #[PrimaryKey(type: 'string', incrementing: false)]
+    #[PrimaryKey(type: 'string', incrementing: false)]
     public string $uuid;
     
     ...
@@ -154,7 +156,7 @@ class Post extends Model
 
 ## Validation de données
 
-**Lift** offre de nombreuses fonctionnalités supplémentaires à ajouter à vos modèles, et la validation des données en fait partie. Vous avez la possibilité de définir les règles de validation du framework ***Laravel*** directement dans vos attributs.
+**Lift** offre de nombreuses fonctionnalités supplémentaires à ajouter à vos modèles, et la validation des données en fait partie. Vous avez la possibilité de définir les règles de validation du framework **Laravel** directement dans vos attributs.
 
 ```php
 use WendellAdriel\Lift\Lift;
@@ -227,6 +229,51 @@ class StoreController extends Controller
     </svg>
     Le principe d'affichage des erreurs restent évidemment inchangé.
 </figcaption>
+
+## CreateRules
+
+Il peut être nécessaire parfois de séparer les règles de création des règles de mise à jour. Le code précédent montrait les règles mixées. Mais vous avez la possibilité de définir des règles qui s'appliquent uniquement à la création. J'en profite pour vous montrer la personnalisation des message qui est valable dans tous les cas.
+
+```php
+use WendellAdriel\Lift\Lift;
+use WendellAdriel\Lift\Attributes\CreateRules;
+
+class Post extends Model
+{
+    use Lift;
+    
+    ...
+    
+    #[CreateRules(rules: ['required', 'string', 'max:60'])]
+    public string $title;
+    
+    #[CreateRules(rules: ['required', 'string'], messages: ['required' => 'The description must not be empty.'])]
+    public string $description;
+    
+    ...
+}
+```
+
+## UpdateRules
+
+Vous l'aurez compris, il existe aussi la même chose, mais pour la mise à jour du Modèle.
+
+```php
+use WendellAdriel\Lift\Lift;
+use WendellAdriel\Lift\Attributes\UpdateRules;
+
+class Post extends Model
+{
+    use Lift;
+    
+    ...
+    
+    #[UpdateRules(['required', 'string', 'min:25'])]
+    public string $description;
+    
+    ...
+}
+```
 
 ## Watchers
 

@@ -110,13 +110,13 @@ class Post extends Model
 }
 ```
 
-Incroyable, n'est-ce pas ? Par défaut, les modèles Eloquent utilisent la colonne **id** avec auto-incrémentation comme clé primaire, ce qui n'aurait nécessité aucune action. Cependant, si vous souhaitez personnaliser cette clé, ***Lift*** vous offre une solution simple.
+Incroyable, n'est-ce pas ? Par défaut, les modèles Eloquent utilisent la colonne **id** avec auto-incrémentation comme clé primaire, ce qui n'aurait nécessité aucune action. Cependant, si vous souhaitez personnaliser cette clé, **Lift** vous offre une solution simple.
 
 ## Fillable et Cast
 
 Dans Laravel, l'attribut `fillable` est utilisé pour spécifier les champs d'une table de base de données qui peuvent être massivement affectés, garantissant ainsi la sécurité des données. D'autre part, les attributs `cast` permettent de définir la conversion automatique des types de données en types PHP natifs, voire en instances, comme c'est le cas avec les dates et `Carbon`.
 
-Certaines configurations se répètent fréquemment, `fillable` et `cast` ne font pas exception à la règle : L'avantage avec ***Lift*** réside dans la centralisation de toutes ces informations via les attributs PHP.
+Certaines configurations se répètent fréquemment, `fillable` et `cast` ne font pas exception à la règle : L'avantage avec **Lift** réside dans la centralisation de toutes ces informations via les attributs PHP.
 
 ```php
 use WendellAdriel\Lift\Lift;
@@ -154,7 +154,7 @@ class Post extends Model
 
 ## Validation de données
 
-***Lift*** offre de nombreuses fonctionnalités supplémentaires à ajouter à vos modèles, et la validation des données en fait partie. Vous avez la possibilité de définir les règles de validation du framework ***Laravel*** directement dans vos attributs.
+**Lift** offre de nombreuses fonctionnalités supplémentaires à ajouter à vos modèles, et la validation des données en fait partie. Vous avez la possibilité de définir les règles de validation du framework ***Laravel*** directement dans vos attributs.
 
 ```php
 use WendellAdriel\Lift\Lift;
@@ -278,7 +278,7 @@ class TitleChangedEvent
 
 ## Conclusion
 
-***Lift*** est une bibliothèque qui permet d'accéder aux fonctionnalités d'Eloquent déjà mises en place, mais d'une manière différente.
+**Lift** est une bibliothèque qui permet d'accéder aux fonctionnalités d'Eloquent déjà mises en place, mais d'une manière différente.
 
 Elle rend les modèles plus **lisibles**, plus **compréhensibles**, et exploite les attributs PHP 8, qui sont intéressants mais que l'on voit trop rarement utilisés.
 

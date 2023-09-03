@@ -6,7 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="98259024-9005-4acc-9331-f4bae29d2b27" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/BlogPost.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/BlogPost.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/blog/for-each-rules.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/blog/for-each-rules.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/blog/tester-php-simplement-avec-pest.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/blog/tester-php-simplement-avec-pest.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/404.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/404.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/blog/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog/index.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +56,7 @@
     &quot;RunOnceActivity.laravel-idea.search-composer-json&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/nordcoders/Sites/laraveljutsu/src/pages&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/nordcoders/Sites/laraveljutsu/src/pages/blog&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -63,18 +69,18 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/blog" />
       <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="$PROJECT_DIR$/public/posts" />
       <recent name="$PROJECT_DIR$/src/content/blog" />
       <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/src/layouts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/blog/category" />
       <recent name="$PROJECT_DIR$/src/content/blog" />
       <recent name="$PROJECT_DIR$/src/pages/blog" />
       <recent name="$PROJECT_DIR$/public/posts" />
       <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/src/pages" />
     </key>
   </component>
   <component name="RunManager">
@@ -157,7 +163,10 @@
       <workItem from="1693339463411" duration="59000" />
       <workItem from="1693509771436" duration="78000" />
       <workItem from="1693639703452" duration="4438000" />
-      <workItem from="1693652579844" duration="281000" />
+      <workItem from="1693652579844" duration="1373000" />
+      <workItem from="1693670264286" duration="16000" />
+      <workItem from="1693684969139" duration="8731000" />
+      <workItem from="1693724726706" duration="2448000" />
     </task>
     <servers />
   </component>

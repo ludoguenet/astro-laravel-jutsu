@@ -1,6 +1,6 @@
 ---
 title: Boostez vos Modèles Eloquent avec Laravel Lift !
-description: Laravel Lift est une librairie qui capitalise sur les attributs PHP pour piloter un maximum de logique depuis vos Modèles Eloquent.
+description: Laravel Lift est une librairie qui capitalise sur les attributs PHP pour piloter un maximum de logique depuis vos ****Modèle**s** Eloquent.
 category: Eloquent
 pubDate: Sep 3 2023
 heroImage: ./images/laravel-lift.png
@@ -8,11 +8,13 @@ heroImage: ./images/laravel-lift.png
 
 # Qu'est-ce que Laravel Lift ?!
 
-**Lift** est une bibliothèque développée et maintenue par [Wendell Adriel](https://twitter.com/wendell_adriel) qui vous permet de créer des **attributs publics** dans vos modèles Eloquent. Cela rend vos modèles plus lisibles, tant pour vous que pour votre IDE.
+**Lift** est une bibliothèque développée et maintenue par [Wendell Adriel](https://twitter.com/wendell_adriel) qui vous permet de créer des **attributs publics** dans vos **Modèles** Eloquent. Les rendant ainsi plus lisibles, tant pour vous que pour votre IDE.
 
-Mais ce n'est pas tout, elle exploite également les attributs de PHP 8, vous permettant de piloter de nombreuses actions directement depuis votre modèle.
+Mais ce n'est pas tout, elle exploite également les [attributs PHP](https://www.php.net/manual/fr/language.attributes.overview.php), vous permettant de piloter de nombreuses actions directement depuis votre **Modèle**.
 
 Alors, lançons-nous dans cet article pour explorer toutes les fonctionnalités que **Lift** met à votre disposition.
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">🏋️ Lift for Laravel v0.10.0 released!!! 🔥🚀<br><br>This version fixes some issues with missing validation messages and adds:<br><br>💪 Support for localization in validation messages<br><br>💪 Support to customize the relationship name with the Relationship attributes<br><br>💪 ide.json file, meaning…</p>&mdash; Wendell Adriel (@wendell_adriel) <a href="https://twitter.com/wendell_adriel/status/1698663349171413046?ref_src=twsrc%5Etfw">September 4, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Pour les utilisateurs de **PHPStorm**, le plugin **Laravel Idea** apportera également un [support partiel](https://github.com/WendellAdriel/laravel-lift/pull/42).
 
@@ -20,11 +22,11 @@ Pour les utilisateurs de **PHPStorm**, le plugin **Laravel Idea** apportera éga
 
 L'installation se fait, comme toujours, par le biais de Composer.
 
-```composer 
+```bash 
 composer require wendelladriel/laravel-lift
 ```
 
-Puis, un simple Trait à greffer sur le Modèle.
+Puis, un simple Trait à greffer sur le **Modèle**.
 
 ```php
 use WendellAdriel\Lift\Lift;
@@ -35,7 +37,7 @@ class Post extends Model
 }
 ```
 
-Ensuite, il ne reste plus qu'à définir les attributs publics de votre Modèle. 
+Ensuite, il ne reste plus qu'à définir les attributs publics de votre **Modèle**. 
 
 ```php
 use WendellAdriel\Lift\Lift;
@@ -112,7 +114,7 @@ class Post extends Model
 }
 ```
 
-Incroyable, n'est-ce pas ? Par défaut, les modèles Eloquent utilisent la colonne **id** avec auto-incrémentation comme clé primaire, ce qui n'aurait nécessité aucune action. Cependant, si vous souhaitez personnaliser cette clé, **Lift** vous offre une solution simple.
+Incroyable, n'est-ce pas ? Par défaut, les **Modèles** Eloquent utilisent la colonne **id** avec auto-incrémentation comme clé primaire, ce qui n'aurait nécessité aucune action. Cependant, si vous souhaitez personnaliser cette clé, **Lift** vous offre une solution simple.
 
 ## Fillable et Cast
 
@@ -156,7 +158,7 @@ class Post extends Model
 
 ## Validation de données
 
-**Lift** offre de nombreuses fonctionnalités supplémentaires à ajouter à vos modèles, et la validation des données en fait partie. Vous avez la possibilité de définir les règles de validation du framework **Laravel** directement dans vos attributs.
+**Lift** offre de nombreuses fonctionnalités supplémentaires à ajouter à vos **Modèles**, et la validation des données en fait partie. Vous avez la possibilité de définir les règles de validation du framework **Laravel** directement dans vos attributs.
 
 ```php
 use WendellAdriel\Lift\Lift;
@@ -256,7 +258,7 @@ class Post extends Model
 
 ## UpdateRules
 
-Vous l'aurez compris, il existe aussi la même chose, mais pour la mise à jour du Modèle.
+Vous l'aurez compris, il existe aussi la même chose, mais pour la mise à jour du **Modèle**.
 
 ```php
 use WendellAdriel\Lift\Lift;
@@ -275,11 +277,11 @@ class Post extends Model
 }
 ```
 
-## Watchers
+## Watch
 
-Par défaut, Eloquent déclenche déjà des événements lorsqu'un modèle est créé, mis à jour, supprimé, etc. Cependant, il s'agit d'événements génériques, et parfois, vous avez besoin de déclencher un événement spécifique lorsque certaines propriétés sont modifiées. C'est là que l'attribut "Watch" entre en jeu.
+Par défaut, Eloquent déclenche déjà des événements lorsqu'un **Modèle** est créé, mis à jour, supprimé, etc. Cependant, il s'agit d'événements génériques, et parfois, vous avez besoin de déclencher un événement spécifique lorsque certaines propriétés sont modifiées. C'est là que l'attribut `Watch` entre en jeu.
 
-Vous avez la possibilité de définir un événement personnalisé qui sera déclenché dès qu'une propriété change. Cet événement recevra en paramètre l'instance mise à jour du modèle :
+Vous avez la possibilité de définir un événement personnalisé qui sera déclenché dès qu'une propriété change. Cet événement recevra en paramètre l'instance mise à jour du **Modèle** :
 
 ```php
 use WendellAdriel\Lift\Lift;
@@ -323,10 +325,41 @@ class TitleChangedEvent
 }
 ```
 
+## Config
+
+L'attribut **Config** vous permet de définir les configurations des propriétés publiques de votre **Modèle** pour les attributs suivants : `Cast`, `Column`, `Fillable`, `Hidden`, `Immutable`, `Rules`, et `Watch`.
+
+```php
+use WendellAdriel\Lift\Lift;
+use WendellAdriel\Lift\Attributes\Config;
+
+#[BelongsTo(User::class)]
+class Post extends Model
+{
+    use Lift;
+    
+    #[PrimaryKey(type: 'string', incrementing: false)]
+    #[Config(cast: 'string')]
+    public string $uuid;
+    
+    #[Config(fillable: true, rules: ['required', 'string', 'max:60'], watch: TitleChangedEvent::class)]
+    public string $title;
+    
+    #[Config(fillable: true, rules: ['required', 'string'])]
+    public string $description;
+
+    #[Cast('int')]
+    public int $views_count;
+    
+    #[Cast('datetime')]
+    public Carbon $published_at;
+}
+```
+
 ## Conclusion
 
 **Lift** est une bibliothèque qui permet d'accéder aux fonctionnalités d'Eloquent déjà mises en place, mais d'une manière différente.
 
-Elle rend les modèles plus **lisibles**, plus **compréhensibles**, et exploite les attributs PHP 8, qui sont intéressants mais que l'on voit trop rarement utilisés.
+Elle rend les **Modèles** plus **lisibles**, plus **compréhensibles**, et exploite les attributs PHP 8, qui sont intéressants mais que l'on voit trop rarement utilisés.
 
 Cependant, gardons à l'esprit qu'il s'agit d'une question de préférence personnelle, et l'appréciation reste subjective.

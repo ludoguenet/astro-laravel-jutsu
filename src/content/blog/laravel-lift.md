@@ -2,7 +2,7 @@
 title: Boostez vos Modèles Eloquent avec Laravel Lift !
 description: Laravel Lift est une librairie qui capitalise sur les attributs PHP pour piloter un maximum de logique depuis vos Modèles Eloquent.
 category: Eloquent
-pubDate: Sep 3 2023
+pubDate: Sep 5 2023
 heroImage: ./images/laravel-lift.png
 ---
 

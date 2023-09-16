@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="98259024-9005-4acc-9331-f4bae29d2b27" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/blog/capsules-laravel.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/blog/capsules-laravel.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/blog/laravel-lift.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/blog/laravel-lift.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,6 +169,8 @@
       <workItem from="1694246037240" duration="203000" />
       <workItem from="1694723996085" duration="327000" />
       <workItem from="1694849688267" duration="28000" />
+      <workItem from="1694851881573" duration="136000" />
+      <workItem from="1694882817402" duration="221000" />
     </task>
     <servers />
   </component>

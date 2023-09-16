@@ -16,7 +16,7 @@ Une capsule Laravel est un épisode où nous allons plonger dans le développeme
 
 L'objectif principal de ces capsules est de fournir des bases solides pour le développement web avec Laravel. Nous allons aborder divers aspects du développement, vous montrant comment créer des fonctionnalités, gérer des données, mettre en place l'authentification et bien plus encore. Chaque capsule se concentrera sur un thème particulier, permettant à chacun d'assimiler progressivement des connaissances essentielles.
 
-## Contenu de la vidéo
+## Tutoriel vidéo
 
 <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/YiiJeqMLOcw" frameborder="0" allowfullscreen></iframe>
 

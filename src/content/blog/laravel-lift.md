@@ -14,9 +14,11 @@ Mais ce n'est pas tout, elle exploite également les [attributs PHP](https://www
 
 Alors, lançons-nous dans cet article pour explorer toutes les fonctionnalités que **Lift** met à votre disposition.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">🏋️ Lift for Laravel v0.10.0 released!!! 🔥🚀<br><br>This version fixes some issues with missing validation messages and adds:<br><br>💪 Support for localization in validation messages<br><br>💪 Support to customize the relationship name with the Relationship attributes<br><br>💪 ide.json file, meaning…</p>&mdash; Wendell Adriel (@wendell_adriel) <a href="https://twitter.com/wendell_adriel/status/1698663349171413046?ref_src=twsrc%5Etfw">September 4, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+Pour les utilisateurs de **PHPStorm**, le plugin **Laravel Idea** apporte maintenant un [support partiel](https://github.com/WendellAdriel/laravel-lift/pull/42).
 
-Pour les utilisateurs de **PHPStorm**, le plugin **Laravel Idea** apportera également un [support partiel](https://github.com/WendellAdriel/laravel-lift/pull/42).
+## Tutoriel vidéo
+
+<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/Fpb18ZIiB3Y" frameborder="0" allowfullscreen></iframe>
 
 ## Mise en place
 

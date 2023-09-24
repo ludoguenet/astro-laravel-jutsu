@@ -10,7 +10,7 @@ heroImage: ./images/trier-donnees-laravel-vue.png
 
 Bienvenue dans ce petit récapitulatif textuel où je vais vous apprendre à trier vos données de façon propre grâce à la Sainte Trinité du full-stack : **Laravel** • **Vue** • **Composable**.
 
-L'objectif est de vous montrer comment trier les produits d'une liste en fonction de leur nom, de leur prix et de leur catégorie. Nous allons également mettre en évidence le bouton de tri, en alternant entre les valeurs ascendantes et descendantes.
+L'objectif est de vous montrer comment trier les produits d'une liste en fonction de leur nom, de leur prix et de leur catégorie. Nous allons appliquer un style sur le bouton de tri avec [TailwindCSS](https://tailwindcss.com), et alternerons entre les valeurs ascendantes et descendantes.
 
 Et comme nous ne sommes plus des développeurs de seconde zone, nous allons tester tout ceci avec [PestPHP](https://pestphp.com).
 
@@ -122,7 +122,7 @@ Nous pourrons également retrouver la liste des produits dans un composant `Prod
 
 Enfin, l'élément le plus crucial sera de centraliser l'appel HTTP à notre API Laravel dans un fichier nommé `useProducts.js`, que nous avons précédemment mentionné dans notre `ProductIndex.vue`.
 
-Ce fichier est un composable qui hébergera toute la logique relative aux produits. La constante `orderBy` stockera la valeur de tri, la direction dans laquelle le tri doit s'effectuer, et enfin, `toggleOrder` mettra à jour ces deux derniers éléments et actualisera la liste en invoquant l'API Laravel.
+Ce fichier est un composable qui hébergera toute la logique relative aux produits. La constante `orderBy` stockera la valeur de tri, `direction` la direction dans laquelle le tri doit s'effectuer (ASC ou DESC), et enfin, `toggleOrder` mettra à jour ces deux derniers éléments et actualisera la liste en invoquant l'API Laravel.
 
 ```js
 import {ref} from "vue";
@@ -168,7 +168,7 @@ export function useProducts () {
 
 ## Conclusion
 
-En combinant habilement les fonctionnalités de Laravel, Vue.js, et des composables, vous avez désormais les outils nécessaires pour trier efficacement vos données de manière organisée et conviviale. 
+En combinant habilement les fonctionnalités de Laravel, Vue.js, et des composables, vous avez désormais les outils nécessaires pour trier efficacement vos données de manière organisée et conviviale pour l'utilisateur. 
 
 La centralisation de la logique dans des composants et fichiers distincts permet de maintenir un code propre et modulaire, facilitant ainsi la gestion et l'évolutivité de votre application. 
 

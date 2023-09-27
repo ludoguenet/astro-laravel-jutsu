@@ -13,7 +13,7 @@ export async function getStaticPaths({ paginate }) {
 
 	return paginate(posts.sort(
 		(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-	), { pageSize: 4 });
+	), { pageSize: 10 });
 }
 
 const { page } = Astro.props;
@@ -80,6 +80,7 @@ const { page } = Astro.props;
 					</div>
 				</div>
 
+			{ page.url.prev || page.url.next ?
 				<nav class="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-2 mt-16" aria-label="Pagination">
 					<div class="hidden sm:block">
 						<p class="text-sm text-gray-700">
@@ -97,6 +98,8 @@ const { page } = Astro.props;
 						{ page.url.next ? <a href={page.url.next} class="relative ml-3 inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline-offset-0">Suivant</a> : null }
 					</div>
 				</nav>
+			: null }
+
 			</div>
 
 		</div>

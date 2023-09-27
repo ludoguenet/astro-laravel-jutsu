@@ -6,15 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="98259024-9005-4acc-9331-f4bae29d2b27" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/blog/capsules-laravel.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/blog/capsules-laravel.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/blog/for-each-rules.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/blog/for-each-rules.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/blog/laravel-lift.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/blog/laravel-lift.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/blog/tester-php-simplement-avec-pest.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/blog/tester-php-simplement-avec-pest.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/blog/trier-donnees-laravel-vue.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/blog/trier-donnees-laravel-vue.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blog/category/[...category].astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog/category/[...category].astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blog/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog/[...page].astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/blog/[...page].astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog/[...page].astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -13,7 +13,7 @@ export async function getStaticPaths({ paginate }) {
 
 	return paginate(posts.sort(
 		(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-	), { pageSize: 10 });
+	), { pageSize: 5 });
 }
 
 const { page } = Astro.props;
@@ -144,7 +144,7 @@ const categories: Category[] = [
 							<span class="font-medium">{page.end + 1}</span>
 							sur
 							<span class="font-medium">{page.total}</span>
-							résultats
+							articles
 						</p>
 					</div>
 					<div class="flex flex-1 justify-between sm:justify-end">

@@ -71,7 +71,7 @@ Côté Vue.js, nous allons procéder de manière méthodique. Le composant princ
         <div class="hidden sm:block">
             <nav class="flex space-x-4" aria-label="Tabs">
                 <a
-                    class="text-gray-500 hover:text-gray-700 rounded-md px-3 py-2 text-sm font-medium cursor-pointer"
+                    class="..."
                     :class="{'text-indigo-500': orderBy === 'name'}"
                     v-on:click="toggleOrder('name')"
                 >
@@ -79,7 +79,7 @@ Côté Vue.js, nous allons procéder de manière méthodique. Le composant princ
                 </a>
 
                 <a
-                    class="text-gray-500 hover:text-gray-700 rounded-md px-3 py-2 text-sm font-medium cursor-pointer"
+                    class="..."
                     :class="{'text-indigo-500': orderBy === 'price'}"
                     v-on:click="toggleOrder('price')"
                 >
@@ -87,7 +87,7 @@ Côté Vue.js, nous allons procéder de manière méthodique. Le composant princ
                 </a>
 
                 <a
-                    class="text-gray-500 hover:text-gray-700 rounded-md px-3 py-2 text-sm font-medium cursor-pointer"
+                    class="..."
                     :class="{'text-indigo-500': orderBy === 'category'}"
                     v-on:click="toggleOrder('category')"
                 >

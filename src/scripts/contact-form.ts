@@ -108,6 +108,12 @@ document.addEventListener('astro:page-load', () => {
 
             displaySuccess();
         }
+
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth",
+        });        
     }
     
     button?.addEventListener('click', submitForm);

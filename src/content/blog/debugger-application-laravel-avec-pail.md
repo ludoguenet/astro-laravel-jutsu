@@ -9,7 +9,11 @@ colorTag: sky
 
 # Qu'est-ce que Pail ?
 
-**Pail**, c’est peut-être ce que bon nombre d'entre nous utilisera demain pour débugger ses logs ! Encore une innovation du grand [Nuno Maduro](https://twitter.com/enunomaduro), qui nous gratifie d'un nouveau package permettant de visionner facilement les logs Laravel directement depuis la ligne de commande. Contrairement à d'autres outils de suivi de journaux, Pail est conçu pour fonctionner avec n'importe quel driver, y compris Sentry ou Flare. 🛠️🔍
+**Pail**, c’est peut-être ce que bon nombre d'entre nous utilisera demain pour débugger ses logs ! Encore une innovation du grand [Nuno Maduro](https://twitter.com/enunomaduro), qui nous gratifie d'un nouveau package permettant de visionner facilement les logs Laravel directement depuis la ligne de commande. 
+
+Contrairement à d'autres outils de suivi de journaux, Pail est conçu pour fonctionner avec n'importe quel driver, y compris Sentry ou Flare. 🔫
+
+La documentation est diposnible sur [le site officiel de Laravel](https://laravel.com/docs/10.x/logging#tailing-log-messages-using-pail).
 
 ## Installation
 
@@ -17,10 +21,8 @@ colorTag: sky
 
 Pour commencer, installez Pail dans votre projet à l'aide du gestionnaire de paquets Composer :
 
-> **Remarque :** Pail est actuellement en version bêta et n'est pas encore prêt pour une utilisation en production.
-
 ```bash
-composer require laravel/pail:^1.0@beta
+composer require laravel/pail
 ```
 
 ## Comment ça s'utilise ?

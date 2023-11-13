@@ -9,6 +9,16 @@ colorTag: emerald
 
 # Comprendre watch et watchEffect avec Vue 3
 
+## Sommaire
+1. [Introduction](#introduction)
+2. [Utilisation de ref et watchEffect](#utilisation)
+    1. [On se watch plus tard ?](#later)
+    2. [Désactivation et invalidation des side effects](#deactivate)
+3. [Gestion des effets secondaires avec `onInvalidate`](#sideeffect)
+4. [Des fonctions paresseuses ?](#lazy)
+5. [Conclusion](#conclusion)
+
+## Introduction <a name="introduction"></a>
 L'API Composition nous offre 2 fonctions pour gérer nos side effects : `watch` et `watchEffect`.
 
 Tout comme `ref` et `reactive`, ces méthodes ne sont pas destinées à se concurrencer, mais à être utilisées selon les besoins de l'application. Considérez-les comme 2 outils similaires, chacun étant utile dans certaines situations.
@@ -25,7 +35,7 @@ Cependant, il existe un certain nombre de différences entre elles. En voici une
 
 Il est important de tenir compte de ce que vous souhaitez réaliser et d'utiliser l'outil approprié pour la tâche.
 
-## Utilisation de ref et watchEffect
+## Utilisation de ref et watchEffect <a name="utilisation"></a>
 
 Contexte actuel : l'utilisateur doit pouvoir éditer en temps réel un article.
 
@@ -54,7 +64,7 @@ Avec `watchEffect`, nous fournissons une fonction anonyme en tant qu'argument, c
 </script>
 ```
 
-## On se watch plus tard ?
+## On se watch plus tard ? <a name="later"></a>
 
 L'une des fonctionnalités l'API Composition est la possibilité de supprimer les watchers de manière programmatique. 
 
@@ -93,7 +103,7 @@ Cela peut aider à organiser votre code et communiquer clairement aux autres dé
     Lorsque l'utilisateur clique sur le bouton de fin de travail, une fonction est appelée pour désactiver le watcher.
   </figcaption>
 
-## Désactivation et invalidation des side effects
+## Désactivation et invalidation des side effects <a name="deactivate"></a>
 
 Une autre fonctionnalité, et pas des moindres, est la possibilité d'invalider nos effets secondaires. 
 
@@ -131,7 +141,7 @@ Examinons à quoi cela ressemblerait :
 </script>
 ```
 
-## Gestion des effets secondaires avec `onInvalidate`
+## Gestion des effets secondaires avec `onInvalidate` <a name="sideeffect"></a>
 
 Le callback que nous avons passé à `watchEffect` a maintenant un argument `onInvalidate`. Cette fonction prend un autre callback en tant qu'argument, qui est appelé lorsque l'état surveillé a changé. 
 
@@ -139,7 +149,7 @@ Dans notre exemple, la fonction `save` renvoie maintenant une fonction que nous 
 
 Lorsque `onInvalidate` est déclenché, nous appelons `abort` ce qui annule la requête API en cours car nous savons à ce moment qu'une prochaine requête API est déclenchée dans un prochain appel de `watch`.
 
-## Des fonctions paresseuses ?
+## Des fonctions paresseuses ? <a name="lazy"></a>
 
 Il est fondamental de noter que `watchEffect` se déclenche immédiatement tout en suivant réactivement ses dépendances et la réexécute chaque fois que les dépendances changent.
 
@@ -155,7 +165,7 @@ watch(source, (newValue, oldValue) => {
 }, { immediate: true })
 ```
 
-## Conclusion
+## Conclusion <a name="conclusion"></a>
 
 Dans cet article, nous avons exploré l'utilisation de `watch` et `watchEffect` avec l'API Composition de Vue 3 pour gérer les effets secondaires dans nos applications. Nous avons constaté que ces deux méthodes offrent une flexibilité précieuse pour réagir aux changements d'état et effectuer des opérations en conséquence.
 

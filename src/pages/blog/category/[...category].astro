@@ -43,6 +43,7 @@ type Category = {
 
 const categories: Category[] = [
     { name: 'Laravel', url: '/blog/category/laravel', },
+    { name: 'PHP', url: '/blog/category/php', },
     { name: 'Pest', url: '/blog/category/pest', },
     { name: 'Eloquent', url: '/blog/category/eloquent', },
     { name: 'Vue', url: '/blog/category/vue', },
@@ -60,7 +61,7 @@ const categories: Category[] = [
 <div class="bg-white mb-6 mt-12 lg:my-10">
 
     <div class="mx-auto max-w-7xl px-6 lg:px-8 mb-16 flex justify-between items-start">
-        <h2 class="text-3xl font-bold tracking-tight">Tous les articles sur <span class=`text-${posts[0]?.data.colorTag}-400`>{category.charAt(0).toUpperCase() + category.slice(1)}</span></h2>
+        <h2 class="text-3xl font-bold tracking-tight">Tous les articles sur <span class=`text-${posts[0]?.data.colorTag}-400`>{category.toUpperCase()}</span></h2>
 
         <div class="relative inline-block text-left">
             <div>

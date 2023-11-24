@@ -22,9 +22,7 @@ colorTag: indigo
 ## Présentation <a name="presentation"></a>
 PHP c'est un peu comme Denver le dinosaure : C'est notre ami et bien plus encore ! 🦖
 
-En plus d'être un dino férocement solide, il bénéficie régulièrement de mises à jour pour améliorer l'expérience développeur (DX) et rafraîchir sa code base. Cette nouvelle version 8.3 sortie ce jour ne fait pas exception à la règle.
-
-Faisons un petit tour de ces nouvelles fonctionnalités.
+En plus de sa robustesse légendaire, il reçoit régulièrement des mises à jour pour affiner l'expérience des développeurs (DX) et moderniser son code. La version 8.3, fidèle à cette tradition, introduit des améliorations prêtes à être exploitées dès maintenant.
 
 ## La nouvelle fonction `json_validate()` <a name="jsonvalidate"></a>
 

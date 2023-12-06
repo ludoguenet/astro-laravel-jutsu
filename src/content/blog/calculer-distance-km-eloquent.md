@@ -42,14 +42,13 @@ $shops = Shop::query()
     ->get();
 ```
 
-Puis dans notre modèle `Shop` nous allons créer une méthode `scopeAddDistance` pour récupérer l'instance du QueryBuilder et les paramètres passées.
+Dans notre modèle `Shop`, nous créons la méthode `scopeAddDistance` pour obtenir l'instance du QueryBuilder et les paramètres associés.
 
-Enfin, nous utiliserons la méthode `ST_Distance`à laquelle nous passons nos références géospatiales.
-La première concerne les coordonnées de nos boutiques, et la seconde les coordonnées passées au scope qui seront résolues dans les bindings de notre `selectRaw`. 
+Ensuite, nous utilisons la fonction SQL `ST_Distance` en fournissant nos références géospatiales. La première correspond aux coordonnées de nos boutiques, la seconde aux coordonnées passées au scope et résolues dans les bindings de notre `selectRaw`.
 
-Je précise que la valeur **4326** n'est pas prise au hasard et correspond au référentiel terrestre.
+Il est important de noter que la valeur **4326** n'est pas choisie au hasard ; elle correspond au référentiel terrestre.
 
-Je fais précéder ceci d'une condition qui insérer les données de toutes mes colonnes si le select est vide, cela me permettra de récupérer tous les champs en plus de notre distance.
+Pour garantir la récupération de tous les champs en plus de la distance, j'insère une condition qui inclut les données de toutes les colonnes si le select est vide.
 
 ```php
     public function scopeAddDistance(

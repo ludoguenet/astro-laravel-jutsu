@@ -12,7 +12,7 @@ colorTag: sky
 ## Sommaire
 1. [Introduction](#introduction)
 7. [Installation de Docker 🐳](#installdocker)
-7. [Autoriser les utilisateurs non-root à exécuter des commandes Docker 🔓](#nonroot)
+7. [Permissions non-root pour Docker 🔓](#nonroot)
 7. [Installer une application avec Laravel Sail 🚢](#laravelsail)
 8. [Conclusion](#conclusion)
 
@@ -99,7 +99,7 @@ docker run -it ubuntu bash
 # Bravo !
 ```
 
-## Autoriser les utilisateurs non-root à exécuter des commandes Docker 🔓 <a name="nonroot"></a>
+## Permissions non-root pour Docker 🔓 <a name="nonroot"></a>
 
 Si vous pensiez être tiré d’affaire : c’est PRESQUE vrai !
 

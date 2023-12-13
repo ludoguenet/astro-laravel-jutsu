@@ -1,7 +1,7 @@
 ---
 title: Debugger son application Laravel avec Pail
 description: Découvrez Laravel Pail, l'outil ultime pour explorer les journaux de votre application Laravel depuis la ligne de commande, avec une interface conviviale et une compatibilité totale.
-category: Package
+category: Outils
 pubDate: Oct 14 2023
 heroImage: ./images/debugger-logs-laravel-pail.png
 colorTag: sky

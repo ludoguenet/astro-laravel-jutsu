@@ -13,10 +13,10 @@
 
 ::-moz-selection {
     color: white;
-    background-color: rgb(253 224 71);
+    background-color: #fde047;
   }
   
   ::selection {
     color: white;
-    background-color: rgb(253 224 71);
+    background-color: #fde047;
   }

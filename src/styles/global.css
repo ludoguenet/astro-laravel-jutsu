@@ -13,10 +13,10 @@
 
 ::-moz-selection {
     color: white;
-    background-color: #fde047;
+    background-color: #facc15;
   }
   
   ::selection {
     color: white;
-    background-color: #fde047;
+    background-color: #facc15;
   }

@@ -20,3 +20,16 @@
     color: white;
     background-color: #facc15;
   }
+
+.bg-scribble::before {
+  mask: url(./scribble.svg) repeat;
+  mask-size: auto 100%;
+  background-color: #ffeca1;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: .9;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}

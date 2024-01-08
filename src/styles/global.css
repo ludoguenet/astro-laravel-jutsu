@@ -24,7 +24,7 @@
 .bg-scribble::before {
   mask: url(./scribble.svg) repeat;
   mask-size: auto 100%;
-  background-color: #ffd32123;
+  background-color: #ffd32134;
   content: "";
   height: 100%;
   left: 0;

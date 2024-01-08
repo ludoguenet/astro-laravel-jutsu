@@ -139,18 +139,26 @@ const categories: Category[] = [
 				<nav class="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-2 mt-16" aria-label="Pagination">
 					<div class="hidden sm:block">
 						<p class="text-sm text-gray-700">
-							Affichage de
-							<span class="font-medium">{page.start + 1}</span>
-							à
-							<span class="font-medium">{page.end + 1}</span>
-							sur
-							<span class="font-medium">{page.total}</span>
-							articles
+				
+							<span class="font-medium">{page.currentPage}</span>
+							/
+							<span class="font-base">{page.lastPage}</span>
+			
 						</p>
 					</div>
 					<div class="flex flex-1 justify-between sm:justify-end">
-						{ page.url.prev ? <a href={page.url.prev} class="relative inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline-offset-0">Précédent</a> : null }
-						{ page.url.next ? <a href={page.url.next} class="relative ml-3 inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline-offset-0">Suivant</a> : null }
+						{ page.url.prev ? <a href={page.url.prev} class="relative inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline-offset-0">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3.5 h-3.5 me-2">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+							</svg>
+							Précédent
+							</a> : null }
+						{ page.url.next ? <a href={page.url.next} class="relative ml-3 inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline-offset-0">
+							Suivant
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3.5 h-3.5 ms-2">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+							</svg>
+							</a> : null }
 					</div>
 				</nav>
 			: null }

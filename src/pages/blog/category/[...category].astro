@@ -96,7 +96,7 @@ const categories: Category[] = [
                         categories.map((categoryItem) => (
                                 <a
                                         href={categoryItem.url}
-                                        class:list={["flex items-center group text-gray-700 px-4 py-2 text-sm hover:bg-gray-100", { "text-yellow-500": categoryItem.name.toLowerCase() === category }]}
+                                        class:list={["flex items-center group text-gray-700 px-4 py-2 text-sm hover:bg-gray-100", { "text-yellow-400": categoryItem.name.toLowerCase() === category }]}
                                         role="menuitem"
                                         tabindex="-1"
                                         id="menu-item-0"
@@ -137,7 +137,7 @@ const categories: Category[] = [
                                     </div>
                                     <div class="mt-6 flex border-t border-gray-900/5 pt-6">
                                         <div class="relative flex items-center gap-x-4">
-                                            <img src="/blog-avatar.jpg" alt="" class="h-10 w-10 rounded-full bg-gray-50">
+                                            <img src="/avatar.jpg" alt="" class="h-10 w-10 rounded-full bg-gray-50">
                                             <div class="text-sm leading-6">
                                                 <p class="font-semibold text-gray-900">
                                                     <a href="https://twitter.com/LaravelJutsu">

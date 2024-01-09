@@ -12,13 +12,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	</head>
 
 	<body>
-
-		<div class="w-full h-full fixed top-0 left-0 bg-white opacity-50 z-50" id="bg-loading">
-			<div class="flex justify-center items-center mt-[50vh]">
-				<div id="loading"></div>
-			</div>
-		  </div>
-
 		<Header />
 
 		<div class="relative isolate">
@@ -60,17 +53,18 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 						<a href="/blog" class="text-sm font-semibold leading-6 text-gray-900">Un peu de lecture <span aria-hidden="true">→</span></a>
 					</div>
 				</div>
+
 				<div class="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow hidden lg:block">
-					<img src="/laravel-logo.png" alt="Logo laravel" class="mx-auto w-[20rem] max-w-full drop-shadow-xl" id="laravel-logo">
+					<img src="/laravel-logo.svg" alt="Logo laravel" class="mx-auto w-[20rem] max-w-full drop-shadow-xl" id="js-animated-logo">
 				</div>
 			</div>
 		</div>
 
 		<section class="bg-white mt-12 py-24">
-			<div class="mx-auto max-w-7xl px-6 lg:px-8">
+			<div class="bg-planet mx-auto max-w-7xl px-6 lg:px-8">
 					<div class="lg:pr-4">
 					  <div class="lg:max-w-3xl">
-						<span class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-600 ring-1 ring-inset ring-yellow-600/20">Garantie sans bullshit</span>
+						<span class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-sm font-medium text-yellow-600 ring-1 ring-inset ring-yellow-600/20">Garantie 0% bullshit</span>
 						<h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 font-bold sm:text-4xl">Contenu adapté à tous les niveaux d'expérience et à tous les styles d'apprentissage.</h1>
 						<p class="mt-6 text-base leading-7 text-gray-600">Que vous ayez déjà développé plusieurs applications ou que vous commenciez tout juste, Laravel Jutsu propose du contenu qui vous apprendra quelque chose de nouveau.</p>
 					  </div>
@@ -93,14 +87,14 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 						<h4 class="font-bold opacity-50">Aucune dépense</h4>
 						<h2 class="text-3xl font-bold mt-2 mb-4">Les bonnes pratiques pour 0,00 €</h2>
 					  
-						<p class="text-base leading-7 text-gray-600">Sur YouTube, je partage gratuitement mes connaissances sur le web. Ouvert à tous, les tutoriels sont constamment mis à jour qu'il s'agisse de Laravel ou de Vue.</p>
+						<p class="text-base leading-7 text-gray-600">Sur YouTube, je partage gratuitement mes connaissances sur le web. Ouvert à tous, les tutoriels sont fabriqués avec passion qu'il s'agisse de Laravel ou de Vue.</p>
 					  </div>					  
 				  
 				</div>
 			</section>
 			
 		<div class="bg-white pb-24 pt-36 sm:pb-16 sm:py-40">
-			<div class="mx-auto max-w-7xl px-6 lg:px-8">
+			<div class="bg-maths mx-auto max-w-7xl px-6 lg:px-8">
 				<div class="mx-auto max-w-2xl lg:text-center">
 					<h2 class="text-base font-semibold leading-7 text-yellow-400">L'essentiel à connaître</h2>
 					<p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Je te montre tout ça en vidéo</p>
@@ -287,11 +281,5 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		</div>
 
 		<Footer />
-
-		<script>
-			document.addEventListener('astro:page-load', () => {
-				document.querySelector('#bg-loading')?.classList.add('invisible');
-			},  { once: false });
-		</script>
 	</body>
 </html>

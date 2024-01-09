@@ -13,7 +13,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 	<body>
 
-		<div class="w-full h-full fixed top-0 left-0 bg-white opacity-75 z-50" id="bg-loading">
+		<div class="w-full h-full fixed top-0 left-0 bg-white opacity-50 z-50" id="bg-loading">
 			<div class="flex justify-center items-center mt-[50vh]">
 				<div id="loading"></div>
 			</div>
@@ -291,18 +291,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<script>
 			document.addEventListener('astro:page-load', () => {
 				document.querySelector('#bg-loading')?.classList.add('invisible');
-			});
-		</script>
-
-		<script is:inline>
-			document.addEventListener('astro:before-preparation', () => {
-				document.querySelector('#bg-loading')?.classList.add('visible');
-				document.querySelector('#bg-loading')?.classList.remove('invisible');
-			});
-			document.addEventListener('astro:after-preparation', () => {
-				document.querySelector('#bg-loading')?.classList.add('invsible');
-				document.querySelector('#bg-loading')?.classList.remove('visible');
-			});
+			},  { once: false });
 		</script>
 	</body>
 </html>

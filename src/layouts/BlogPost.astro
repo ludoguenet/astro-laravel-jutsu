@@ -15,12 +15,6 @@ const { title, description, pubDate, heroImage } = Astro.props;
 	</head>
 
 	<body>
-		<div class="w-full h-full fixed top-0 left-0 bg-white opacity-75 z-50" id="bg-loading">
-			<div class="flex justify-center items-center mt-[50vh]">
-				<div id="loading"></div>
-			</div>
-		  </div>
-
 		<Header />
 
 		<main class="mx-auto max-w-7xl px-6 md:flex md:items-center md:justify-between lg:px-8 mb-6 mt-12 lg:my-10">
@@ -40,22 +34,5 @@ const { title, description, pubDate, heroImage } = Astro.props;
 		</main>
 
 		<Footer />
-
-		<script>
-			document.addEventListener('astro:page-load', () => {
-				document.querySelector('#bg-loading')?.classList.add('invisible');
-			});
-		</script>
-		
-		<script is:inline>
-			document.addEventListener('astro:before-preparation', () => {
-				document.querySelector('#bg-loading')?.classList.add('visible');
-				document.querySelector('#bg-loading')?.classList.remove('invisible');
-			});
-			document.addEventListener('astro:after-preparation', () => {
-				document.querySelector('#bg-loading')?.classList.add('invsible');
-				document.querySelector('#bg-loading')?.classList.remove('visible');
-			});
-		</script>
 	</body>
 </html>

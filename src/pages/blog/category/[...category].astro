@@ -56,6 +56,13 @@ const categories: Category[] = [
     <BaseHead title={SITE_TITLE + " | Blog | "+category.charAt(0).toUpperCase() + category.slice(1)} description={SITE_DESCRIPTION} />
 </head>
 <body>
+
+    <div class="w-full h-full fixed top-0 left-0 bg-white opacity-75 z-50" id="bg-loading">
+        <div class="flex justify-center items-center mt-[50vh]">
+            <div id="loading"></div>
+        </div>
+      </div>
+      
 <Header />
 
 <div class="bg-white mb-6 mt-12 lg:my-10">
@@ -161,7 +168,24 @@ const categories: Category[] = [
                     <Footer />
 
                     <script>
-                        import "../../../scripts/dropdown.ts";
-                        </script>
+                    import "../../../scripts/dropdown.ts";
+                    </script>
+
+                    <script>
+			document.addEventListener('astro:page-load', () => {
+				document.querySelector('#bg-loading')?.classList.add('invisible');
+			});
+		  </script>
+
+		  <script is:inline>
+			document.addEventListener('astro:before-preparation', () => {
+				document.querySelector('#bg-loading')?.classList.add('visible');
+				document.querySelector('#bg-loading')?.classList.remove('invisible');
+			});
+			document.addEventListener('astro:after-preparation', () => {
+				document.querySelector('#bg-loading')?.classList.add('invsible');
+				document.querySelector('#bg-loading')?.classList.remove('visible');
+			});
+		</script>
                     </body>
                     </html>

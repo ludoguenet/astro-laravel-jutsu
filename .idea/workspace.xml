@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="98259024-9005-4acc-9331-f4bae29d2b27" name="Changes" comment="">
+    <list default="true" id="419b0636-2280-4a50-8f32-1cfaf6e18afc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blog/[...page].astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog/[...page].astro" afterDir="false" />
     </list>
-=======
-    <list default="true" id="98259024-9005-4acc-9331-f4bae29d2b27" name="Changes" comment="" />
->>>>>>> 53aaf9a (chores: added article)
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,223 +15,19 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-        <option value="TypeScript File" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="PackageJsonUpdateNotifier">
-    <dismissed value="$PROJECT_DIR$/package.json" />
-  </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php" />
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7
-}</component>
-  <component name="ProjectId" id="2Snr0j1ujAXHGiafVTAcDT1Sdwk" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-<<<<<<< HEAD
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.laravel-idea.search-composer-json&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/nordcoders/Sites/laraveljutsu/src/content/blog/images&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/nordcoders/Jetbrains/Phpstorm/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
-=======
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.laravel-idea.search-composer-json": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/nordcoders/Sites/laraveljutsu/src/content/blog/images",
+    "git-widget-placeholder": "Rebasing main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/usr/local/PhpStorm-222.3345.135/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
->>>>>>> 53aaf9a (chores: added article)
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/content/blog/images" />
-      <recent name="$PROJECT_DIR$/src/content/blog" />
-      <recent name="$PROJECT_DIR$/public/icons" />
-      <recent name="$PROJECT_DIR$/src/pages/blog" />
-      <recent name="$PROJECT_DIR$/src/pages" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/content/blog/images" />
-      <recent name="$PROJECT_DIR$/public/articles/pail" />
-      <recent name="$PROJECT_DIR$/src/pages/blog/category" />
-      <recent name="$PROJECT_DIR$/src/content/blog" />
-      <recent name="$PROJECT_DIR$/src/pages/blog" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="dev" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-  </component>
-<<<<<<< HEAD
-=======
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-php-predefined-ba97393d7c68-b4dcf6bb9de9-com.jetbrains.php.sharedIndexes-PS-233.13135.108" />
-      </set>
-    </attachedChunks>
-  </component>
->>>>>>> 53aaf9a (chores: added article)
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="98259024-9005-4acc-9331-f4bae29d2b27" name="Changes" comment="" />
-      <created>1689792964433</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1689792964433</updated>
-      <workItem from="1689792965845" duration="1939000" />
-      <workItem from="1689794938029" duration="38000" />
-      <workItem from="1689794999004" duration="544000" />
-      <workItem from="1690111971762" duration="3456000" />
-      <workItem from="1690144688950" duration="14000" />
-      <workItem from="1690148210555" duration="1309000" />
-      <workItem from="1690182479596" duration="4068000" />
-      <workItem from="1690190860527" duration="706000" />
-      <workItem from="1691838978318" duration="2886000" />
-      <workItem from="1691842560574" duration="2770000" />
-      <workItem from="1691864438780" duration="3131000" />
-      <workItem from="1691926560958" duration="2413000" />
-      <workItem from="1691928979429" duration="2229000" />
-      <workItem from="1691939935984" duration="2424000" />
-      <workItem from="1691949058617" duration="403000" />
-      <workItem from="1691949559964" duration="2546000" />
-      <workItem from="1692038151036" duration="838000" />
-      <workItem from="1692098893588" duration="2563000" />
-      <workItem from="1692107404028" duration="721000" />
-      <workItem from="1692109029172" duration="319000" />
-      <workItem from="1692122302755" duration="3644000" />
-      <workItem from="1692163281358" duration="25000" />
-      <workItem from="1692163488375" duration="67000" />
-      <workItem from="1692297893335" duration="642000" />
-      <workItem from="1692298552586" duration="2716000" />
-      <workItem from="1692386154871" duration="6983000" />
-      <workItem from="1692427284245" duration="1394000" />
-      <workItem from="1692429142657" duration="2300000" />
-      <workItem from="1692444035362" duration="1016000" />
-      <workItem from="1692450784521" duration="1729000" />
-      <workItem from="1692453177576" duration="512000" />
-      <workItem from="1692454312368" duration="2166000" />
-      <workItem from="1692472689547" duration="916000" />
-      <workItem from="1692473971935" duration="1236000" />
-      <workItem from="1692553678131" duration="142000" />
-      <workItem from="1692554296367" duration="134000" />
-      <workItem from="1692607812691" duration="16000" />
-      <workItem from="1692612210964" duration="150000" />
-      <workItem from="1692612905044" duration="3581000" />
-      <workItem from="1692687594979" duration="15000" />
-      <workItem from="1692816709044" duration="810000" />
-      <workItem from="1692817538208" duration="3202000" />
-      <workItem from="1692888404539" duration="1288000" />
-      <workItem from="1692905393142" duration="2091000" />
-      <workItem from="1692988064592" duration="6068000" />
-      <workItem from="1692998416184" duration="7000" />
-      <workItem from="1693033480875" duration="4109000" />
-      <workItem from="1693042944311" duration="128000" />
-      <workItem from="1693075299398" duration="6270000" />
-      <workItem from="1693141494234" duration="7934000" />
-      <workItem from="1693333490027" duration="373000" />
-      <workItem from="1693333887797" duration="67000" />
-      <workItem from="1693333970108" duration="34000" />
-      <workItem from="1693334428325" duration="83000" />
-      <workItem from="1693336068177" duration="102000" />
-      <workItem from="1693336344929" duration="9000" />
-      <workItem from="1693339314766" duration="115000" />
-      <workItem from="1693339463411" duration="59000" />
-      <workItem from="1693509771436" duration="78000" />
-      <workItem from="1693639703452" duration="4438000" />
-      <workItem from="1693652579844" duration="1373000" />
-      <workItem from="1693670264286" duration="16000" />
-      <workItem from="1693684969139" duration="8731000" />
-      <workItem from="1693724726706" duration="8533000" />
-      <workItem from="1693755464665" duration="2532000" />
-      <workItem from="1693941851949" duration="3110000" />
-      <workItem from="1693944966815" duration="1000" />
-      <workItem from="1694112244410" duration="1156000" />
-      <workItem from="1694246037240" duration="203000" />
-      <workItem from="1694723996085" duration="327000" />
-      <workItem from="1694849688267" duration="28000" />
-      <workItem from="1694851881573" duration="136000" />
-      <workItem from="1694882817402" duration="604000" />
-      <workItem from="1694883611886" duration="151000" />
-      <workItem from="1694939251460" duration="2000" />
-      <workItem from="1694973218479" duration="431000" />
-      <workItem from="1695487703558" duration="9000" />
-      <workItem from="1695499421582" duration="3971000" />
-      <workItem from="1695545523004" duration="837000" />
-      <workItem from="1696013718697" duration="481000" />
-      <workItem from="1696014222127" duration="487000" />
-      <workItem from="1696879470004" duration="301000" />
-      <workItem from="1697055836988" duration="30000" />
-      <workItem from="1697055881285" duration="6888000" />
-      <workItem from="1697137273883" duration="2943000" />
-      <workItem from="1697229047390" duration="4313000" />
-      <workItem from="1697234318919" duration="1804000" />
-      <workItem from="1697273062245" duration="13000" />
-      <workItem from="1697750825585" duration="83000" />
-      <workItem from="1698517016343" duration="360000" />
-      <workItem from="1698517411549" duration="87000" />
-      <workItem from="1698568494004" duration="2444000" />
-      <workItem from="1698589626053" duration="358000" />
-<<<<<<< HEAD
-=======
-      <workItem from="1704888477215" duration="1416000" />
->>>>>>> 53aaf9a (chores: added article)
-    </task>
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
 </project>

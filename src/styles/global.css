@@ -8,6 +8,14 @@
   background-color: #facc15;
 }
 
+.laravel-span {
+  color: #fbcc64
+}
+
+.jutsu-span {
+  color: #f7b6a5;
+}
+
 #js-animated-logo {
     animation-name: floating;
     animation-duration: 4s;

@@ -62,12 +62,12 @@
   width: 12rem;
 }
 
-.bg-maths {
+.bg-video {
   position: relative;
 }
 
-.bg-maths::before {
-  background-image: url('./ruler.svg'),url('./code.svg');
+.bg-video::before {
+  background-image: url('./video.svg'),url('./code.svg');
   background-position: top 0 right 0,right 4rem top 6rem;
   background-repeat: no-repeat;
   background-size: 8rem auto;
@@ -80,4 +80,24 @@
   right: 0;
   top: 0;
   width: 12rem;
+}
+
+.bg-blog {
+  position: relative;
+}
+
+.bg-blog::before {
+  background-image: url('./computer.svg'),url('./book.svg');
+  background-position: top 0 right 0,right 7rem top 6rem;
+  background-repeat: no-repeat;
+  background-size: 8rem auto;
+  content: "";
+  display: block;
+  height: 100%;
+  opacity: .1;
+  overflow-x: visible;
+  position: absolute;
+  right: 0;
+  top: -70px;
+  width: 16rem;
 }

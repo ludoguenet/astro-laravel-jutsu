@@ -1,6 +1,6 @@
 ---
 title: Laravel avec FrankenPHP
-description: Comment installer une application Laravel avec FrankenPHP et bénéficier de la puissance de Laravel Octane.
+description: Comment installer une application Laravel avec FrankenPHP et Laravel Octane.
 category: Laravel
 pubDate: Dec 25 2023
 heroImage: ./images/laravel-frankenphp.png

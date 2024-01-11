@@ -1,0 +1,122 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<BaseHead title={SITE_TITLE + " | Me contacter"} description={SITE_DESCRIPTION} />
+	</head>
+
+	<body>	  
+		<Header />
+
+		<div class="bg-white mb-6 lg:mb-10">
+			<div>
+				<img class="h-32 w-full object-cover lg:h-48" src="https://images.unsplash.com/photo-1605822725598-1f354345d668?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="background-banner">
+			</div>
+			<div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+				<div class="-mt-12 sm:-mt-16 sm:flex sm:items-end sm:space-x-5">
+					<div class="flex">
+						<img class="h-24 w-24 rounded-full ring-4 ring-white sm:h-32 sm:w-32" src="/avatar.jpg" alt="avatar">
+					</div>
+					<div class="mt-6 sm:flex sm:min-w-0 sm:flex-1 sm:items-center sm:justify-end sm:space-x-6 sm:pb-1">
+						<div class="mt-6 min-w-0 flex-1 sm:hidden md:block">
+							<h1 class="truncate text-2xl font-bold text-gray-900">Ludovic Guénet</h1>
+						</div>
+						<div class="mt-6 flex flex-col justify-stretch space-y-3 sm:flex-row sm:space-x-4 sm:space-y-0">
+							<a href="/contact" class="inline-flex justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+								<svg class="-ml-0.5 mr-1.5 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+									<path d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z" />
+									<path d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z" />
+								</svg>
+								<span>Message</span>
+							</a>
+							<a href="https://twitter.com/LaravelJutsu" class="inline-flex justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="-ml-0.5 mr-1.5 h-5 w-5 text-gray-400">
+									<path d="M21.721 12.752a9.711 9.711 0 0 0-.945-5.003 12.754 12.754 0 0 1-4.339 2.708 18.991 18.991 0 0 1-.214 4.772 17.165 17.165 0 0 0 5.498-2.477ZM14.634 15.55a17.324 17.324 0 0 0 .332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 0 0 .332 4.647 17.385 17.385 0 0 0 5.268 0ZM9.772 17.119a18.963 18.963 0 0 0 4.456 0A17.182 17.182 0 0 1 12 21.724a17.18 17.18 0 0 1-2.228-4.605ZM7.777 15.23a18.87 18.87 0 0 1-.214-4.774 12.753 12.753 0 0 1-4.34-2.708 9.711 9.711 0 0 0-.944 5.004 17.165 17.165 0 0 0 5.498 2.477ZM21.356 14.752a9.765 9.765 0 0 1-7.478 6.817 18.64 18.64 0 0 0 1.988-4.718 18.627 18.627 0 0 0 5.49-2.098ZM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 0 0 1.988 4.718 9.765 9.765 0 0 1-7.478-6.816ZM13.878 2.43a9.755 9.755 0 0 1 6.116 3.986 11.267 11.267 0 0 1-3.746 2.504 18.63 18.63 0 0 0-2.37-6.49ZM12 2.276a17.152 17.152 0 0 1 2.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0 1 12 2.276ZM10.122 2.43a18.629 18.629 0 0 0-2.37 6.49 11.266 11.266 0 0 1-3.746-2.504 9.754 9.754 0 0 1 6.116-3.985Z" />
+								</svg>
+								<span>Twitter</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="mt-6 hidden min-w-0 flex-1 sm:block md:hidden">
+					<h1 class="truncate text-2xl font-bold text-gray-900">Ludovic Guénet</h1>
+				</div>
+
+				<div class="mt-20">
+					<div class="px-4 sm:px-0">
+						<h3 class="text-base font-semibold leading-7 text-gray-900">Ingénieur logiciel</h3>
+						<p class="mt-1 max-w-2xl text-sm leading-6 text-gray-500">Je développe des applications web avec Laravel et Vue.</p>
+					</div>
+					<div class="mt-6 border-t border-gray-100">
+						<dl class="divide-y divide-gray-100">
+							<div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+								<dt class="text-sm font-medium leading-6 text-gray-900">Entreprise</dt>
+								<dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Epekta</dd>
+							</div>
+							<div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+								<dt class="text-sm font-medium leading-6 text-gray-900">Poste actuel</dt>
+								<dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Développeur full-stack</dd>
+							</div>
+							<div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+								<dt class="text-sm font-medium leading-6 text-gray-900">Localisation</dt>
+								<dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Full remote</dd>
+							</div>
+							<div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+								<dt class="text-sm font-medium leading-6 text-gray-900">A propos</dt>
+								<dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Je suis spécialisé dans la conception de produits web avec PHP et JavaScript. Je suis le créateur de la communauté Laravel Jutsu.</dd>
+							</div>
+							<div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+								<dt class="text-sm font-medium leading-6 text-gray-900">Hauts faits</dt>
+								<dd class="mt-2 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
+									<ul role="list" class="divide-y divide-gray-100 rounded-md border border-gray-200">
+										<li class="flex items-center justify-between py-4 pl-4 pr-5 text-sm leading-6">
+											<div class="flex w-0 flex-1 items-center">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 flex-shrink-0 text-gray-400">
+													<path fill-rule="evenodd" d="M8.5 3.528v4.644c0 .729-.29 1.428-.805 1.944l-1.217 1.216a8.75 8.75 0 0 1 3.55.621l.502.201a7.25 7.25 0 0 0 4.178.365l-2.403-2.403a2.75 2.75 0 0 1-.805-1.944V3.528a40.205 40.205 0 0 0-3 0Zm4.5.084.19.015a.75.75 0 1 0 .12-1.495 41.364 41.364 0 0 0-6.62 0 .75.75 0 0 0 .12 1.495L7 3.612v4.56c0 .331-.132.649-.366.883L2.6 13.09c-1.496 1.496-.817 4.15 1.403 4.475C5.961 17.852 7.963 18 10 18s4.039-.148 5.997-.436c2.22-.325 2.9-2.979 1.403-4.475l-4.034-4.034A1.25 1.25 0 0 1 13 8.172v-4.56Z" clip-rule="evenodd" />
+												</svg>
+
+												<div class="ml-4 flex min-w-0 flex-1 gap-2">
+													<span class="truncate font-medium">Ajout de fonctionnalités</span>
+													<span class="flex-shrink-0 text-gray-400">PestPHP</span>
+												</div>
+											</div>
+											<div class="ml-4 flex-shrink-0">
+												<a href="https://pestphp.com/" class="font-medium text-yellow-400 hover:text-yellow-500">Voir</a>
+											</div>
+										</li>
+										<li class="flex items-center justify-between py-4 pl-4 pr-5 text-sm leading-6">
+											<div class="flex w-0 flex-1 items-center">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 flex-shrink-0 text-gray-400">
+													<path fill-rule="evenodd" d="M7.84 1.804A1 1 0 0 1 8.82 1h2.36a1 1 0 0 1 .98.804l.331 1.652a6.993 6.993 0 0 1 1.929 1.115l1.598-.54a1 1 0 0 1 1.186.447l1.18 2.044a1 1 0 0 1-.205 1.251l-1.267 1.113a7.047 7.047 0 0 1 0 2.228l1.267 1.113a1 1 0 0 1 .206 1.25l-1.18 2.045a1 1 0 0 1-1.187.447l-1.598-.54a6.993 6.993 0 0 1-1.929 1.115l-.33 1.652a1 1 0 0 1-.98.804H8.82a1 1 0 0 1-.98-.804l-.331-1.652a6.993 6.993 0 0 1-1.929-1.115l-1.598.54a1 1 0 0 1-1.186-.447l-1.18-2.044a1 1 0 0 1 .205-1.251l1.267-1.114a7.05 7.05 0 0 1 0-2.227L1.821 7.773a1 1 0 0 1-.206-1.25l1.18-2.045a1 1 0 0 1 1.187-.447l1.598.54A6.992 6.992 0 0 1 7.51 3.456l.33-1.652ZM10 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd" />
+												</svg>
+
+												<div class="ml-4 flex min-w-0 flex-1 gap-2">
+													<span class="truncate font-medium">Membre actif</span>
+													<span class="flex-shrink-0 text-gray-400">AFLA</span>
+												</div>
+											</div>
+											<div class="ml-4 flex-shrink-0">
+												<a href="https://afla.dev" class="font-medium text-yellow-400 hover:text-yellow-500">Voir</a>
+											</div>
+										</li>
+									</ul>
+								</dd>
+							</div>
+						</dl>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+		<Footer />
+
+	</body>
+</html>

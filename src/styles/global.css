@@ -13,7 +13,7 @@
 }
 
 .jutsu-span {
-  color: #f7b6a5;
+  color: #f4a490;
 }
 
 #js-animated-logo {
@@ -87,8 +87,8 @@
 }
 
 .bg-blog::before {
-  background-image: url('./computer.svg'),url('./book.svg');
-  background-position: top 0 right 0,right 7rem top 6rem;
+  background-image: url('./books.svg'),url('./pencil.svg');
+  background-position: top 0 right 0,right 4rem top 6rem;
   background-repeat: no-repeat;
   background-size: 8rem auto;
   content: "";

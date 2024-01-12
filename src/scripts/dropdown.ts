@@ -1,4 +1,4 @@
-document.addEventListener('astro:page-load', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const dropdownButton: HTMLElement|null = document.querySelector('#js-dropdown-button');
     const dropdownMenu: HTMLElement|null = document.querySelector('#js-dropdown-menu');
 

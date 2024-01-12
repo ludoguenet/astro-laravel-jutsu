@@ -4,7 +4,7 @@ description: Découvrez Laravel Pail, l'outil ultime pour explorer les journaux 
 category: Outils
 pubDate: Oct 14 2023
 heroImage: ./images/debugger-logs-laravel-pail.png
-colorTag: sky
+colorTag: pink
 ---
 
 # Qu'est-ce que Pail ?
@@ -60,8 +60,6 @@ php artisan pail --filter="products"
 ```
 
 Maintenant, si je visite la route ***/orders***, Pail n'affichera rien ! En revanche, si je visite la route ***/products***, l'exception sera bien consignée en ligne de commande. Sublime. 🪣
-
-<img src="/articles/pail/pail-1.png">
 
 ### Autres options
 

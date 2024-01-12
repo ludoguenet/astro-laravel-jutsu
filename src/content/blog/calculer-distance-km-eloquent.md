@@ -4,7 +4,7 @@ description: Tutoriel pour calculer la distance entre l'utilisateur connecté et
 category: Eloquent
 pubDate: Dec 06 2023
 heroImage: ./images/calculer-distance-eloquent.png
-colorTag: amber
+colorTag: violet
 ---
 
 # Calculer une distance avec Eloquent

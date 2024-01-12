@@ -4,7 +4,7 @@ description: Parfois, nous avons besoin de créer des règles de validation comp
 category: Laravel
 pubDate: Aug 21 2023
 heroImage: ./images/laravel-rule-foreach.png
-colorTag: rose
+colorTag: red
 ---
 
 # Validation complexe de données avec Laravel

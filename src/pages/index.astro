@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 import IndexFormattedDate from '../components/IndexFormattedDate.astro';
 import BaseHead from '../components/BaseHead.astro';
@@ -70,8 +71,8 @@ const latestPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
 			<div class="bg-planet mx-auto max-w-7xl px-6 lg:px-8">
 					<div class="lg:pr-4">
 					  <div class="lg:max-w-3xl">
-						<span class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-sm font-medium text-yellow-600 ring-1 ring-inset ring-yellow-600/20">Garantie 0% bullshit</span>
-						<h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 font-bold sm:text-4xl">Contenu adapté à tous les niveaux d'expérience et à tous les styles d'apprentissage.</h1>
+						<span class="inline-flex items-center rounded-full bg-yellow-100 px-3 py-1 text-sm font-medium text-yellow-800">Garantie 0% bullshit</span>
+						<h1 class="mt-4 text-3xl font-bold tracking-tight text-gray-900 font-bold sm:text-4xl">Contenu adapté à tous les niveaux d'expérience et à tous les styles d'apprentissage.</h1>
 						<p class="mt-6 text-base leading-7 text-gray-600">Que vous ayez déjà développé plusieurs applications ou que vous commenciez tout juste, Laravel Jutsu propose du contenu qui vous apprendra quelque chose de nouveau.</p>
 					  </div>
 					</div>
@@ -251,38 +252,42 @@ const latestPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
 			</div>
 		</div>
 
-		<!-- blog section -->
-
-<div class="bg-white pt-16 pb-32">
-	<div class="bg-blog mx-auto max-w-7xl px-6 lg:px-8">
-	  <div class="mx-auto max-w-2xl lg:mx-0">
-		<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Mes derniers articles</h2>
-		<p class="mt-2 text-lg leading-8 text-gray-600">Quelques écrits pour t'aider en plus des vidéos.</p>
-	  </div>
-	  <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 pt-6 sm:mt-8 sm:pt-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-		{
-			latestPosts.map((post) => (
-			<article class="flex max-w-xl flex-col items-start justify-between">
-		  <div class="flex items-center gap-x-4 text-xs">
-			<time datetime="2020-03-16" class="text-gray-500">{<IndexFormattedDate date={post.data.pubDate} />}</time>
-			<a href={"/blog/category/"+post.data.category.toLowerCase()} class="relative z-10 rounded-full bg-yellow-50 px-3 py-1.5 font-medium text-yellow-900 hover:bg-yellow-100">{post.data.category}</a>
-		  </div>
-		  <div class="group relative">
-			<h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-			  <a href={`/blog/${post.slug}`}>
-				<span class="absolute inset-0"></span>
-				{post.data.title}
-			  </a>
-			</h3>
-			<p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">{post.data.description}</p>
-		  </div>
-		</article>
-			))
-		}
-		
-	  </div>
-	</div>
-  </div>
+		<div class="bg-white pt-16 pb-16 sm:pb-32">
+			<div class="bg-blog mx-auto max-w-7xl px-6 lg:px-8">
+			<div class="mx-auto max-w-2xl lg:mx-0">
+				<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Mes derniers articles</h2>
+				<p class="mt-2 text-lg leading-8 text-gray-600">Une plume pour accompagner la caméra.</p>
+			</div>
+			<div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 pt-6 sm:mt-8 sm:pt-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+				{
+					latestPosts.map((post) => (
+					<article class="flex max-w-xl flex-col items-start justify-between">
+						<div class="relative w-full">
+						<Image src={post.data.heroImage} alt={post.data.title} class="w-full rounded-2xl bg-gray-100 object-cover aspect-[5/2]" />
+				<div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+				</div>
+				<div class="max-w-xl">
+					<div class="mt-8 flex items-center gap-x-4 text-xs">
+					<time datetime="2020-03-16" class="text-gray-500">{<IndexFormattedDate date={post.data.pubDate} />}</time>
+					<a href={"/blog/category/"+post.data.category.toLowerCase()} class=`relative z-10 rounded-full bg-${post.data.colorTag}-50 px-3 py-1.5 font-medium text-${post.data.colorTag}-900 hover:bg-${post.data.colorTag}-100`>{post.data.category}</a>
+					</div>
+					<div class="group relative">
+					<h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+						<a href={`/blog/${post.slug}`}>
+						<span class="absolute inset-0"></span>
+						{post.data.title}
+						</a>
+					</h3>
+					<p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">{post.data.description}</p>
+					</div>
+					</div>
+				</article>
+					))
+				}
+				
+			</div>
+			</div>
+		</div>
   
 
 		<div class="relative z-10 bg-yellow-50 pb-20 my-28 sm:pb-24 xl:pb-0">

@@ -4,7 +4,7 @@ description: Tutoriel pour installer Docker proprement sur Linux et développer 
 category: Outils
 pubDate: Dec 14 2023
 heroImage: ./images/docker-laravel-sail.png
-colorTag: pink
+colorTag: cyan
 ---
 
 # Docker et Laravel Sail avec Linux

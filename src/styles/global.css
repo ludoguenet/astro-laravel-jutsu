@@ -50,7 +50,6 @@
   background-image: url('./puzzle.svg'),url('./maths.svg');
   background-position: top 0 right 0,right 4rem top 6rem;
   background-repeat: no-repeat;
-  transform: rotate(10deg);
   background-size: 8rem auto;
   content: "";
   display: block;

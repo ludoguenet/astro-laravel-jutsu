@@ -1,6 +1,6 @@
 import emailjs from '@emailjs/browser';
 
-document.addEventListener('astro:page-load', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const button = document.querySelector('#js-contact-button');
     const errorMessages = document.querySelector('#js-contact-error');
     const successMessages = document.querySelector('#js-contact-success');

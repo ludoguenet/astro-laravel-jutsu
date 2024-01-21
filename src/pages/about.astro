@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+import bannerImage from '../images/bg-about.jpg';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -15,8 +17,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<Header />
 
 		<div class="bg-white mb-6 lg:mb-10">
-			<div>
-				<img class="h-32 w-full object-cover lg:h-48" src="https://images.unsplash.com/photo-1551215536-a01ce2fb0d3d?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="background-banner">
+			<div> 
+				<Image class="h-32 w-full object-cover lg:h-48" src={bannerImage} alt="background-banner" />
 			</div>
 			<div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
 				<div class="-mt-12 sm:-mt-16 sm:flex sm:items-end sm:space-x-5">

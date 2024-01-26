@@ -92,7 +92,9 @@ Le généreux Taylor Otwell nous gratifie (enfin) de 2 nouvelles commandes artis
 
 `make:class myClass` et `make:interface myInterface`
 
-Les interfaces sont créées dans le dossier `Contracts` ce qui définit par la même occasion une standardisation des dossiers.
+Si vous ne précisez aucun nom, le prompt de Laravel vous en demande un. Aussi, il assignera un `__construct` aux classes.
+
+Les options comme `--invokable` sont permises.
 
 ## En plus <a name="autres"></a>
 

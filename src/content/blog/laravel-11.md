@@ -88,9 +88,9 @@ SQLite est desormais le driver de base de données par défaut. Cela permet de d
 
 ## 2 nouvelles commandes <a name="makeclass"></a>
 
-Le généreux Taylor Otwell nous gratifie (enfin) de 2 nouvelles commandes pour la création de fichiers :
+Le généreux Taylor Otwell nous gratifie (enfin) de 2 nouvelles commandes artisan pour la création de fichiers :
 
-`php artisan make:class myClass` et `php artisan make:interface myInterface`
+`make:class myClass` et `make:interface myInterface`
 
 Les interfaces sont créées dans le dossier `Contracts` ce qui définit par la même occasion une standardisation des dossiers.
 

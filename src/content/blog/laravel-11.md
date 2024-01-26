@@ -1,6 +1,6 @@
 ---
 title: Découvrez les nouveautés Laravel 11
-description: Une grosse refonte, voyons ensemble les nouveautés de Laravel 11.
+description: Larael 11 sort le 6 févirier 2024. Voyons ensemble ses nouveautés.
 category: Laravel
 pubDate: Jan 26 2024
 heroImage: ./images/laravel-11.png
@@ -15,13 +15,13 @@ colorTag: red
 3. [API](#api)
 4. [Casts](#casts)
 5. [SQLite par défaut](#sqlite)
-6. [Commande make:class](#makeclass)
-7. [Autres](#autres)
+6. [2 nouvelles commandes](#makeclass)
+7. [En plus](#autres)
 8. [Conclusion](#conclusion)
 
 ## Introduction <a name="introduction"></a>
 
-Cette mise à jour majeure apporte son lot de nouveautés et de changement. Levons le voile sans plus attendre.
+Cette mise à jour majeure apporte son lot de nouveautés et de changements. Levons le voile sans plus attendre.
 
 <!-- ## Tutoriel vidéo <a name="tutorielvideo"></a> -->
 
@@ -31,17 +31,21 @@ Cette mise à jour majeure apporte son lot de nouveautés et de changement. Levo
 
 Ce n'est plus un scoop, Taylor Otwell avait décidé depuis l'année dernière d'[amincir le squelette de Laravel](https://github.com/laravel/framework/pull/47309). 
 
-Le dossier de configuration se retrouvera vide et les fichiers entérés dans le framework seront une nouvelle fois editable après un `php artisan config:publish`.
+Le dossier de configuration se retrouve vide et les fichiers de configurations du framework retournent au vendor. 
 
-Aussi, le dossier ***Middleware*** et le fichier `app/Http/kernel.php` n'existent plus. 
+Pour les publier et les éditer, vous devez passer par `php artisan config:publish`.
 
-La customisation des middlewares internes à Laravel seront faites dans `AppServiceProvider` :
+Le dossier ***Middleware*** et le fichier `app/Http/kernel.php` n'existent plus. 
+
+La personnalisation des middlewares internes à Laravel sont faites dans `AppServiceProvider` :
 
 ```php
-VerifyCsrfToken::except(['/webhooks/*'])
+VerifyCsrfToken::except([
+    '*',
+]);
 ```
 
-L'ajoute d'un middleware custom se fera dans `Bootstrap/app.php` :
+L'ajoute d'un nouveau middleware se passe dans `bootstrap/app.php` :
 
 ```php
 return Application::configure()
@@ -50,24 +54,22 @@ return Application::configure()
         web: __DIR__.'/../routes/web.php'
         commands: __DIR__.'/../routes/console.php',
     )
-    ->withMiddleware(function(Middleware Smiddleware) {
-        $middleware->web(append: MyAwesomeMiddleware::class):
+    ->withMiddleware(function(Smiddleware) {
+        $middleware->web(MyAwesomeMiddleware::class):
     })
 ```
 
-Dites également adieu à `Console/Kernel.php`. 
-
-L'enregistrement des commandes se fait desormais via le fichier `routes/console.php`.
+Nos adieux également à `app/Console/Kernel.php`. L'enregistrement des commandes se déroule maintenant dans le fichier `routes/console.php`.
 
 ## API <a name="api"></a>
 
-Laravel n'est plus une API par défaut. ***Sanctum*** et `routes/api.php` ne seront plus là nativement.
+Laravel n'est plus une API par défaut. ***Sanctum*** et le fichier `routes/api.php` ont été supprimés.
 
-Si vous désirez les revoir, il faudra passer par la commande `php artisan install:api`
+Si vous désirez les revoir, il faut utiliser la commande `php artisan install:api` qui remettra en place le scaffolding qui existait auparavant. N'oubliez pas le trait `HasApiTokens` !
 
 ## Casts <a name="casts"></a>
 
-Les casts des Modèles sont à définir dans une méthode et plus un tableau.
+Les casts du Modèle sont à définir dans une méthode et plus un tableau.
 
 ```php
 protected function casts(): array
@@ -82,17 +84,17 @@ protected function casts(): array
 
 ## SQLite par défaut <a name="sqlite"></a>
 
-SQLite est desormais le driver de base de données par défaut. Cela permettra de démarrer rapidement un environement de développement local. Pas de panique, tout ceci reste modifiable facilement dans le `.env`.
+SQLite est desormais le driver de base de données par défaut. Cela permet de démarrer rapidement son environement en local. Pas de panique, tout ceci reste modifiable facilement dans le `.env`.
 
-## Commande make:class <a name="makeclass"></a>
+## 2 nouvelles commandes <a name="makeclass"></a>
 
-Le généreux Taylor Otwell nous gratifie (enfin !) de 2 nouvelles commandes pour la création de fichiers :
+Le généreux Taylor Otwell nous gratifie (enfin) de 2 nouvelles commandes pour la création de fichiers :
 
 `php artisan make:class myClass` et `php artisan make:interface myInterface`
 
-Les interfaces seront créées dans le dossier `Contracts` ce qui met un terme au débat et définit une standardisation des dossiers.
+Les interfaces sont créées dans le dossier `Contracts` ce qui définit par la même occasion une standardisation des dossiers.
 
-## Autres <a name="autres"></a>
+## En plus <a name="autres"></a>
 
 Le plus important étant dit, voici une liste non-exhaustive de ce que nous savons à l'heure où je compose cet article :
 

@@ -92,19 +92,21 @@ Le généreux Taylor Otwell nous gratifie (enfin) de 2 nouvelles commandes artis
 
 `make:class myClass` et `make:interface myInterface`
 
-Les interfaces sont créées dans le dossier `Contracts` ce qui définit par la même occasion une standardisation des dossiers.
+Si vous ne précisez aucun nom, le prompt de Laravel vous en demande un. Aussi, il assignera un `__construct` aux classes.
+
+Les options comme `--invokable` sont permises.
 
 ## En plus <a name="autres"></a>
 
 Le plus important étant dit, voici une liste non-exhaustive de ce que nous savons à l'heure où je compose cet article :
 
 - PHP 8.2 sera la version minimum requise
-- Les contrôleurs n'étendent plus de BaseController par défaut
-- L'eager limit est incorporé
+- Les contrôleurs par défaut n'étendent plus de BaseController
+- [L'eager limit est incorporé](https://www.youtube.com/watch?v=XNqAZMgmiLo)
 - Ajout du trait `Dumpable`
-- Les migrations sont squishées
-- Le middleware `Authenticate` ne redirige plus vers une location quand la requête entrante attend du JSON.
-- Une commande `php artisan install:broadcasting` permet le scaffolding des websockets de l'application.
+- Les migrations par défaut sont squishées
+- Le middleware `Authenticate` ne redirige plus vers une location quand la requête entrante attend du JSON
+- Une commande `php artisan install:broadcasting` permet le scaffolding des websockets de l'application
 
 ## Conclusion <a name="conclusion"></a>
 

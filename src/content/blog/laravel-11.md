@@ -23,9 +23,7 @@ colorTag: red
 
 Cette mise à jour majeure apporte son lot de nouveautés et de changements. Levons le voile sans plus attendre.
 
-<!-- ## Tutoriel vidéo <a name="tutorielvideo"></a> -->
-
-<!-- <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/XNqAZMgmiLo" frameborder="0" allowfullscreen></iframe> -->
+<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/V6fbLsdbhe8" frameborder="0" allowfullscreen></iframe>
 
 ## Slim skeleton <a name="slim"></a>
 

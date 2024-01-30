@@ -41,7 +41,7 @@ Restons avec SQL pour bien saisir la solution. Pour répondre à la question il 
 ```sql
 SELECT AVG(total_amount)
 FROM (
-    SELECT user_id, SUM(amount) AS total_amount
+    SELECT SUM(amount) AS total_amount
     FROM transactions
     GROUP BY user_id
 )

@@ -17,26 +17,28 @@ colorTag: red
 
 ## Problématique <a name="problematique"></a>
 
-Vous savez probablement déjà calculer des sommes. Vous savez probablemennt aussi calculer des moyennes. 
+Vous savez probablement déjà calculer des sommes. Vous savez probablement aussi calculer des moyennes. 
 
 Mais comment mixer les 2 ?!
 
-Je m'explique : prenons un cas simple où vous stockez les transactions de vos utilisateurs. Une colonne `amount` pour le montant de la transaction et une colonne `user_id` pour la clé étrangère.
+Prenons un cas simple où vous stockez les transactions de vos utilisateurs en base de données. Vous avez donc une table `users` et `transactions`.
 
-Comment calculer alors la moyenne des sommes de nos utilisateurs ?
+La table `transactions` contient une colonne `amount` pour le montant et une colonne `user_id` pour la clé étrangère.
 
-La difficulté réside dans le fait qu'on ne peut pas enchaîner 2 fonctions d'aggrégats.
+Comment calculer alors _la moyenne des sommes_ de nos utilisateurs ?
+
+La difficulté réside dans le fait qu'on ne peut pas enchaîner 2 fonctions d'aggrégat.
 
 ```sql
 SELECT AVG(SUM(amount))
 FROM transactions
 GROUP BY user_id
 ```
-Rien que cet exemple hérisse les poils de mon IDE qui me notifie d'un beau ***Nested aggregate calls are not allowed***
+Cette requête vous envoie en prison. Rien que cet exemple hérisse les poils de mon IDE qui me notifie d'un beau ***Nested aggregate calls are not allowed***
 
 ## Requête avec SQL <a name="sql"></a>
 
-Restons avec SQL pour bien saisir la solution. Pour répondre à la question il faudra calculer la somme dans une sous-requête pour enfin calculer la moyenne.
+Restons avec SQL pour bien saisir la solution. Pour répondre à la question, il faut calculer dans un premier temps la somme dans une sous-requête, puis dans un second temps la moyenne.
 
 ```sql
 SELECT AVG(total_amount)
@@ -46,15 +48,15 @@ FROM (
     GROUP BY user_id
 )
 ```
-La sous-requête groupe par utilisateur et calcule la somme des transactions par utilisateur. 
+La sous-requête group et calcule la somme des transactions par utilisateur.
 
 On nomme un alias `total_amount` pour représenter la valeur de cette somme.
 
-Enfin, nous calculons la moyenne via `AVG` sur toutes les sommes par utilisateur.
+Enfin, nous calculons la moyenne via `AVG` sur toutes les sommes par utilisateur sur ladite sous-requête.
 
 ## Requête avec le Query Builder <a name="querybuilder"></a>
 
-Maintenant que notre requête SQL est juste, passons sur Laravel !
+Maintenant que notre requête SQL est correcte, passons sur Laravel !
 
 ```php
 return DB::table(
@@ -68,8 +70,6 @@ Et voilà ! Nous arrivons au même résultat, encore faut-il le savoir !
 
 ## Conclusion <a name="conclusion"></a>
 
-Laravel et son Query Builder nous permettent de faire des choses incroyables ! 
-
-Comme la moyenne de sommes pour les transactions par utilisateur.
+Laravel et son Query Builder nous permettent de faire des choses incroyables. Merci à Jonathan Reinink pour cette astuce et [sa PR](https://github.com/laravel/framework/pull/29602)
 
 N'hésitez pas à [me suivre](https://twitter.com/LaravelJutsu) et à vous abonner à [Laravel Jutsu](https://www.youtube.com/@LaravelJutsu) pour plus de contenu !

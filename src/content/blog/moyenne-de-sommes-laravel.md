@@ -70,6 +70,6 @@ Et voilà ! Nous arrivons au même résultat, encore faut-il le savoir !
 
 ## Conclusion <a name="conclusion"></a>
 
-Laravel et son Query Builder nous permettent de faire des choses incroyables. Merci à Jonathan Reinink pour cette astuce et [sa PR](https://github.com/laravel/framework/pull/29602)
+Laravel et son Query Builder nous permettent de faire des choses incroyables. Merci à Jonathan Reinink pour cette astuce et [sa PR](https://github.com/laravel/framework/pull/29602).
 
 N'hésitez pas à [me suivre](https://twitter.com/LaravelJutsu) et à vous abonner à [Laravel Jutsu](https://www.youtube.com/@LaravelJutsu) pour plus de contenu !

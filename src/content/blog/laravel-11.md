@@ -11,7 +11,7 @@ colorTag: red
 
 ## Sommaire
 1. [Introduction](#introduction)
-2. [Slim skeleton](#slim)
+2. [Laravel au régime](#slim)
 3. [API](#api)
 4. [Casts](#casts)
 5. [SQLite par défaut](#sqlite)
@@ -26,7 +26,7 @@ Cette mise à jour majeure apporte son lot de nouveautés et de changements. Lev
 
 <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/V6fbLsdbhe8" frameborder="0" allowfullscreen></iframe>
 
-## Slim skeleton <a name="slim"></a>
+## Laravel au régime <a name="slim"></a>
 
 Ce n'est plus un scoop, Taylor Otwell avait décidé depuis l'année dernière d'[amincir le squelette de Laravel](https://github.com/laravel/framework/pull/47309). 
 

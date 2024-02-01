@@ -1,6 +1,6 @@
 ---
 title: Découvrez les nouveautés Laravel 11
-description: Larael 11 sort le 6 févirier 2024. Voyons ensemble ses nouveautés.
+description: Laravel 11 sort en février 2024. Voyons ensemble ses nouveautés.
 category: Laravel
 pubDate: Jan 26 2024
 heroImage: ./images/laravel-11.png
@@ -17,7 +17,8 @@ colorTag: red
 5. [SQLite par défaut](#sqlite)
 6. [2 nouvelles commandes](#makeclass)
 7. [En plus](#autres)
-8. [Conclusion](#conclusion)
+8. [Nouveautés](#news)
+9. [Conclusion](#conclusion)
 
 ## Introduction <a name="introduction"></a>
 
@@ -105,6 +106,14 @@ Le plus important étant dit, voici une liste non-exhaustive de ce que nous savo
 - Les migrations par défaut sont squishées
 - Le middleware `Authenticate` ne redirige plus vers une location quand la requête entrante attend du JSON
 - Une commande `php artisan install:broadcasting` permet le scaffolding des websockets de l'application
+
+## Nouveautés <a name="news"></a>
+
+L'article et la vidéo ont été rédigés et enregistrés avant la sortie officielle de Laravel 11.
+
+Il est important de noter que la liste des éléments mentionnés n'est pas exhaustive, comme l'indique clairement la publication de Taylor Otwell : de nouvelles fonctionnalités sont à venir !
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Things I&#39;ll be talking about at <a href="https://twitter.com/LaraconEU?ref_src=twsrc%5Etfw">@LaraconEU</a> next week...<br><br>Slim Laravel 11 app structure 🧼<br>Laravel 11 feature highlights 💫<br>Laravel Herd updates 🐘<br>Laravel Reverb 👂</p>&mdash; Taylor Otwell (@taylorotwell) <a href="https://twitter.com/taylorotwell/status/1752702460026867841?ref_src=twsrc%5Etfw">January 31, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Conclusion <a name="conclusion"></a>
 

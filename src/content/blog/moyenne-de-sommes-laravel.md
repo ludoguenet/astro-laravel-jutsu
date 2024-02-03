@@ -11,9 +11,10 @@ colorTag: red
 
 ## Sommaire
 1. [Problématique](#problematique)
-2. [Requête avec SQL](#sql)
-3. [Requête avec le Query Builder](#querybuilder) 
-4. [Conclusion](#conclusion)
+2. [Tutoriel vidéo](#video)
+3. [Requête avec SQL](#sql)
+4. [Requête avec le Query Builder](#querybuilder) 
+5. [Conclusion](#conclusion)
 
 ## Problématique <a name="problematique"></a>
 
@@ -35,6 +36,10 @@ FROM transactions
 GROUP BY user_id
 ```
 Cette requête vous envoie en prison. Rien que cet exemple hérisse les poils de mon IDE qui me notifie d'un beau ***Nested aggregate calls are not allowed***
+
+## Tutoriel vidéo <a name="video"></a>
+
+<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/KMh_sump1Vg" frameborder="0" allowfullscreen></iframe>
 
 ## Requête avec SQL <a name="sql"></a>
 

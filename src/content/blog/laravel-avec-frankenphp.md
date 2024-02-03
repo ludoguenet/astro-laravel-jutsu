@@ -25,7 +25,7 @@ Son triomphe réside dans la génération d'un serveur doté des fonctionnalité
 
 En résumé, plus besoin de configurations superflues : vous disposez d'un serveur PHP prêt à propulser votre application (que ce soit Laravel, Symfony, Vanilla, etc.).
 
-## Tutoriel vidéo  <a name="tutorielvideo"></a>
+## Tutoriel vidéo <a name="tutorielvideo"></a>
 
 <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/CbRWYCEZOK0" frameborder="0" allowfullscreen></iframe>
 

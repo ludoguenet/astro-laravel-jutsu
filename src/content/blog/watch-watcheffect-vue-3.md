@@ -66,7 +66,7 @@ Avec `watchEffect`, nous fournissons une fonction anonyme en tant qu'argument, c
 
 ## On se watch plus tard ? <a name="later"></a>
 
-L'une des fonctionnalités l'API Composition est la possibilité de supprimer les watchers de manière programmatique. 
+L'une des fonctionnalités de l'API Composition est la possibilité de supprimer les watchers de manière programmatique. 
 
 Imaginons que notre utilisateur ait terminé de modifier son article et souhaite arrêter de soumettre les modifications côté backend. À la fois `watch` et `watchEffect` renvoient une fonction qui peut être appelée pour cesser de surveiller les changements.
 

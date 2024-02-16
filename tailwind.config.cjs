@@ -6,11 +6,9 @@ module.exports = {
     { pattern: /(text)-./ },
     {
       pattern: /(bg)-./,
-      variants: ["hover"],
+      variants: ['hover'],
     },
   ],
-  theme: {
-    extend: {},
-  },
+  theme: {},
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
 };

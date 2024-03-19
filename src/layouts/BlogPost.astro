@@ -1,36 +1,61 @@
 ---
-import { Image } from 'astro:assets';
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import FormattedDate from '../components/FormattedDate.astro';
+import { Image } from "astro:assets";
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import FormattedDate from "../components/FormattedDate.astro";
 
-import { SITE_TITLE } from '../consts';
+import { SITE_TITLE } from "../consts";
 const { title, description, pubDate, heroImage } = Astro.props;
 ---
 
 <html lang="fr">
 	<head>
-		<BaseHead title={SITE_TITLE + " | Blog | " + title} description={description} image={heroImage.src} />
+		<BaseHead
+			title={SITE_TITLE + " | Blog | " + title}
+			description={description}
+			image={heroImage.src}
+		/>
 	</head>
 
 	<body>
-		<Header />		
-		
-		<main class="mx-auto max-w-7xl px-6 md:flex md:items-center md:justify-between lg:px-8 mb-6 mt-12 lg:my-10">
+		<Header />
+
+		<main
+			class="mx-auto max-w-7xl px-6 md:flex md:items-center md:justify-between lg:px-8 mb-6 mt-12 lg:my-10"
+		>
 			<article>
-				<a 
+				<a
+					class="group inline-flex font-semibold text-sm leading-6 text-yellow-400 hover:text-yellow-500 transition ease-in-out duration-200 mb-10"
 					href="/blog"
-					class="inline-block mb-10 text-sm transition ease-in-out duration-200 hover:text-yellow-400"
+					><svg
+						viewBox="0 -9 3 24"
+						class="mr-2 text-yellow-400 w-auto h-6 group-hover:text-yellow-500 transition ease-in-out duration-200"
+						><path
+							d="M3 0L0 3L3 6"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"></path></svg
+					>Retour au blog</a
 				>
-					Retour au blog
-				</a>
 
 				<figure>
-					{heroImage && <Image src={heroImage} alt={title} class="rounded-xl bg-gray-50 object-cover" />}
+					{
+						heroImage && (
+							<Image
+								src={heroImage}
+								alt={title}
+								class="rounded-xl bg-gray-50 object-cover"
+							/>
+						)
+					}
 				</figure>
 
-				<div class="flex items-center block text-sm leading-6 text-gray-600 my-10">
+				<div
+					class="flex items-center block text-sm leading-6 text-gray-600 my-10"
+				>
 					<FormattedDate date={pubDate} />
 				</div>
 

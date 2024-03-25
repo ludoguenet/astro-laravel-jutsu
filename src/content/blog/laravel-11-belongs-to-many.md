@@ -16,9 +16,9 @@ colorTag: red
 
 ## Présentation <a name="presentation"></a>
 
-Découvrez en profondeur la puissance de la relation BelongsToMany dans le framework PHP Laravel 11 ! Dans cet article, plongez dans les différentes facettes de cette fonctionnalité essentielle pour la gestion des relations complexes entre les entités.
+Découvrez en profondeur la puissance de la relation BelongsToMany dans le framework PHP Laravel 11 ! Dans ce tutoriel, plongez dans tout ce qu'il faut savoir sur cette relation avec la dernière version de Laravel 11.
 
-Merci à Laravel France pour l'[article original](https://laravel-france.com/posts/maitrisez-les-relations-belongs-to-many-avec-la-methode-attach).
+Un grand merci à Laravel France pour l'[article original](https://laravel-france.com/posts/maitrisez-les-relations-belongs-to-many-avec-la-methode-attach).
 
 ## Tutoriel vidéo <a name="tutorielvideo"></a>
 
@@ -26,6 +26,6 @@ Merci à Laravel France pour l'[article original](https://laravel-france.com/pos
 
 ## Conclusion <a name="conclusion"></a>
 
-La relation BelongsToMany est super puissante et utile dans certains cas, à vous de bien jauger. Laravel vous fournit tous les outils pour y arriver !
+La relation BelongsToMany est super puissante et pratique à mettre en place dans notre framework favori. Tous les outils sont à votre disposition !
 
 N'hésitez pas à [me suivre](https://twitter.com/LaravelJutsu) et à vous abonner à [Laravel Jutsu](https://www.youtube.com/@LaravelJutsu) pour plus de contenu !

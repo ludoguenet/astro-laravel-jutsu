@@ -1,12 +1,12 @@
 ---
-title: 'Interface Ou Pas : Telle Est La Question'
+title: 'Quand doit-on utiliser une Interface en PHP ?'
 description: Avec le retour du bon Christopher Okhravi, on en apprend plus sur le polymorphisme.
 category: PHP
 pubDate: Apr 05 2024
 heroImage: ./images/interface-ou-pas-php.png
 ---
 
-# Interface Ou Pas : Telle Est La Question
+# Quand doit-on utiliser une Interface en PHP ?
 
 ## Sommaire
 1. [Présentation](#presentation)

@@ -9,7 +9,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 const posts = await getCollection('blog')
 
-const latestPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()).slice(0, 3);
+const latestPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()).slice(0, 6);
 ---
 
 <!DOCTYPE html>
@@ -25,24 +25,24 @@ const latestPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
 			<div class="bg-white pt-14 pb-14 sm:pb-32">
 				<div class="mx-auto max-w-7xl px-6 lg:px-8">
 					<div class="mx-auto max-w-2xl lg:mx-0">
-						<h2 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Mes derniers articles</h2>
-						<p class="mt-1 text-md leading-8 text-gray-600">Une plume pour accompagner la caméra.</p>
+						<h2 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Échos du Dojo</h2>
+						<p class="mt-1 text-md leading-8 text-gray-600">Le blog pour tout savoir sur Laravel et Vue.</p>
 					</div>
 					<div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 pt-6 sm:mt-8 sm:pt-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
 						{
 							latestPosts.map((post) => (
 								<article class="flex max-w-xl flex-col items-start justify-between">
-									<div class="relative w-full hover:opacity-75 transition duration-300 ease-in-out">
+									<div class="relative w-full hover:opacity-75 transition duration-200 ease-in-out">
 										<Image src={post.data.heroImage} alt={post.data.title} class="w-full cursor-pointer rounded-2xl bg-gray-100 object-cover aspect-[5/2]" />
 										<div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
 									</div>
 									<div class="max-w-xl">
 										<div class="mt-8 flex items-center gap-x-4 text-xs">
 											<time datetime="2020-03-16" class="text-gray-500">{<IndexFormattedDate date={post.data.pubDate} />}</time>
-											<a href={"/blog/category/"+post.data.category.toLowerCase()} class="relative z-10 rounded-full transition duration-300 ease-in-out px-3 py-1.5 font-medium bg-lime-400/20 hover:bg-lime-400/30 text-lime-700">{post.data.category}</a>
+											<a href={"/blog/category/"+post.data.category.toLowerCase()} class="relative z-10 rounded-full transition duration-200 ease-in-out px-3 py-1.5 font-medium bg-lime-400/20 hover:bg-lime-400/30 text-lime-700">{post.data.category}</a>
 										</div>
 										<div class="group relative">
-											<h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 transition duration-300 ease-in-out">
+											<h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 transition duration-200 ease-in-out">
 												<a href={`/blog/${post.slug}`}>
 													<span class="absolute inset-0"></span>
 													{post.data.title}
@@ -59,6 +59,23 @@ const latestPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
 				</div>
 			</div>
 
+			<div class="bg-white">
+				<div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:justify-between lg:px-8">
+					<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+						Prêt à passer au niveau supérieur ?<br>Découvrez ma chaîne YouTube.
+					</h2>
+					<div class="mt-10 flex items-center gap-x-6 lg:mt-0 lg:flex-shrink-0">
+						<a href="https://youtube.com/@laravelJutsu" class="rounded-md px-3.5 py-2.5 text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-500 bg-lime-400/20 hover:bg-lime-400/30 text-lime-700 duration-200 transition ease-in-out">
+							Voir la chaîne
+						</a>
+						<a href="/blog" class="text-sm font-semibold leading-6 text-gray-900">
+							Voir tous les articles <span aria-hidden="true">→</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			
+			
 		<Footer />
 	</body>
 </html>

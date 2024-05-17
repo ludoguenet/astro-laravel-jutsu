@@ -4,7 +4,6 @@ description: Découvrons ensemble le nouveau serveur de websockets de Laravel !
 category: Laravel
 pubDate: Mar 19 2024
 heroImage: ./images/laravel-reverb.png
-colorTag: red
 ---
 
 # Découverte de Laravel Reverb

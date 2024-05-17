@@ -4,7 +4,6 @@ description: On va écrire du code propre et testé. Pourquoi je vous montre ça
 category: Laravel
 pubDate: Mar 30 2024
 heroImage: ./images/on-developpe-sur-mon-application.png
-colorTag: red
 ---
 
 # On développe une fonctionnalité sur mon application !

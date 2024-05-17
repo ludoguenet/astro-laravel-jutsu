@@ -4,7 +4,6 @@ description: Les fonctions watch et watchEffect sont de véritables petits bijou
 category: Vue
 pubDate: Nov 4 2023
 heroImage: ./images/watch-vue.png
-colorTag: emerald
 ---
 
 # Comprendre watch et watchEffect avec Vue 3

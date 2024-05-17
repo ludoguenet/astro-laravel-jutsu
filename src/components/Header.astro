@@ -1,44 +1,24 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 ---
+<div class="relative z-10 mb-16 px-4 pb-5 pt-7 ring-1 ring-zinc-950/5 dark:ring-white/5">
+		<div class="mx-auto flex items-center justify-between px-2 sm:px-4 lg:max-w-7xl">
+			<div class="flex items-center gap-2 sm:gap-4">
+				<a aria-label="Home" href="/">
+					<div class="flex items-center gap-2 rounded-full border border-dashed border-zinc-300 py-px pl-1 pr-3 text-xs/6 font-medium text-zinc-900 dark:border-white/20 dark:text-white">
+						<div class="flex h-5 w-5 items-center justify-center rounded-full bg-zinc-100 ring-1 ring-zinc-200 dark:bg-zinc-800 dark:ring-white/25">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 fill-zinc-900 dark:fill-white">
+								<path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+							</svg>
 
-<header class="flex flex-col sm:flex-row justify-between mx-auto max-w-7xl px-6 pb-4 pt-16 sm:py-8 items-center lg:gap-x-10 lg:px-8 lg:py-10">
-	<h2>
-		<a href="/" class="flex items-center group">
-			<img src="/logo.png" alt="logo" class="w-10 mr-2 group-hover:rotate-180 transition ease-in-out">
-			<span class="laravel-span font-extrabold">Laravel</span>&nbsp;<span class="jutsu-span font-extrabold">Jutsu</span>
-		</a>
-	</h2>
-
-	<nav class="flex items-center justify-center pb-3 pt-3 lg:pt-3 space-x-5">
-		<HeaderLink href="/" class="flex items-center text-sm transition ease-in-out duration-200 hover:text-yellow-400">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 mr-1">
-				<path d="M8.543 2.232a.75.75 0 0 0-1.085 0l-5.25 5.5A.75.75 0 0 0 2.75 9H4v4a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1a1 1 0 1 1 2 0v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V9h1.25a.75.75 0 0 0 .543-1.268l-5.25-5.5Z" />
-			</svg>
-			Accueil
-		</HeaderLink>
-
-		<HeaderLink href="/blog" class="flex items-center text-sm transition ease-in-out duration-200 hover:text-yellow-400">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 mr-1">
-				<path fill-rule="evenodd" d="M10 3a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v9a2 2 0 0 0 2 2h8a2 2 0 0 1-2-2V3ZM4 4h4v2H4V4Zm4 3.5H4V9h4V7.5Zm-4 3h4V12H4v-1.5Z" clip-rule="evenodd" />
-				<path d="M13 5h-1.5v6.25a1.25 1.25 0 1 0 2.5 0V6a1 1 0 0 0-1-1Z" />
-			</svg>
-			Blog
-		</HeaderLink>
-
-		<HeaderLink href="/about" class="flex items-center text-sm transition ease-in-out duration-200 hover:text-yellow-400">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 mr-1">
-				<path fill-rule="evenodd" d="M11.914 4.086a2 2 0 0 0-2.828 0l-5 5a2 2 0 1 0 2.828 2.828l.556-.555a.75.75 0 0 1 1.06 1.06l-.555.556a3.5 3.5 0 0 1-4.95-4.95l5-5a3.5 3.5 0 0 1 4.95 4.95l-1.972 1.972a2.125 2.125 0 0 1-3.006-3.005L9.97 4.97a.75.75 0 1 1 1.06 1.06L9.058 8.003a.625.625 0 0 0 .884.883l1.972-1.972a2 2 0 0 0 0-2.828Z" clip-rule="evenodd" />
-			</svg>
-			About
-		</HeaderLink>
-
-		<HeaderLink href="/contact" class="flex items-center text-sm transition ease-in-out duration-200 hover:text-yellow-400">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 mr-1">
-				<path fill-rule="evenodd" d="M11 4V3a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v1H4a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1ZM9 2.5H7a.5.5 0 0 0-.5.5v1h3V3a.5.5 0 0 0-.5-.5ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z" clip-rule="evenodd" />
-				<path d="M3 11.83V12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-.17c-.313.11-.65.17-1 .17H4c-.35 0-.687-.06-1-.17Z" />
-			</svg>
-			Contact
-		</HeaderLink>
-	</nav>
-</header>
+						</div>Laravel Jutsu
+					</div>
+				</a>
+			</div>
+			<div class="flex items-center gap-8">
+				<HeaderLink href="/blog" class="text-sm/6 font-medium hover:text-zinc-500 transition duration-200 ease-in-out">
+					Blog
+				</HeaderLink>
+			</div>
+		</div>
+	</div>

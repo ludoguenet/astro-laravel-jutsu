@@ -4,7 +4,6 @@ description: PHP 8.3 a été publié le 23 novembre 2023. Il embarque des améli
 category: PHP
 pubDate: Nov 23 2023
 heroImage: ./images/php-83-est-sorti.png
-colorTag: indigo
 ---
 
 # Quoi de neuf dans PHP 8.3 ?

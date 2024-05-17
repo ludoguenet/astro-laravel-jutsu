@@ -4,7 +4,6 @@ description: Avec le retour du bon Christopher Okhravi, on en apprend plus sur l
 category: PHP
 pubDate: Apr 05 2024
 heroImage: ./images/interface-ou-pas-php.png
-colorTag: indigo
 ---
 
 # Interface Ou Pas : Telle Est La Question

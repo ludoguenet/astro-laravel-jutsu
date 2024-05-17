@@ -4,7 +4,6 @@ description: Amélioration du watchEffect(), defineModel() stable et shorthands 
 category: Vue
 pubDate: Jan 14 2024
 heroImage: ./images/vue-34.png
-colorTag: emerald
 ---
 
 # Découvrez 3 nouveautés de Vue 3.4

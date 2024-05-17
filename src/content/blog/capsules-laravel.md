@@ -4,7 +4,6 @@ description: Découvrons ensemble le nouveau concept des Capsules Laravel qui es
 category: Laravel
 pubDate: Aug 18 2023
 heroImage: ./images/laravel-capsule.png
-colorTag: red
 ---
 
 # 1, 2, 3... Initialisation du projet Laravel 10

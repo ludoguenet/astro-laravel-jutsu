@@ -4,7 +4,6 @@ description: Découvrez avec moi cette nouveauté que l'on nomme Eager load limi
 category: Laravel
 pubDate: Jan 20 2024
 heroImage: ./images/eager-load-limit.png
-colorTag: red
 ---
 
 # Découvrez l'Eager load limit avec Laravel 11

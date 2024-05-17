@@ -4,7 +4,6 @@ description: Comment installer une application Laravel avec FrankenPHP et Larave
 category: Laravel
 pubDate: Dec 25 2023
 heroImage: ./images/laravel-frankenphp.png
-colorTag: red
 ---
 
 # Laravel avec FrankenPHP

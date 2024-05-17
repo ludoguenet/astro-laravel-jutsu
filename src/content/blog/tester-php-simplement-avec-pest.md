@@ -4,7 +4,6 @@ description: "Quand on veut assurer une qualité logicielle, on se doit d'écrir
 category: Pest
 pubDate: Aug 25 2023
 heroImage: ./images/test-php-simple-pest.png
-colorTag: lime
 ---
 
 # Qu'est-ce que Pest ?

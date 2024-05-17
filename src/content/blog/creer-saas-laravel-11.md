@@ -4,7 +4,6 @@ description: Je vous apprends à développer votre SaaS (Software As A Service) 
 category: Laravel
 pubDate: Feb 10 2024
 heroImage: ./images/saas-laravel-11.png
-colorTag: red
 ---
 
 # Crée ton SaaS avec Laravel 11

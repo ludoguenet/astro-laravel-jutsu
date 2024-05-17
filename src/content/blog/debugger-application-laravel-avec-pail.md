@@ -4,7 +4,6 @@ description: Découvrez Laravel Pail, l'outil ultime pour explorer les journaux 
 category: Outils
 pubDate: Oct 14 2023
 heroImage: ./images/debugger-logs-laravel-pail.png
-colorTag: cyan
 ---
 
 # Qu'est-ce que Pail ?

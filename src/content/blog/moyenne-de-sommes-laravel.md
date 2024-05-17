@@ -4,7 +4,6 @@ description: Apprenez cette astuce pour effectuer la moyenne de sommes avec le Q
 category: Laravel
 pubDate: Feb 03 2024
 heroImage: ./images/moyenne-de-sommes-laravel.png
-colorTag: red
 ---
 
 # Faire la moyenne de sommes avec Laravel

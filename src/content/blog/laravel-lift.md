@@ -4,7 +4,6 @@ description: Laravel Lift est une librairie qui capitalise sur les attributs PHP
 category: Eloquent
 pubDate: Sep 5 2023
 heroImage: ./images/laravel-lift.png
-colorTag: fuchsia
 ---
 
 # Qu'est-ce que Laravel Lift ?!

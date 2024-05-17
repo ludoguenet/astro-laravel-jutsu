@@ -4,7 +4,6 @@ description: Nous allons apprendre ensemble à refactorer du code Laravel danger
 category: Laravel
 pubDate: Jan 10 2024
 heroImage: ./images/laravel-clean-code.png
-colorTag: red
 ---
 
 # CODER PROPREMENT avec LARAVEL

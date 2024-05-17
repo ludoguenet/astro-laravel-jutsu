@@ -4,7 +4,6 @@ description: Apprenez à trier vos données avec Laravel et des composants Vue 3
 category: Vue
 pubDate: Sep 23 2023
 heroImage: ./images/trier-donnees-laravel-vue.png
-colorTag: emerald
 ---
 
 # Trions nos produits comme il se doit !

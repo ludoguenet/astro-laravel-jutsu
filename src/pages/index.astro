@@ -32,10 +32,15 @@ const latestPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
 						{
 							latestPosts.map((post) => (
 								<article class="flex max-w-xl flex-col items-start justify-between">
-									<div class="relative w-full hover:opacity-75 transition duration-200 ease-in-out">
-										<Image src={post.data.heroImage} alt={post.data.title} class="w-full cursor-pointer rounded-2xl bg-gray-100 object-cover aspect-[5/2]" />
-										<div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+								
+									<a href={`/blog/${post.slug}`} class="group flex flex-col overflow-hidden transition-all rounded-lg shadow-lg focus:outline-none">
+									
+									<div class="relative flex-shrink-0 overflow-hidden">
+										<Image src={post.data.heroImage} alt={post.data.title} class="w-full cursor-pointer  bg-gray-100 object-cover aspect-[5/2] group-hover:scale-110 group-focus:scale-110 group-hover:-rotate-2 group-focus:-rotate-2 transition duration-200 ease-in-out" />
 									</div>
+								
+									</a>
+							
 									<div class="max-w-xl">
 										<div class="mt-8 flex items-center gap-x-4 text-xs">
 											<time datetime="2020-03-16" class="text-gray-500">{<IndexFormattedDate date={post.data.pubDate} />}</time>

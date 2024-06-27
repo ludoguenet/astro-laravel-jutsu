@@ -8,7 +8,7 @@ import Footer from "../../../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../../consts';
 
 export async function getStaticPaths() {
-	const posts = (await getCollection('blog'))
+    const posts = (await getCollection('blog'))
         .sort(
             (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
         );
@@ -55,8 +55,21 @@ const categories: Category[] = [
 <html lang="fr">
 <head>
     <BaseHead title={SITE_TITLE + " | Blog | "+category.charAt(0).toUpperCase() + category.slice(1)} description={SITE_DESCRIPTION} />
+
+    <style>
+        .back-to-top {
+            @apply fixed z-50 opacity-0 flex items-center justify-center bottom-8 right-8 border-0 text-lg w-12 h-12 rounded-full shadow-lg bg-lime-400 hover:bg-lime-500 transition duration-300;
+        }
+        .back-to-top.show {
+            @apply opacity-100;
+        }
+    </style>
+
+    <script>
+        import "../../../scripts/back-to-top.ts";
+    </script>
 </head>
-<body>      
+<body>
 <Header />
 
 <div class="bg-white mb-6 mt-12 lg:my-10">
@@ -142,8 +155,8 @@ const categories: Category[] = [
                                             <div class="text-sm leading-6">
                                                 <p class="font-semibold text-gray-900">
                                                     <a
-                                                        href="https://twitter.com/LaravelJutsu"
-                                                        target="_blank"
+                                                            href="https://twitter.com/LaravelJutsu"
+                                                            target="_blank"
                                                     >
                                                         <span class="absolute inset-0"></span>
                                                         Ludovic Guénet
@@ -156,16 +169,21 @@ const categories: Category[] = [
                                 </div>
                             </article>
                     ))
-                    }
-                    </div>
-                    </div>
-                    </div>
-                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
 
-                    <Footer />
+<Footer />
 
-                    <script>
-                    import "../../../scripts/dropdown.ts";
-                    </script>
-                    </body>
-                    </html>
+<button id="back-to-top" class="back-to-top">
+    ☝️
+</button>
+
+<script>
+    import "../../../scripts/dropdown.ts";
+</script>
+
+</body>
+</html>

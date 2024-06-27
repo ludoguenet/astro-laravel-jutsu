@@ -38,6 +38,19 @@ const categories: Category[] = [
 <html lang="fr">
 	<head>
 		<BaseHead title={SITE_TITLE + " | Blog"} description={SITE_DESCRIPTION} />
+
+		<style>
+			.back-to-top {
+				@apply fixed z-50 opacity-0 flex items-center justify-center bottom-8 right-8 border-0 text-lg w-12 h-12 rounded-full shadow-lg bg-lime-400 hover:bg-lime-500 transition duration-300;
+			}
+			.back-to-top.show {
+				@apply opacity-100;
+			}
+		</style>
+
+		<script>
+			import "../../scripts/back-to-top.ts";
+		</script>
 	</head>
 	<body>
 		<Header />
@@ -170,6 +183,10 @@ const categories: Category[] = [
 		</div>
 
 		<Footer />
+
+		<button id="back-to-top" class="back-to-top">
+			☝️
+		</button>
 
 		<script>
 			import "../../scripts/dropdown.ts";

@@ -16,6 +16,19 @@ const { title, description, pubDate, heroImage } = Astro.props;
 			description={description}
 			image={heroImage.src}
 		/>
+
+		<style>
+			.back-to-top {
+				@apply fixed z-50 opacity-0 flex items-center justify-center bottom-8 right-8 border-0 text-lg w-12 h-12 rounded-full shadow-lg bg-lime-400 hover:bg-lime-500 transition duration-300;
+			}
+			.back-to-top.show {
+				@apply opacity-100;
+			}
+		</style>
+
+		<script>
+			import "../scripts/back-to-top.ts";
+		</script>
 	</head>
 
 	<body>
@@ -66,5 +79,9 @@ const { title, description, pubDate, heroImage } = Astro.props;
 		</main>
 
 		<Footer />
+
+		<button id="back-to-top" class="back-to-top">
+			☝️
+		</button>
 	</body>
 </html>

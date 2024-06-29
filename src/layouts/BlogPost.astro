@@ -73,7 +73,7 @@ const { title, description, pubDate, heroImage } = Astro.props;
 					<FormattedDate date={pubDate} />
 				</div>
 
-				<div class="prose prose-slate lg:prose-xl max-w-none">
+				<div class="prose prose-slate prose-a:text-lime-500 prose-a:transition prose-a:duration-300 hover:prose-a:text-lime-600 lg:prose-xl max-w-none">
 					<slot />
 				</div>
 			</article>

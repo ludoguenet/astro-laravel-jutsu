@@ -29,7 +29,7 @@ Une solution qui s'offre à nous serait l'utilisation des **bootstrappers**. Un 
 
 <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/VUholO_AEfE" frameborder="0" allowfullscreen></iframe>
 
-## Notre première classe Bootstrapper <a name="bootstrapper"></a>
+## Notre première classe Bootstrapper <a name="bootsrapper"></a>
 
 Je vais illustrer ici un exemple avec les Middlewares, sachez que cela vaut pour le reste. (sauf le routing que l'on voit juste après !)
 

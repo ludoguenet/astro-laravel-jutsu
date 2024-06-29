@@ -59,7 +59,7 @@ watch(name, throttle((newValue, oldValue) => {
 }, 2000));
 ```
 
-## Throttle <a name="debounce"></a>
+## Throttle <a name="throttle"></a>
 
 Je m'inspire maintenant de ma mouture initiale pour créer une fonction `throttle` qui renverra cette fois-ci une fonction qui attendra de ne plus être "bouchée" pour faire un appel API.
 

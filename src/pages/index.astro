@@ -20,9 +20,11 @@ const latestPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
 		<style>
 			.back-to-top {
 				@apply fixed z-50 opacity-0 flex items-center justify-center bottom-8 right-8 border-0 text-lg w-12 h-12 rounded-full shadow-lg bg-lime-400 hover:bg-lime-500 transition duration-300;
+				pointer-events: none;
 			}
 			.back-to-top.show {
 				@apply opacity-100;
+				pointer-events: auto;
 			}
 		</style>
 
@@ -38,8 +40,8 @@ const latestPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
 			<div class="bg-white pt-14 pb-14 sm:pb-32">
 				<div class="mx-auto max-w-7xl px-6 lg:px-8">
 					<div class="mx-auto max-w-2xl lg:mx-0">
-						<h2 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Les derniers articles</h2>
-						<p class="mt-1 text-md leading-8 text-gray-600">Le blog pour tout savoir sur Laravel et Vue.</p>
+						<h1 class="text-5xl font-bold sm:text-6xl">Blog Laravel Jutsu</h1>
+						<p class="mt-4 text-gray-600">Les derniers articles sur Laravel et Vue</p>
 					</div>
 					<div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 pt-6 sm:mt-8 sm:pt-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
 						{
@@ -96,7 +98,9 @@ const latestPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
 		<Footer />
 
 		<button id="back-to-top" class="back-to-top">
-			☝️
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4 text-white">
+				<path fill-rule="evenodd" d="M8 14a.75.75 0 0 1-.75-.75V4.56L4.03 7.78a.75.75 0 0 1-1.06-1.06l4.5-4.5a.75.75 0 0 1 1.06 0l4.5 4.5a.75.75 0 0 1-1.06 1.06L8.75 4.56v8.69A.75.75 0 0 1 8 14Z" clip-rule="evenodd" />
+			</svg>
 		</button>
 	</body>
 </html>

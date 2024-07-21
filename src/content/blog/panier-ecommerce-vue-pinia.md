@@ -1,6 +1,6 @@
 ---
 title: "Panier E-Commerce avec Vue 3 et Pinia"
-description: "Partons à la découverte de Pinia au travers d'un petit projet !"
+description: "Partons à la découverte de Pinia au travers d'un petit projet Vue 3"
 category: Vue
 pubDate: Jul 20 2024
 heroImage: ./images/panier-ecommerce-vue-pinia.png

@@ -16,7 +16,7 @@ heroImage: ./images/panier-ecommerce-vue-pinia.png
 
 ## Présentation <a name="presentation"></a>
 
-Dans cet article, nous allons explorer comment utiliser **Pinia**, une solution de gestion d'état intuitive et adaptée à Vue.js. Pinia permet de partager les états entre les composants de manière fluide, évitant ainsi les complexités des bus d'événements ou des appels API redondants pour des données front-end.
+Nous allons explorer comment utiliser **Pinia**, une solution de gestion d'état intuitive et adaptée à Vue.js. Pinia permet de partager les états entre les composants de manière fluide, évitant ainsi les complexités des bus d'événements ou des appels API redondants pour des données front-end.
 
 Nous utiliserons un projet disponible sur mon [GitHub](https://github.com/ludoguenet/shopping-cart-with-pinia/tree/feat/todo), branché sur `todo`, pour créer un panier de e-commerce dynamique. Grâce à Pinia, nous allons simuler un appel API pour afficher nos produits et centraliser les informations essentielles dans notre store. Suivez ce guide pas à pas pour maîtriser l'intégration de Pinia dans vos applications Vue.js.
 

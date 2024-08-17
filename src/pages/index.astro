@@ -51,7 +51,7 @@ const latestPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
 									<a href={`/blog/${post.slug}`} class="group flex flex-col overflow-hidden transition-all rounded-lg shadow-lg focus:outline-none">
 									
 									<div class="relative flex-shrink-0 overflow-hidden">
-										<Image src={post.data.heroImage} alt={post.data.title} class="w-full cursor-pointer  bg-gray-100 object-cover aspect-[5/2] group-hover:scale-110 group-focus:scale-110 group-hover:-rotate-2 group-focus:-rotate-2 transition duration-200 ease-in-out" />
+										<Image src={post.data.heroImage} loading="eager" alt={post.data.title} class="w-full cursor-pointer  bg-gray-100 object-cover aspect-[5/2] group-hover:scale-110 group-focus:scale-110 group-hover:-rotate-2 group-focus:-rotate-2 transition duration-200 ease-in-out" />
 									</div>
 								
 									</a>

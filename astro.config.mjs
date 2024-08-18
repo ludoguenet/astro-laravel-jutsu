@@ -1,6 +1,7 @@
 import { defineConfig, passthroughImageService } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
+import syntaxTheme from './syntax-theme.json';
 
 import tailwind from "@astrojs/tailwind";
 
@@ -13,7 +14,7 @@ export default defineConfig({
   integrations: [mdx(), sitemap(), tailwind()],
   markdown: {
     shikiConfig: {
-      theme: 'material-theme',
+      theme: syntaxTheme,
       langs: [],
       wrap: false,
     },

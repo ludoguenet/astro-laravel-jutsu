@@ -4,6 +4,7 @@ import { getCollection } from 'astro:content';
 import IndexFormattedDate from '../components/IndexFormattedDate.astro';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
+import Banner from '../components/Banner.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
@@ -34,6 +35,8 @@ const latestPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
 	</head>
 
 	<body>
+
+		<Banner />
 
 		<Header />
 

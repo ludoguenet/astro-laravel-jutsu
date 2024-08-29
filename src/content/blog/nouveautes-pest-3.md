@@ -106,6 +106,8 @@ arch()->preset()->relaxed();
 
 En conclusion, la transition vers Pest v3 s'annonce fluide pour les utilisateurs de la version 2, sans risque de rupture de compatibilité. 
 
-La mise à jour du package et des dépendances composer se fera sans accroc, ce qui est un atout majeur pour les développeurs, particulièrement ceux ayant une grande suite de tests. Cela permettra de bénéficier des nouvelles fonctionnalités de Pest v3 sans perturber les projets existants, garantissant une adoption rapide et sereine de cette nouvelle version.
+La mise à jour du package et des dépendances composer se fera sans accroc, ce qui est un atout majeur pour les développeurs, particulièrement ceux ayant une grande suite de tests. 
+
+Cela permettra de bénéficier des nouvelles fonctionnalités de Pest 3 sans perturber les projets existants, garantissant une adoption rapide et sereine de cette nouvelle version.
 
 N'hésitez pas à [me suivre](https://twitter.com/LaravelJutsu) et à vous abonner à [Laravel Jutsu](https://www.youtube.com/@LaravelJutsu) pour plus de contenu !

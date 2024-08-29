@@ -17,17 +17,17 @@ heroImage: ./images/pest-3.png
 
 ## Présentation <a name="presentation"></a>
 
-[Nuno Maduro](https://x.com/enunomaduro) a été le conférencier d'ouverture lors de la Laracon US 2024, dévoilant de nouvelles fonctionnalités impressionnantes pour la prochaine version de Pest v3.0. 
+[Nuno Maduro](https://x.com/enunomaduro) a été le conférencier d'ouverture lors de la Laracon US 2024, dévoilant de nouvelles fonctionnalités pour la prochaine version de Pest v3.0. 
 
 Pest continue de gagner en popularité, avec plus de 18 millions de téléchargements, et est le framework de test par défaut dans Laravel depuis la version 11.
 
-Pest v3 franchit une nouvelle étape importante avec trois fonctionnalités impressionnantes à venir dans Pest 3 :
+Pest 3 franchit une nouvelle étape importante avec trois fonctionnalités :
 
 - Tests de mutation
 - Gestion des tâches
 - Presets d'architecture
 
-Examinons chacune d'elles' :
+Examinons chacune d'elles :
 
 ## Tests de mutation <a name="mutation"></a>
 

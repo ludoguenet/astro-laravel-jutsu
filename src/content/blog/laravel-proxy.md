@@ -83,6 +83,8 @@ class PodcastServiceProxy implements PodcastServiceContract
 ```
 
 ```php
+namespace App\Providers;
+
 use App\Services\PodcastService;
 use Illuminate\Support\ServiceProvider;
 use App\Contracts\PodcastServiceContract;

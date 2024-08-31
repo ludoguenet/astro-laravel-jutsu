@@ -20,7 +20,7 @@ Bienvenue dans cette vidéo où je souhaite partager mon point de vue sur un twe
 
 ## Tutoriel vidéo <a name="tutorielvideo"></a>
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/v3myW1CwFHA" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/v3myW1CwFHA" loading="lazy" frameborder="0" allowfullscreen></iframe>
 
 ## Synthèse de la vidéo <a name="synthese"></a>
 

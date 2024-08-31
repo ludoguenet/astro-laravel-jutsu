@@ -26,7 +26,7 @@ En simplifiant et en rendant le code plus maintenable, ce pattern offre une solu
 
 ## Tutoriel vidéo <a name="tutorielvideo"></a>
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/KPmY__8SRUk" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/KPmY__8SRUk" loading="lazy" frameborder="0" allowfullscreen></iframe>
 
 ## Synthèse de la vidéo <a name="synthese"></a>
 

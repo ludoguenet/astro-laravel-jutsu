@@ -59,7 +59,6 @@ abstract class CompositeComponent implements ComponentContract
 ```
 
 ```php
-
 namespace App\FormBuilder;
 
 use App\Abstracts\CompositeComponent;

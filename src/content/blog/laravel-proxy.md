@@ -29,7 +29,7 @@ Le Proxy Pattern est un design pattern structurel utilisé pour fournir un subst
 
 Dans cette vidéo, nous avons implémenté le Proxy Pattern en PHP avec Laravel pour optimiser l'appel à une API externe. Notre objectif était d'ajouter de la mise en cache et de l'authentification à un service existant sans modifier son code original.
 
-Nous avons d'abord créé une interface `PodcastServiceContract`, puis développé une classe `PodcastService` pour récupérer les podcasts via une API. Ensuite, nous avons créé un proxy (`ProxyPodcastService`) qui implémente la même interface, permettant d'ajouter les comportements désirés (cache, vérification d'authentification) sans toucher à `PodcastService`.
+Nous avons d'abord créé une interface `PodcastServiceContract`, puis développé une classe `PodcastService` pour récupérer les podcasts via une API. Ensuite, nous avons créé un proxy (`PodcastServiceProxy`) qui implémente la même interface, permettant d'ajouter les comportements désirés (cache, vérification d'authentification) sans toucher à `PodcastService`.
 
 ```php
 namespace App\Contracts;

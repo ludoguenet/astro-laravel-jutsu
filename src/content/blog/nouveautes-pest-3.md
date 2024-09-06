@@ -10,14 +10,15 @@ heroImage: ./images/pest-3.png
 
 ## Sommaire
 1. [Présentation](#presentation)
-2. [Tests de mutation](#mutation)
-3. [Gestion des tâches](#tasks)
-4. [Préréglages d'architecture](#presets)
-5. [Conclusion](#conclusion)
+2. [Conférence Laracon US](#laracon)
+3. [Tests de mutation](#mutation)
+4. [Gestion des tâches](#tasks)
+5. [Préréglages d'architecture](#presets)
+6. [Conclusion](#conclusion)
 
 ## Présentation <a name="presentation"></a>
 
-[Nuno Maduro](https://x.com/enunomaduro) a été le conférencier d'ouverture lors de la Laracon US 2024, dévoilant de nouvelles fonctionnalités pour la prochaine version de Pest v3.0. 
+[Nuno Maduro](https://x.com/enunomaduro) a été le conférencier d'ouverture lors de la Laracon US 2024, dévoilant de nouvelles fonctionnalités pour la prochaine version de Pest v3.0.
 
 Pest continue de gagner en popularité, avec plus de 18 millions de téléchargements, et est le framework de test par défaut dans Laravel depuis la version 11.
 
@@ -27,7 +28,9 @@ Pest 3 franchit une nouvelle étape importante avec trois fonctionnalités :
 - Gestion des tâches
 - Presets d'architecture
 
-Examinons chacune d'elles :
+## Conférence lors de la Laracon US <a name="laracon"></a>
+
+<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/BNhbgcNJyAk" loading="lazy" frameborder="0" allowfullscreen></iframe>
 
 ## Tests de mutation <a name="mutation"></a>
 
@@ -37,7 +40,7 @@ Pour faire simple, les tests de mutation vous aideront à trouver les véritable
 
 Une façon certaine d'augmenter drastiquement la qualité de votre logiciel !
 
-Pour démarrer, installer le plugin : 
+Pour démarrer, installer le plugin :
 
 ```bash
 composer require pestphp/pest-plugin-mutate --dev
@@ -75,7 +78,7 @@ it('has a homepage')
 
 Les presets d'architecture permettent d'utiliser rapidement les mêmes règles d'architecture sur plusieurs projets, en tirant parti de préréglages déjà incorporés tels que des règles pour Laravel, PHP.
 
-Un préréglage strict ou relax est également disponible. 
+Un préréglage strict ou relax est également disponible.
 
 J'avais déjà publié à ce sujet sur Twitter :
 
@@ -88,25 +91,25 @@ Vous pouvez utiliser ces préréglages avec la méthode `arch()->preset()` :
 ```php
 // S'assure que des fonctions PHP comme die(), phpinfo(), etc. ne soient pas présentes
 arch()->preset()->php();
- 
+
 // S'assure que des fonctions comme eval(), md5(), etc. ne soient pas présentes
 arch()->preset()->security();
- 
+
 // Un Preset qui permet de s'assurer de la cohérence propre à Laravel sur l'organisation du projet
 arch()->preset()->laravel();
- 
+
 // S'assurer que le code est strict et final doit être utilisé
 arch()->preset()->strict();
- 
-// L'inverse 
+
+// L'inverse
 arch()->preset()->relaxed();
 ```
 
 ## Conclusion <a name="conclusion"></a>
 
-En conclusion, la transition vers Pest v3 s'annonce fluide pour les utilisateurs de la version 2, sans risque de rupture de compatibilité. 
+En conclusion, la transition vers Pest v3 s'annonce fluide pour les utilisateurs de la version 2, sans risque de rupture de compatibilité.
 
-La mise à jour du package et des dépendances composer se fera sans accroc, ce qui est un atout majeur pour les développeurs, particulièrement ceux ayant une grande suite de tests. 
+La mise à jour du package et des dépendances composer se fera sans accroc, ce qui est un atout majeur pour les développeurs, particulièrement ceux ayant une grande suite de tests.
 
 Cela permettra de bénéficier des nouvelles fonctionnalités de Pest 3 sans perturber les projets existants, garantissant une adoption rapide et sereine de cette nouvelle version.
 

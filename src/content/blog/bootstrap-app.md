@@ -12,14 +12,14 @@ heroImage: ./images/bootstrap-app.png
 1. [Présentation](#presentation)
 2. [Tutoriel vidéo](#tutorielvideo)
 3. [Notre première classe Bootstrapper](#bootsrapper)
-4. [La configuration du routing](#routing) 
+4. [La configuration du routing](#routing)
 5. [Conclusion](#conclusion)
 
 ## Présentation <a name="presentation"></a>
 
 Depuis **Laravel 11**, chaque nouveau projet trouve un ensemble de configurations dans son fichier `bootstrap/app.php`.
 
-Cette configuration inclue celle du routing, des middlewares et du gestionnaire d'exceptions entre autre. 
+Cette configuration inclue celle du routing, des middlewares et du gestionnaire d'exceptions entre autre.
 
 Le fichier `bootstrap/app.php` peut ainsi facilement devenir gonflé à bloc avec de nombreuses configurations.
 
@@ -59,7 +59,7 @@ return Application::configure(basePath: dirname(__DIR__))
     ->create();
 ```
 
-L'idée est de remplacer le callable par une classe *callable*, et nous pouvons y parvenir via une classe invokable. Pour plus d'informations à ce sujet je vous renvoie sur la [doc officielle de PHP](https://www.php.net/manual/en/language.types.callable.php). 
+L'idée est de remplacer le callable par une classe *callable*, et nous pouvons y parvenir via une classe invokable. Pour plus d'informations à ce sujet je vous renvoie sur la [doc officielle de PHP](https://www.php.net/manual/en/language.types.callable.php).
 
 Créons notre première classe Bootstrapper via la nouvelle commande :
 

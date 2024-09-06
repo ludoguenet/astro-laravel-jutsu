@@ -97,7 +97,7 @@ Cela créera désormais un domaine `.test` pour chaque sous-répertoire dans `Si
 
 Pour activer le SSL sur un site, rien de plus simple, rendez-vous dans le répertoire de l'application et exécutez :
 
-```
+```bash
 valet secure
 ```
 

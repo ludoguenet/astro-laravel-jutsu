@@ -21,6 +21,7 @@ Bonjour à toutes et à tous, et bienvenue dans ce nouveau tutoriel Laravel ! Au
 ### Introduction au Proxy Pattern
 
 Le Proxy Pattern est un design pattern structurel utilisé pour fournir un substitut ou un intermédiaire pour un autre objet. Ce pattern est particulièrement utile lorsque vous souhaitez ajouter des fonctionnalités telles que l'optimisation de performance ou l'ajout d'une couche de sécurité sans toucher au code de la classe originale. Dans notre exemple, nous allons créer un service qui récupère des podcasts depuis une API et utiliser un proxy pour ajouter de la mise en cache et de l'authentification.
+
 ## Tutoriel vidéo <a name="tutorielvideo"></a>
 
 <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/eerQngYLVB0" loading="lazy" frameborder="0" allowfullscreen></iframe>
@@ -132,7 +133,7 @@ class PodcastController extends Controller
 
 ## Conclusion <a name="conclusion"></a>
 
-En conclusion, le Proxy Pattern est un outil puissant pour enrichir le comportement d'une classe sans en altérer le code source. 
+En conclusion, le Proxy Pattern est un outil puissant pour enrichir le comportement d'une classe sans en altérer le code source.
 
 Dans cet exemple, nous avons démontré comment il peut être utilisé pour ajouter facilement des fonctionnalités telles que le cache et l'authentification dans un service Laravel.
 

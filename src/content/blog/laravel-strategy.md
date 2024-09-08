@@ -16,7 +16,7 @@ heroImage: ./images/laravel-strategy.png
 
 ## Présentation <a name="presentation"></a>
 
-Bonjour à toutes et à tous, et bienvenue dans cette nouvelle vidéo où nous allons explorer le Design Pattern Strategy avec Laravel. Ce pattern est particulièrement utile lorsque vous devez gérer plusieurs comportements différents tout en partageant un même contexte. Nous allons l’illustrer à travers un exemple d'application de cartographie qui permet de calculer des itinéraires pour différents moyens de transport : voitures, bus, marche à pied, etc.
+Dans cet article où nous allons explorer le **Design Pattern Strategy** avec Laravel. Ce pattern est particulièrement utile lorsque vous devez gérer plusieurs comportements différents tout en partageant un même contexte. Nous allons l’illustrer à travers un exemple d'application de cartographie qui permet de calculer des itinéraires pour différents moyens de transport : voitures, bus, marche à pied, etc.
 
 Ce tutoriel s'appuie sur un exemple de [refactoring.guru](https://refactoring.guru/design-patterns/strategy) et nous allons y ajouter une couche de maintenabilité en utilisant ce design pattern.
 

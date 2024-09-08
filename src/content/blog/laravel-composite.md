@@ -16,7 +16,7 @@ heroImage: ./images/laravel-composite.png
 
 ## Présentation <a name="presentation"></a>
 
-Bonjour à toutes et à tous, et bienvenue dans ce nouveau tutoriel Laravel ! Suite à vos nombreuses demandes, nous allons aujourd'hui découvrir un nouveau design pattern : le **Composite Pattern**. Pour ce faire, nous allons créer ensemble un **Form Builder**, une classe qui génère du HTML pour des formulaires avec des inputs. Ce tutoriel vous permettra d'appréhender le Composite Pattern de manière pratique, tout en restant simple pour faciliter la compréhension.
+Suite à vos nombreuses demandes, nous allons aujourd'hui découvrir un nouveau design pattern : le **Composite Pattern**. Pour ce faire, nous allons créer ensemble un **Form Builder**, une classe qui génère du HTML pour des formulaires avec des inputs. Ce tutoriel vous permettra d'appréhender le Composite Pattern de manière pratique, tout en restant simple pour faciliter la compréhension.
 
 ### Introduction au Composite Pattern
 
@@ -28,7 +28,7 @@ Le Composite Pattern est un design pattern structurel qui s'applique particuliè
 
 ## Synthèse de la vidéo <a name="synthese"></a>
 
-Le Composite Pattern est un puissant design pattern structurel qui permet de gérer des objets sous forme d'arborescence, comme les formulaires HTML dans notre exemple. En traitant les objets composites (comme un formulaire) et les objets individuels (comme un input) de manière uniforme, ce pattern simplifie la gestion des structures complexes. 
+Le Composite Pattern est un puissant design pattern structurel qui permet de gérer des objets sous forme d'arborescence, comme les formulaires HTML dans notre exemple. En traitant les objets composites (comme un formulaire) et les objets individuels (comme un input) de manière uniforme, ce pattern simplifie la gestion des structures complexes.
 
 Dans ce tutoriel, nous avons implémenté un Form Builder en Laravel en utilisant le Composite Pattern. Nous avons créé une interface commune pour tous les composants (`ComponentContract`), puis développé des classes concrètes pour le formulaire et les inputs, permettant de générer dynamiquement du HTML structuré. Cette approche offre une grande flexibilité et modularité dans la création de formulaires, tout en facilitant leur maintenance et leur extension.
 
@@ -124,7 +124,7 @@ class Input implements ComponentContract
 
 ## Conclusion <a name="conclusion"></a>
 
-En conclusion, l'utilisation du Composite Pattern dans la création d'un Form Builder avec Laravel nous a permis de structurer efficacement le code et de simplifier la gestion de composants complexes. 
+En conclusion, l'utilisation du Composite Pattern dans la création d'un Form Builder avec Laravel nous a permis de structurer efficacement le code et de simplifier la gestion de composants complexes.
 
 Grâce à ce pattern, nous avons pu traiter de manière uniforme les éléments individuels (comme les inputs) et les compositions d'éléments (comme le formulaire), rendant notre application plus modulable et maintenable. Bien que nous ayons opté pour une implémentation simple afin de faciliter la compréhension, ce pattern peut être adapté et étendu pour répondre aux besoins de projets plus complexes.
 

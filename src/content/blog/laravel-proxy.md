@@ -16,7 +16,7 @@ heroImage: ./images/laravel-proxy.png
 
 ## Présentation <a name="presentation"></a>
 
-Bonjour à toutes et à tous, et bienvenue dans ce nouveau tutoriel Laravel ! Aujourd'hui, nous continuons notre série sur les design patterns en explorant le **Proxy Pattern**. Aussi appelé **procuration**, ce pattern nous permet d'intercepter et d'ajuster le comportement d'une classe sans en modifier le code original. Nous allons l'illustrer en optimisant un appel à une API dans un service Laravel, en ajoutant des fonctionnalités comme la mise en cache et l'authentification.
+Nous continuons notre série sur les design patterns en explorant le **Proxy Pattern**. Aussi appelé **procuration**, ce pattern nous permet d'intercepter et d'ajuster le comportement d'une classe sans en modifier le code original. Nous allons l'illustrer en optimisant un appel à une API dans un service Laravel, en ajoutant des fonctionnalités comme la mise en cache et l'authentification.
 
 ### Introduction au Proxy Pattern
 

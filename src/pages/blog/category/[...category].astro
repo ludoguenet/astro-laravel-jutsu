@@ -58,10 +58,12 @@ const categories: Category[] = [
 
     <style>
         .back-to-top {
-            @apply fixed z-50 opacity-0 flex items-center justify-center bottom-8 right-8 border-0 text-lg w-12 h-12 rounded-full shadow-lg bg-lime-400 hover:bg-lime-500 transition duration-300;
+            @apply fixed z-50 opacity-0 flex items-center justify-center bottom-8 right-8 border-0 text-lg size-10 rounded-full shadow-lg bg-lime-400 hover:bg-lime-500 transition duration-300;
+            pointer-events: none;
         }
         .back-to-top.show {
             @apply opacity-100;
+            pointer-events: auto;
         }
     </style>
 
@@ -178,9 +180,9 @@ const categories: Category[] = [
 <Footer />
 
 <button id="back-to-top" class="back-to-top">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4 text-white">
-        <path fill-rule="evenodd" d="M8 14a.75.75 0 0 1-.75-.75V4.56L4.03 7.78a.75.75 0 0 1-1.06-1.06l4.5-4.5a.75.75 0 0 1 1.06 0l4.5 4.5a.75.75 0 0 1-1.06 1.06L8.75 4.56v8.69A.75.75 0 0 1 8 14Z" clip-rule="evenodd" />
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-white">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+        </svg>
 </button>
 
 <script>

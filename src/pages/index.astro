@@ -20,7 +20,7 @@ const latestPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
 
 		<style>
 			.back-to-top {
-				@apply fixed z-50 opacity-0 flex items-center justify-center bottom-8 right-8 border-0 text-lg w-12 h-12 rounded-full shadow-lg bg-lime-400 hover:bg-lime-500 transition duration-300;
+				@apply fixed z-50 opacity-0 flex items-center justify-center bottom-8 right-8 border-0 text-lg size-10 rounded-full shadow-lg bg-lime-400 hover:bg-lime-500 transition duration-300;
 				pointer-events: none;
 			}
 			.back-to-top.show {
@@ -57,7 +57,7 @@ const latestPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
 						<a href="https://www.youtube.com/@LaravelJutsu" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 bg-gray-100 hover:bg-gray-200/80 duration-200 transition ease-in-out">
 							<svg class="mr-2 -ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
 							Regarder des tutoriels
-						</a>  
+						</a>
 					</div>
 				</div>
 			</div>
@@ -73,15 +73,15 @@ const latestPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
 						{
 							latestPosts.map((post) => (
 								<article class="flex max-w-xl flex-col items-start justify-between">
-								
+
 									<a href={`/blog/${post.slug}`} class="group flex flex-col overflow-hidden transition-all rounded-lg shadow-lg focus:outline-none">
-									
+
 									<div class="relative flex-shrink-0 overflow-hidden">
 										<Image src={post.data.heroImage} loading="eager" alt={post.data.title} class="w-full cursor-pointer  bg-gray-100 object-cover aspect-[5/2] group-hover:scale-110 group-focus:scale-110 group-hover:-rotate-2 group-focus:-rotate-2 transition duration-200 ease-in-out" />
 									</div>
-								
+
 									</a>
-							
+
 									<div class="max-w-xl">
 										<div class="mt-8 flex items-center gap-x-4 text-xs">
 											<time datetime="2020-03-16" class="text-gray-500">{<IndexFormattedDate date={post.data.pubDate} />}</time>
@@ -120,13 +120,13 @@ const latestPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
 					</div>
 				</div>
 			</div>
-			
+
 		<Footer />
 
 		<button id="back-to-top" class="back-to-top">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4 text-white">
-				<path fill-rule="evenodd" d="M8 14a.75.75 0 0 1-.75-.75V4.56L4.03 7.78a.75.75 0 0 1-1.06-1.06l4.5-4.5a.75.75 0 0 1 1.06 0l4.5 4.5a.75.75 0 0 1-1.06 1.06L8.75 4.56v8.69A.75.75 0 0 1 8 14Z" clip-rule="evenodd" />
-			</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-white">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+              </svg>
 		</button>
 	</body>
 </html>

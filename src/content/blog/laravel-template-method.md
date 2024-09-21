@@ -1,5 +1,5 @@
 ---
-title: "Design Pattern avec Laravel : Adapter"
+title: "Design Pattern avec Laravel : Template Method"
 description: "Le Template Method permet de capturer intelligemment la logique commune dans une classe parent."
 category: Laravel
 pubDate: Sep 21 2024
@@ -20,7 +20,7 @@ Dans cet article, nous allons découvrir le **Template Method Pattern** avec Lar
 
 Ce tutoriel s'appuie sur un exemple de [refactoring.guru](https://refactoring.guru/design-patterns/template-method).
 
-### Introduction à l'Adapter Pattern
+### Introduction à au Template Method
 
 Le Template Method est particulièrement utile lorsque plusieurs classes partagent une logique commune, mais nécessitent des comportements spécifiques pour certaines étapes. Dans notre exemple, nous allons montrer comment utiliser ce pattern pour le minage de données provenant de différents formats de fichiers (Doc, CSV, PDF).
 

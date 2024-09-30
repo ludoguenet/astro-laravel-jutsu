@@ -6,7 +6,7 @@ pubDate: Sep 29 2024
 heroImage: ./images/extension-vscode-temphpest.png
 ---
 
-# TempPHPest : L'extension VSCode qui amène PHPStorm dans ton éditeur préféré
+# TempPHPest : L'alternative PHPStorm pour VSCode
 
 ## Sommaire
 1. [Introduction](#introduction)

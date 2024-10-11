@@ -7,7 +7,6 @@ import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 
-
 export async function getStaticPaths({ paginate }) {
 	const posts = await getCollection('blog');
 
@@ -17,6 +16,8 @@ export async function getStaticPaths({ paginate }) {
 }
 
 const { page } = Astro.props;
+const firstPost = page.data[0];
+const restPosts = page.data.slice(1);
 
 type Category = {
 	name: string;
@@ -64,6 +65,7 @@ const categories: Category[] = [
 					<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Tous les <span class="text-lime-500">articles</span></h2>
 					<p class="mt-2 text-lg leading-8 text-gray-600">Retrouve un contenu exclusif en complément des tutoriels vidéo.</p>
 				</div>
+
 				<div class="relative inline-block text-left">
 					<div>
 						<button
@@ -90,7 +92,6 @@ const categories: Category[] = [
 						tabindex="-1"
 					>
 						<div class="py-1" role="none">
-							<!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
 							{
 								categories.map((category) => (
 									<a href={category.url} class="flex items-center group text-gray-700 px-4 py-2 text-sm hover:bg-gray-100" role="menuitem" tabindex="-1" id="menu-item-0">
@@ -103,11 +104,67 @@ const categories: Category[] = [
 				</div>
 			</div>
 
-
-
 			<div class="mx-auto max-w-7xl px-6 lg:px-8">
 				<div class="mx-auto">
-					<div class="space-y-20">
+                    <div class="bg-white py-12 sm:py-16">
+                        <div class="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-12 sm:gap-y-16 lg:grid-cols-2">
+                            <article class="mx-auto w-full max-w-2xl lg:mx-0 lg:max-w-lg">
+
+                            <div class="flex items-center justify-between gap-x-4 text-xs">
+                                <FormattedDate date={firstPost.data.pubDate} />
+
+                                <a href={"/blog/category/"+firstPost.data.category.toLowerCase()} class="inline-flex items-center rounded-md bg-lime-50 px-2 py-1 text-xs font-medium text-lime-600 ring-1 ring-inset ring-lime-500/10">{firstPost.data.category}</a>
+                            </div>
+
+                            <a href={`/blog/${firstPost.slug}`} class="my-3 group flex flex-col overflow-hidden transition-all rounded-lg shadow-lg focus:outline-none">
+                                <div class="relative flex-shrink-0 overflow-hidden">
+                                    <Image src={firstPost.data.heroImage} loading="eager" alt={firstPost.data.title} class="w-full cursor-pointer bg-gray-100 object-cover aspect-[5/2] group-hover:scale-110 group-focus:scale-110 group-hover:-rotate-2 group-focus:-rotate-2 transition duration-200 ease-in-out" />
+                                </div>
+                            </a>
+                            <h2 id="featured-post" class="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{firstPost.data.title}</h2>
+                            <p class="mt-4 text-lg leading-8 text-gray-600">{firstPost.data.description}</p>
+                            <div class="mt-4 flex flex-col justify-between gap-6 sm:mt-8 sm:flex-row-reverse sm:gap-8 lg:mt-4 lg:flex-col">
+                              <div class="flex">
+                                <a href={`/blog/${firstPost.slug}`} class="text-sm font-semibold leading-6 text-lime-500 hover:text-lime-600 transition duration-200 ease-in-out" aria-describedby="featured-post">Continuer de lire <span aria-hidden="true">&rarr;</span></a>
+                              </div>
+                              <div class="flex lg:border-t lg:border-gray-900/10 lg:pt-8">
+                                <a href="https://twitter.com/LaravelJutsu" target="_blank" class="flex gap-x-2.5 text-sm font-semibold leading-6 text-gray-900">
+                                  <img src="/images/avatar.jpg" alt="avatar" class="h-6 w-6 flex-none rounded-full bg-gray-50">
+                                  Ludovic Guénet
+                                </a>
+                              </div>
+                            </div>
+                          </article>
+                          <div class="mx-auto w-full max-w-2xl border-t border-gray-900/10 pt-12 sm:pt-16 lg:mx-0 lg:max-w-none lg:border-t-0 lg:pt-0">
+                            <div class="-my-12 divide-y divide-gray-900/10">
+                                {restPosts.map((post) => (
+                                    <article class="py-12">
+                                      <div class="group relative max-w-xl">
+                                        <time datetime={post.data.pubDate} class="block text-sm leading-6 text-gray-600">
+                                          <FormattedDate date={post.data.pubDate} />
+                                        </time>
+                                        <h2 class="mt-2 text-lg font-semibold text-gray-900 group-hover:text-gray-600">
+                                          <a href={`/blog/${post.slug}`}>
+                                            <span class="absolute inset-0"></span>
+                                            {post.data.title}
+                                          </a>
+                                        </h2>
+                                        <p class="mt-4 text-sm leading-6 text-gray-600">{post.data.description}</p>
+                                      </div>
+                                      <div class="mt-4 flex">
+                                        <a href="#" class="relative flex gap-x-2.5 text-sm font-semibold leading-6 text-gray-900">
+                                          <img src="/images/avatar.jpg" alt="" class="h-6 w-6 flex-none rounded-full bg-gray-50">
+                                          Ludovic Guénet
+                                        </a>
+                                      </div>
+                                    </article>
+                                  ))}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+					<!-- <div class="space-y-20">
 						{
 							page.data.map((post) => (
 								<article class="relative isolate flex flex-col gap-8 lg:flex-row">
@@ -151,7 +208,7 @@ const categories: Category[] = [
 								</article>
 							))
 						}
-					</div>
+					</div> -->
 				</div>
 
 			{ page.url.prev || page.url.next ?

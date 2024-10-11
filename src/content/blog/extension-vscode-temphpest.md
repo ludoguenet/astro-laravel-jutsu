@@ -1,12 +1,12 @@
 ---
-title: "TemPHPest : L'alternative PHPStorm pour VSCode"
+title: "Découverte de l'extension TemPHPest"
 description: "Une véritable alternative qui enrichit l’expérience VSCode pour PHP."
 category: Outils
 pubDate: Sep 29 2024
 heroImage: ./images/extension-vscode-temphpest.png
 ---
 
-# TemPHPest : L'alternative PHPStorm pour VSCode
+# Découverte de l'extension TemPHPest
 
 ## Sommaire
 1. [Introduction](#introduction)

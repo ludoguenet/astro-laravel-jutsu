@@ -81,7 +81,7 @@ const latestPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
 									<div class="max-w-xl">
 										<div class="mt-8 flex items-center gap-x-4 text-xs">
 											<time datetime="2020-03-16" class="text-gray-500">{<IndexFormattedDate date={post.data.pubDate} />}</time>
-											<a href={"/blog/category/"+post.data.category.toLowerCase()} class="relative z-10 rounded-full transition duration-200 ease-in-out px-3 py-1.5 font-medium bg-lime-400/20 hover:bg-lime-400/30 text-lime-700">{post.data.category}</a>
+                                            <a href={"/blog/category/"+post.data.category.toLowerCase()} class="inline-flex items-center rounded-md bg-lime-50 px-2 py-1 text-xs font-medium text-lime-600 ring-1 ring-inset ring-lime-500/10">{post.data.category}</a>
 										</div>
 										<div class="group relative">
 											<h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 transition duration-200 ease-in-out">

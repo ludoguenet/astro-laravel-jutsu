@@ -1,7 +1,7 @@
 ---
 title: "Découvrir le Bridge Pattern avec PHP"
 description: "Ce design pattern fait certainement partie de mes favoris. Voyons comment le construire."
-category: PHP
+category: Laravel
 pubDate: Jul 16 2024
 heroImage: ./images/bridge-pattern.png
 ---
@@ -18,9 +18,9 @@ heroImage: ./images/bridge-pattern.png
 
 Nous allons explorer un design pattern très utile : le Bridge Pattern.
 
-Pour illustrer son utilité, nous utiliserons une application Laravel, bien que ce pattern soit applicable à d'autres langages et frameworks. 
+Pour illustrer son utilité, nous utiliserons une application Laravel, bien que ce pattern soit applicable à d'autres langages et frameworks.
 
-L'exemple porte sur la génération de rapports en HTML et PDF, mais pourrait inclure des formats comme XML ou JSON. Le but est de montrer comment le Bridge Pattern peut éviter la création excessive de classes nécessaires pour gérer différentes combinaisons de formats et de modèles. 
+L'exemple porte sur la génération de rapports en HTML et PDF, mais pourrait inclure des formats comme XML ou JSON. Le but est de montrer comment le Bridge Pattern peut éviter la création excessive de classes nécessaires pour gérer différentes combinaisons de formats et de modèles.
 
 En simplifiant et en rendant le code plus maintenable, ce pattern offre une solution élégante pour gérer une complexité croissante. Découvrez comment l'implémenter efficacement !
 

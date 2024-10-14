@@ -1,18 +1,21 @@
 ---
-import { Image } from 'astro:assets';
-import BaseHead from '../../components/BaseHead.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
-import { getCollection } from 'astro:content';
-import FormattedDate from '../../components/FormattedDate.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import { Image } from "astro:assets";
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { getCollection } from "astro:content";
+import FormattedDate from "../../components/FormattedDate.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
 
 export async function getStaticPaths({ paginate }) {
-	const posts = await getCollection('blog');
+    const posts = await getCollection("blog");
 
-	return paginate(posts.sort(
-		(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-	), { pageSize: 10 });
+    return paginate(
+        posts.sort(
+            (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+        ),
+        { pageSize: 10 },
+    );
 }
 
 const { page } = Astro.props;
@@ -20,151 +23,249 @@ const firstPost = page.data[0];
 const restPosts = page.data.slice(1);
 
 type Category = {
-	name: string;
-	url: string;
+    name: string;
+    url: string;
 };
 
 const categories: Category[] = [
-	{ name: 'Laravel', url: '/blog/category/laravel', },
-	{ name: 'PHP', url: '/blog/category/php', },
-	{ name: 'JavaScript', url: '/blog/category/javascript', },
-	{ name: 'Pest', url: '/blog/category/pest', },
-	{ name: 'Eloquent', url: '/blog/category/eloquent', },
-	{ name: 'Vue', url: '/blog/category/vue', },
-	{ name: 'Outils', url: '/blog/category/outils', }
+    { name: "Laravel", url: "/blog/category/laravel" },
+    { name: "PHP", url: "/blog/category/php" },
+    { name: "JavaScript", url: "/blog/category/javascript" },
+    { name: "Pest", url: "/blog/category/pest" },
+    { name: "Eloquent", url: "/blog/category/eloquent" },
+    { name: "Vue", url: "/blog/category/vue" },
+    { name: "Outils", url: "/blog/category/outils" },
 ];
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-	<head>
-		<BaseHead title={SITE_TITLE + " | Blog"} description={SITE_DESCRIPTION} />
+    <head>
+        <BaseHead
+            title={SITE_TITLE + " | Blog"}
+            description={SITE_DESCRIPTION}
+        />
 
-		<style>
-			.back-to-top {
-				@apply fixed z-50 opacity-0 flex items-center justify-center bottom-8 right-8 border-0 text-lg size-10 rounded-full shadow-lg bg-lime-400 hover:bg-lime-500 transition duration-300;
-				pointer-events: none;
-			}
-			.back-to-top.show {
-				@apply opacity-100;
-				pointer-events: auto;
-			}
-		</style>
+        <style>
+            .back-to-top {
+                @apply fixed z-50 opacity-0 flex items-center justify-center bottom-8 right-8 border-0 text-lg size-10 rounded-full shadow-lg bg-lime-400 hover:bg-lime-500 transition duration-300;
+                pointer-events: none;
+            }
+            .back-to-top.show {
+                @apply opacity-100;
+                pointer-events: auto;
+            }
+        </style>
 
-		<script>
-			import "../../scripts/back-to-top.ts";
-		</script>
-	</head>
-	<body>
-		<Header />
+        <script>
+            import "../../scripts/back-to-top.ts";
+        </script>
+    </head>
+    <body>
+        <Header />
 
-		<div class="bg-white mb-6 mt-12 lg:my-10">
+        <div class="bg-white mb-6 mt-12 lg:my-10">
+            <div
+                class="mx-auto max-w-6xl px-6 lg:px-8 mb-16 flex justify-between items-start"
+            >
+                <div>
+                    <h2
+                        class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+                    >
+                        Tous les <span class="text-lime-500">articles</span>
+                    </h2>
+                    <p class="mt-2 text-lg leading-8 text-gray-600">
+                        Retrouve un contenu exclusif en complément des tutoriels
+                        vidéo.
+                    </p>
+                </div>
 
-			<div class="mx-auto max-w-6xl px-6 lg:px-8 mb-16 flex justify-between items-start">
-				<div>
-					<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Tous les <span class="text-lime-500">articles</span></h2>
-					<p class="mt-2 text-lg leading-8 text-gray-600">Retrouve un contenu exclusif en complément des tutoriels vidéo.</p>
-				</div>
+                <div class="relative inline-block text-left">
+                    <div>
+                        <button
+                            type="button"
+                            class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                            id="js-dropdown-button"
+                            aria-expanded="true"
+                            aria-haspopup="true"
+                        >
+                            Catégories
+                            <svg
+                                class="-mr-1 h-5 w-5 text-gray-400"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </div>
 
-				<div class="relative inline-block text-left">
-					<div>
-						<button
-							type="button"
-							class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
-							id="js-dropdown-button"
-							aria-expanded="true"
-							aria-haspopup="true"
-						>
-							Catégories
-							<svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-								<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-							</svg>
-						</button>
-					</div>
-
-					<div
-						style="display: none;"
-						class="absolute right-0 z-10 mt-2 w-48 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-						id="js-dropdown-menu"
-						role="menu"
-						aria-orientation="vertical"
-						aria-labelledby="menu-button"
-						tabindex="-1"
-					>
-						<div class="py-1" role="none">
-							{
-								categories.map((category) => (
-									<a href={category.url} class="flex items-center group text-gray-700 px-4 py-2 text-sm hover:bg-gray-100" role="menuitem" tabindex="-1" id="menu-item-0">
-										{category.name}
-									</a>
-								))
-							}
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="mx-auto max-w-6xl px-6 lg:px-8">
-				<div class="mx-auto">
-                    <div class="bg-white py-12 sm:py-16">
-                        <div class="mx-auto grid max-w-6xl grid-cols-1 gap-x-8 gap-y-12 sm:gap-y-16 lg:grid-cols-2">
-                            <article class="mx-auto w-full max-w-2xl lg:mx-0 lg:max-w-lg">
-
-                            <div class="flex items-center justify-between gap-x-4 text-xs">
-                                <FormattedDate date={firstPost.data.pubDate} />
-
-                                <a href={"/blog/category/"+firstPost.data.category.toLowerCase()} class="inline-flex items-center rounded-md bg-lime-50 px-2 py-1 text-xs font-medium text-lime-600 ring-1 ring-inset ring-lime-500/10">{firstPost.data.category}</a>
-                            </div>
-
-                            <a href={`/blog/${firstPost.slug}`} class="my-3 group flex flex-col overflow-hidden transition-all rounded-lg shadow-lg focus:outline-none">
-                                <div class="relative flex-shrink-0 overflow-hidden">
-                                    <Image src={firstPost.data.heroImage} loading="eager" alt={firstPost.data.title} class="w-full cursor-pointer bg-gray-100 object-cover aspect-[5/2] group-hover:scale-110 group-focus:scale-110 group-hover:-rotate-2 group-focus:-rotate-2 transition duration-200 ease-in-out" />
-                                </div>
-                            </a>
-                            <h2 id="featured-post" class="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{firstPost.data.title}</h2>
-                            <p class="mt-4 text-lg leading-8 text-gray-600">{firstPost.data.description}</p>
-                            <div class="mt-4 flex flex-col justify-between gap-6 sm:mt-8 sm:flex-row-reverse sm:gap-8 lg:mt-4 lg:flex-col">
-                              <div class="flex">
-                                <a href={`/blog/${firstPost.slug}`} class="text-sm font-semibold leading-6 text-lime-500 hover:text-lime-600 transition duration-200 ease-in-out" aria-describedby="featured-post">Continuer de lire <span aria-hidden="true">&rarr;</span></a>
-                              </div>
-                              <div class="flex lg:border-t lg:border-gray-900/10 lg:pt-8">
-                                <a href="https://twitter.com/LaravelJutsu" target="_blank" class="flex gap-x-2.5 text-sm font-semibold leading-6 text-gray-900">
-                                  <img src="/images/avatar.jpg" alt="avatar" class="h-6 w-6 flex-none rounded-full bg-gray-50">
-                                  Ludovic Guénet
-                                </a>
-                              </div>
-                            </div>
-                          </article>
-                          <div class="mx-auto w-full max-w-2xl border-t border-gray-900/10 pt-12 sm:pt-16 lg:mx-0 lg:max-w-none lg:border-t-0 lg:pt-0">
-                            <div class="-my-12 divide-y divide-gray-900/10">
-                                {restPosts.map((post) => (
-                                    <article class="py-12">
-                                      <div class="group relative max-w-xl">
-                                        <time datetime={post.data.pubDate} class="block text-sm leading-6 text-gray-600">
-                                          <FormattedDate date={post.data.pubDate} />
-                                        </time>
-                                        <h2 class="mt-2 text-lg font-semibold text-gray-900 group-hover:text-gray-600">
-                                          <a href={`/blog/${post.slug}`}>
-                                            <span class="absolute inset-0"></span>
-                                            {post.data.title}
-                                          </a>
-                                        </h2>
-                                        <p class="mt-4 text-sm leading-6 text-gray-600">{post.data.description}</p>
-                                      </div>
-                                      <div class="mt-4 flex">
-                                        <a href="#" class="relative flex gap-x-2.5 text-sm font-semibold leading-6 text-gray-900">
-                                          <img src="/images/avatar.jpg" alt="" class="h-6 w-6 flex-none rounded-full bg-gray-50">
-                                          Ludovic Guénet
-                                        </a>
-                                      </div>
-                                    </article>
-                                  ))}
-                            </div>
-                          </div>
+                    <div
+                        style="display: none;"
+                        class="absolute right-0 z-10 mt-2 w-48 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                        id="js-dropdown-menu"
+                        role="menu"
+                        aria-orientation="vertical"
+                        aria-labelledby="menu-button"
+                        tabindex="-1"
+                    >
+                        <div class="py-1" role="none">
+                            {
+                                categories.map((category) => (
+                                    <a
+                                        href={category.url}
+                                        class="flex items-center group text-gray-700 px-4 py-2 text-sm hover:bg-gray-100"
+                                        role="menuitem"
+                                        tabindex="-1"
+                                        id="menu-item-0"
+                                    >
+                                        {category.name}
+                                    </a>
+                                ))
+                            }
                         </div>
-                      </div>
+                    </div>
+                </div>
+            </div>
 
-					<!-- <div class="space-y-20">
+            <div class="mx-auto max-w-6xl px-6 lg:px-8">
+                <div class="mx-auto">
+                    <div class="bg-white py-12 sm:py-16">
+                        <div
+                            class="mx-auto grid max-w-6xl grid-cols-1 gap-x-8 gap-y-12 sm:gap-y-16 lg:grid-cols-2"
+                        >
+                            <article
+                                class="mx-auto w-full max-w-2xl lg:mx-0 lg:max-w-lg"
+                            >
+                                <div
+                                    class="flex items-center justify-between gap-x-4 text-xs"
+                                >
+                                    <FormattedDate
+                                        date={firstPost.data.pubDate}
+                                    />
+
+                                    <a
+                                        href={"/blog/category/" +
+                                            firstPost.data.category.toLowerCase()}
+                                        class="inline-flex items-center rounded-md bg-lime-50 px-2 py-1 text-xs font-medium text-lime-600 ring-1 ring-inset ring-lime-500/10"
+                                        >{firstPost.data.category}</a
+                                    >
+                                </div>
+
+                                <a
+                                    href={`/blog/${firstPost.slug}`}
+                                    class="my-3 group flex flex-col overflow-hidden transition-all rounded-lg shadow-lg focus:outline-none"
+                                >
+                                    <div
+                                        class="relative flex-shrink-0 overflow-hidden"
+                                    >
+                                        <Image
+                                            src={firstPost.data.heroImage}
+                                            loading="eager"
+                                            alt={firstPost.data.title}
+                                            class="w-full cursor-pointer bg-gray-100 object-cover aspect-[5/2] group-hover:scale-110 group-focus:scale-110 group-hover:-rotate-2 group-focus:-rotate-2 transition duration-200 ease-in-out"
+                                        />
+                                    </div>
+                                </a>
+                                <h2
+                                    id="featured-post"
+                                    class="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+                                >
+                                    {firstPost.data.title}
+                                </h2>
+                                <p class="mt-4 text-lg leading-8 text-gray-600">
+                                    {firstPost.data.description}
+                                </p>
+                                <div
+                                    class="mt-4 flex flex-col justify-between gap-6 sm:mt-8 sm:flex-row-reverse sm:gap-8 lg:mt-4 lg:flex-col"
+                                >
+                                    <div class="flex">
+                                        <a
+                                            href={`/blog/${firstPost.slug}`}
+                                            class="text-sm font-semibold leading-6 text-lime-500 hover:text-lime-600 transition duration-200 ease-in-out"
+                                            aria-describedby="featured-post"
+                                            >Continuer de lire <span
+                                                aria-hidden="true">&rarr;</span
+                                            ></a
+                                        >
+                                    </div>
+                                    <div
+                                        class="flex lg:border-t lg:border-gray-900/10 lg:pt-8"
+                                    >
+                                        <a
+                                            href="https://twitter.com/LaravelJutsu"
+                                            target="_blank"
+                                            class="flex gap-x-2.5 text-sm font-semibold leading-6 text-gray-900"
+                                        >
+                                            <img
+                                                src="/images/avatar.jpg"
+                                                alt="avatar"
+                                                class="h-6 w-6 flex-none rounded-full bg-gray-50"
+                                            />
+                                            Ludovic Guénet
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                            <div
+                                class="mx-auto w-full max-w-2xl border-t border-gray-900/10 pt-12 sm:pt-16 lg:mx-0 lg:max-w-none lg:border-t-0 lg:pt-0"
+                            >
+                                <div class="-my-12 divide-y divide-gray-900/10">
+                                    {
+                                        restPosts.map((post) => (
+                                            <article class="py-12">
+                                                <div class="group relative max-w-xl">
+                                                    <time
+                                                        datetime={
+                                                            post.data.pubDate
+                                                        }
+                                                        class="block text-sm leading-6 text-gray-600"
+                                                    >
+                                                        <FormattedDate
+                                                            date={
+                                                                post.data
+                                                                    .pubDate
+                                                            }
+                                                        />
+                                                    </time>
+                                                    <h2 class="mt-2 text-lg font-semibold text-gray-900 group-hover:text-gray-600">
+                                                        <a
+                                                            href={`/blog/${post.slug}`}
+                                                        >
+                                                            <span class="absolute inset-0" />
+                                                            {post.data.title}
+                                                        </a>
+                                                    </h2>
+                                                    <p class="mt-4 text-sm leading-6 text-gray-600">
+                                                        {post.data.description}
+                                                    </p>
+                                                </div>
+                                                <div class="mt-4 flex">
+                                                    <a
+                                                        href="#"
+                                                        class="relative flex gap-x-2.5 text-sm font-semibold leading-6 text-gray-900"
+                                                    >
+                                                        <img
+                                                            src="/images/avatar.jpg"
+                                                            alt=""
+                                                            class="h-6 w-6 flex-none rounded-full bg-gray-50"
+                                                        />
+                                                        Ludovic Guénet
+                                                    </a>
+                                                </div>
+                                            </article>
+                                        ))
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="space-y-20">
 						{
 							page.data.map((post) => (
 								<article class="relative isolate flex flex-col gap-8 lg:flex-row">
@@ -209,48 +310,91 @@ const categories: Category[] = [
 							))
 						}
 					</div> -->
-				</div>
+                </div>
 
-			{ page.url.prev || page.url.next ?
-				<nav class="flex items-center justify-between border-t border-gray-200 bg-white px-2 py-3 mt-16" aria-label="Pagination">
-					<div class="block">
-						<p class="text-sm text-gray-700">
+                {
+                    page.url.prev || page.url.next ? (
+                        <nav
+                            class="flex items-center justify-between border-t border-gray-200 bg-white px-2 py-3 mt-16"
+                            aria-label="Pagination"
+                        >
+                            <div class="block">
+                                <p class="text-sm text-gray-700">
+                                    <span class="font-medium">
+                                        {page.currentPage}
+                                    </span>
+                                    /
+                                    <span class="font-base">
+                                        {page.lastPage}
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="flex flex-1 justify-end">
+                                {page.url.prev ? (
+                                    <a
+                                        href={page.url.prev}
+                                        class="relative inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline-offset-0"
+                                    >
+                                        <svg
+                                            class="h-5 w-5"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
+                                                clip-rule="evenodd"
+                                            />
+                                        </svg>
+                                    </a>
+                                ) : null}
+                                {page.url.next ? (
+                                    <a
+                                        href={page.url.next}
+                                        class="relative ml-3 inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline-offset-0"
+                                    >
+                                        <svg
+                                            class="h-5 w-5"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                                                clip-rule="evenodd"
+                                            />
+                                        </svg>
+                                    </a>
+                                ) : null}
+                            </div>
+                        </nav>
+                    ) : null
+                }
+            </div>
+        </div>
 
-							<span class="font-medium">{page.currentPage}</span>
-							/
-							<span class="font-base">{page.lastPage}</span>
-
-						</p>
-					</div>
-					<div class="flex flex-1 justify-end">
-						{ page.url.prev ? <a href={page.url.prev} class="relative inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline-offset-0">
-							<svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-								<path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd" />
-							</svg>
-							</a> : null }
-						{ page.url.next ? <a href={page.url.next} class="relative ml-3 inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline-offset-0">
-							<svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-								<path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
-							</svg>
-							</a> : null }
-					</div>
-				</nav>
-			: null }
-
-			</div>
-
-		</div>
-
-		<Footer />
+        <Footer />
 
         <button id="back-to-top" class="back-to-top">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-white">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
-                </svg>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-5 text-white"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 15.75 7.5-7.5 7.5 7.5"></path>
+            </svg>
         </button>
 
-		<script>
-			import "../../scripts/dropdown.ts";
-		</script>
-	</body>
+        <script>
+            import "../../scripts/dropdown.ts";
+        </script>
+    </body>
 </html>

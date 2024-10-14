@@ -10,83 +10,93 @@ const { title, description, pubDate, heroImage } = Astro.props;
 ---
 
 <html lang="fr">
-	<head>
-		<BaseHead
-			title={SITE_TITLE + " | Blog | " + title}
-			description={description}
-			image={heroImage.src}
-		/>
+    <head>
+        <BaseHead
+            title={SITE_TITLE + " | Blog | " + title}
+            description={description}
+            image={heroImage.src}
+        />
 
-		<style>
-			.back-to-top {
-				@apply fixed z-50 opacity-0 flex items-center justify-center bottom-8 right-8 border-0 text-lg size-10 rounded-full shadow-lg bg-lime-400 hover:bg-lime-500 transition duration-300;
-				pointer-events: none;
-			}
-			.back-to-top.show {
-				@apply opacity-100;
-				pointer-events: auto;
-			}
-		</style>
+        <style>
+            .back-to-top {
+                @apply fixed z-50 opacity-0 flex items-center justify-center bottom-8 right-8 border-0 text-lg size-10 rounded-full shadow-lg bg-lime-400 hover:bg-lime-500 transition duration-300;
+                pointer-events: none;
+            }
+            .back-to-top.show {
+                @apply opacity-100;
+                pointer-events: auto;
+            }
+        </style>
 
-		<script>
-			import "../scripts/back-to-top.ts";
-			import "../scripts/smooth-scroll.ts";
-		</script>
-	</head>
+        <script>
+            import "../scripts/back-to-top.ts";
+            import "../scripts/smooth-scroll.ts";
+        </script>
+    </head>
 
-	<body>
-		<Header />
+    <body>
+        <Header />
 
-		<main
-			class="mx-auto max-w-6xl px-6 md:flex md:items-center md:justify-between lg:px-8 mb-6 mt-12 lg:my-10"
-		>
-			<article>
-				<a
-					class="group inline-flex font-semibold text-sm leading-6 text-zinc-500 hover:text-zinc-400 transition ease-in-out duration-200 mb-10"
-					href="/blog"
-					><svg
-						viewBox="0 -9 3 24"
-						class="mr-2 text-zinc-500 w-auto h-6 group-hover:text-zinc-400 transition ease-in-out duration-200"
-						><path
-							d="M3 0L0 3L3 6"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							stroke-linecap="round"
-							stroke-linejoin="round"></path></svg
-					>Retour au blog</a
-				>
+        <main
+            class="mx-auto max-w-6xl px-6 md:flex md:items-center md:justify-between lg:px-8 mb-6 mt-12 lg:my-10"
+        >
+            <article>
+                <a
+                    class="group inline-flex font-semibold text-sm leading-6 text-zinc-500 hover:text-zinc-400 transition ease-in-out duration-200 mb-10"
+                    href="/blog"
+                    ><svg
+                        viewBox="0 -9 3 24"
+                        class="mr-2 text-zinc-500 w-auto h-6 group-hover:text-zinc-400 transition ease-in-out duration-200"
+                        ><path
+                            d="M3 0L0 3L3 6"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"></path></svg
+                    >Retour au blog</a
+                >
 
-				<figure>
-					{
-						heroImage && (
-							<Image
-								src={heroImage}
-								alt={title}
-								class="rounded-xl bg-gray-50 object-cover"
-							/>
-						)
-					}
-				</figure>
+                <figure>
+                    {
+                        heroImage && (
+                            <Image
+                                src={heroImage}
+                                alt={title}
+                                class="rounded-xl bg-gray-50 object-cover"
+                            />
+                        )
+                    }
+                </figure>
 
-				<div
-					class="mt-10 mb-2"
-				>
-					<FormattedDate date={pubDate} />
-				</div>
+                <div class="mt-10 mb-2">
+                    <FormattedDate date={pubDate} />
+                </div>
 
-				<div class="prose prose-slate prose-h1:block prose-h1:w-full prose-h1:py-2 prose-h1:text-transparent prose-h1:bg-clip-text prose-h1:leading-12 prose-h1:bg-gradient-to-r prose-h1:from-lime-300 prose-h1:to-emerald-500 prose-h1:lg:inline prose-a:no-underline prose-a:text-lime-500 prose-a:transition prose-a:duration-300 hover:prose-a:text-lime-600 lg:prose-xl max-w-none">
-					<slot />
-				</div>
-			</article>
-		</main>
+                <div
+                    class="prose prose-slate prose-h1:block prose-h1:w-full prose-h1:py-2 prose-h1:text-transparent prose-h1:bg-clip-text prose-h1:leading-12 prose-h1:bg-gradient-to-r prose-h1:from-lime-300 prose-h1:to-emerald-500 prose-h1:lg:inline prose-a:no-underline prose-a:text-lime-500 prose-a:transition prose-a:duration-300 hover:prose-a:text-lime-600 lg:prose-xl max-w-none"
+                >
+                    <slot />
+                </div>
+            </article>
+        </main>
 
-		<Footer />
+        <Footer />
 
-		<button id="back-to-top" class="back-to-top">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-white">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
-              </svg>
-		</button>
-	</body>
+        <button id="back-to-top" class="back-to-top">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-5 text-white"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 15.75 7.5-7.5 7.5 7.5"></path>
+            </svg>
+        </button>
+    </body>
 </html>

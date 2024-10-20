@@ -6,6 +6,7 @@ import FormattedDate from "../../../components/FormattedDate.astro";
 import BaseHead from "../../../components/BaseHead.astro";
 import Footer from "../../../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../../../consts";
+import "../../../styles/global.css";
 
 export async function getStaticPaths() {
     const posts = (await getCollection("blog")).sort(
@@ -64,17 +65,6 @@ const categories: Category[] = [
             description={SITE_DESCRIPTION}
         />
 
-        <style>
-            .back-to-top {
-                @apply fixed z-50 opacity-0 flex items-center justify-center bottom-8 right-8 border-0 text-lg size-10 rounded-full shadow-lg bg-lime-400 hover:bg-lime-500 transition duration-300;
-                pointer-events: none;
-            }
-            .back-to-top.show {
-                @apply opacity-100;
-                pointer-events: auto;
-            }
-        </style>
-
         <script>
             import "../../../scripts/back-to-top.ts";
         </script>
@@ -84,14 +74,15 @@ const categories: Category[] = [
 
         <div class="bg-white mb-6 mt-12 lg:my-10">
             <div
-                class="mx-auto max-w-6xl px-6 lg:px-8 mb-16 flex justify-between items-start"
+                class="mx-auto max-w-6xl px-6 lg:px-8 mb-12 flex justify-between items-start"
             >
                 <div>
                     <h2
                         class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
                     >
                         Tous les articles sur <span class="text-lime-500"
-                            >{category}</span>
+                            >{category}</span
+                        >
                     </h2>
                 </div>
 

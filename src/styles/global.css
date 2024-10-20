@@ -1,0 +1,21 @@
+.astro-code {
+    @apply relative;
+}
+
+.astro-code::after {
+    position: absolute;
+    top: .7rem;
+    right: .7rem;
+    @apply inline-flex items-center rounded-full bg-zinc-500 px-1.5 py-0.5 text-xs font-medium text-white;
+    content: attr(data-language);
+}
+
+.back-to-top {
+    @apply fixed z-50 opacity-0 flex items-center justify-center bottom-8 right-8 border-0 text-lg size-10 rounded-full shadow-lg bg-lime-400 hover:bg-lime-500 transition duration-300;
+    pointer-events: none;
+}
+
+.back-to-top.show {
+    @apply opacity-100;
+    pointer-events: auto;
+}

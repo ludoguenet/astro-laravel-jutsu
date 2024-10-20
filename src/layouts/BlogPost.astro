@@ -17,17 +17,6 @@ const { title, description, pubDate, heroImage } = Astro.props;
             image={heroImage.src}
         />
 
-        <style>
-            .back-to-top {
-                @apply fixed z-50 opacity-0 flex items-center justify-center bottom-8 right-8 border-0 text-lg size-10 rounded-full shadow-lg bg-lime-400 hover:bg-lime-500 transition duration-300;
-                pointer-events: none;
-            }
-            .back-to-top.show {
-                @apply opacity-100;
-                pointer-events: auto;
-            }
-        </style>
-
         <script>
             import "../scripts/back-to-top.ts";
             import "../scripts/smooth-scroll.ts";
@@ -74,7 +63,7 @@ const { title, description, pubDate, heroImage } = Astro.props;
                 </div>
 
                 <div
-                    class="prose prose-slate prose-h1:block prose-h1:w-full prose-h1:py-2 prose-h1:text-transparent prose-h1:bg-clip-text prose-h1:leading-12 prose-h1:bg-gradient-to-r prose-h1:from-lime-300 prose-h1:to-emerald-500 prose-h1:lg:inline prose-a:no-underline prose-a:text-lime-500 prose-a:transition prose-a:duration-300 hover:prose-a:text-lime-600 lg:prose-xl max-w-none"
+                    class="prose prose-a:no-underline prose-a:text-lime-500 prose-a:transition prose-a:duration-300 hover:prose-a:text-lime-600 lg:prose-xl max-w-none"
                 >
                     <slot />
                 </div>

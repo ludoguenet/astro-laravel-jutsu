@@ -17,12 +17,17 @@ const tools = [
     },
     {
         itemTitle: "Système d'exploitation",
-        itemName: "Linux Mint",
+        itemName: "Linux Mint 22 Wilma",
         itemDescription:
-            "Linux Mint est un système d'exploitation basé sur Ubuntu, connu pour sa simplicité et sa convivialité. Il offre un environnement de bureau agréable et est idéal pour les développeurs.",
+            "Linux Mint est un système d'exploitation basé sur Ubuntu, connu pour sa simplicité et sa convivialité. " +
+            "Il offre un environnement de bureau agréable avec Cinnamon 6.2.9 et utilise LightDM 1.30.0 comme gestionnaire d'affichage. " +
+            "Mon système fonctionne sur un noyau 6.8.0-47-generic et est équipé d'un processeur AMD Ryzen 5 3600 à 6 cœurs, " +
+            "accompagné d'une carte graphique NVIDIA GeForce GTX 1650. " +
+            "J'ai également 16 Go de RAM, et mon stockage total s'élève à 1.13 To, composé d'un SSD et d'un HDD. " +
+            "Pour la connectivité, j'utilise un adaptateur Wi-Fi Realtek RTL8192EE.",
         itemType: "Part-time",
         itemLocation: "Remotely",
-        itemPath: "javascript:void(0)",
+        itemPath: "#",
     },
     {
         itemTitle: "Outils supplémentaires",
@@ -31,10 +36,9 @@ const tools = [
             "J'utilise également Ray et Helo pour améliorer mon flux de travail. Ray m'aide à déboguer mes applications efficacement, tandis que Helo facilite la gestion des notifications.",
         itemType: "Full-time",
         itemLocation: "Remotely",
-        itemPath: "javascript:void(0)",
+        itemPath: "#",
     },
 ];
-
 ---
 
 <!doctype html>
@@ -79,7 +83,7 @@ const tools = [
                                     >
                                         <div class="flex items-center gap-x-3">
                                             <div>
-                                                <span class="block text-sm text-indigo-600 font-medium">
+                                                <span class="block text-sm text-lime-600 font-medium">
                                                     {tool.itemTitle}
                                                 </span>
                                                 <h3 class="text-base text-gray-800 font-semibold mt-1">
@@ -133,7 +137,6 @@ const tools = [
                             ))
                         }
                     </ul>
-
                 </div>
             </div>
         </section>

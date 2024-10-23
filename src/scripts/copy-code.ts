@@ -1,4 +1,4 @@
-const copyButtonLabel = 'Copier';
+const copyButtonLabel = 'Copier le code';
 const codeBlocks = Array.from(document.querySelectorAll("pre"));
 
 for (const codeBlock of codeBlocks) {
@@ -19,6 +19,7 @@ for (const codeBlock of codeBlocks) {
     'py-0.5',
     'text-xs',
     'font-medium',
+    'font-sans',
     'text-gray-600'
   );
 
@@ -40,7 +41,7 @@ async function copyCode(block: HTMLElement, button: HTMLSpanElement) {
 
   await navigator.clipboard.writeText(text);
 
-  button.innerText = 'Code copié !';
+  button.innerText = 'Copié';
 
   setTimeout(() => {
     button.innerText = copyButtonLabel;

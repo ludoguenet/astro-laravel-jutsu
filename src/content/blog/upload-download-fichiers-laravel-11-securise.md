@@ -10,15 +10,20 @@ heroImage: ./images/upload-download-fichiers-laravel-11-securise.png
 
 ## Sommaire
 1. [Introduction](#introduction)
-2. [Étapes d'Implémentation](#etapes-implementation)
-3. [Résumé de la Méthodologie](#resume-methodologie)
-4. [Conclusion](#conclusion)
+2. [Tutoriel vidéo](#tutoriel-video)
+3. [Étapes d'Implémentation](#etapes-implementation)
+4. [Résumé de la Méthodologie](#resume-methodologie)
+5. [Conclusion](#conclusion)
 
 ## Introduction <a name="introduction"></a>
 
 La gestion sécurisée des fichiers est cruciale pour toute application moderne. Avec **Laravel 11**, l'approche de l'upload et du download de fichiers a été améliorée grâce à des méthodes pratiques et des options de sécurité avancées. Dans cet article, nous allons passer en revue les concepts clés pour mettre en place un système d'upload et de download de fichiers, en utilisant des URL temporaires pour garantir la confidentialité des données.
 
 Nous aborderons l'utilisation des **règles de validation**, le stockage des fichiers dans des dossiers privés, et l'accès contrôlé à ces fichiers via des **URL signées et temporaires**.
+
+## Tutoriel vidéo <a name="tutoriel-video"></a>
+
+<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/XkhN5wWinT0" loading="lazy" frameborder="0" allowfullscreen></iframe>
 
 ## Étapes d'Implémentation <a name="etapes-implementation"></a>
 

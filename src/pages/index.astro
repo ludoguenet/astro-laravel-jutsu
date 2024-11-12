@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 import IndexFormattedDate from "../components/IndexFormattedDate.astro";
 import BaseHead from "../components/BaseHead.astro";
+import Banner from "../components/Banner.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
@@ -29,6 +30,8 @@ const latestPosts = posts
     </head>
 
     <body>
+        <Banner />
+
         <Header />
 
         <section>

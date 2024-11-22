@@ -4,54 +4,54 @@ import MobileHeaderLink from "./MobileHeaderLink.astro";
 ---
 
 <div
-    class="sticky top-0 px-2 sm:px-4 lg:divide-y mb-16 lg:divide-gray-200 lg:px-8 z-10 ring-1 ring-zinc-950/5 backdrop-blur-md bg-white/80 supports-backdrop-blur:bg-white/80"
+  class="sticky top-0 z-40 px-2 sm:px-4 lg:px-8 mb-16 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06] bg-white/95 supports-backdrop-blur:bg-white/60 dark:bg-transparent"
 >
-    <div
-        class="mx-auto container flex items-center justify-between px-2 py-4 sm:px-4 max-w-6xl"
-    >
-        <div class="flex items-center gap-2 sm:gap-4">
-            <a aria-label="Home" href="/">
-                <img
-                    src="/images/logo.svg"
-                    class="flex size-10 items-center justify-center"
-                />
-            </a>
-        </div>
-        <div class="hidden sm:flex items-center gap-8">
-            <HeaderLink
-                href="/blog"
-                class="text-sm/6 font-medium hover:text-lime-500 transition duration-200 ease-in-out"
-                >Blog</HeaderLink
-            >
-        </div>
-        <button id="menu-toggle" class="sm:hidden rounded focus:outline-none">
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-6"
-            >
-                <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M3.75 9h16.5m-16.5 6.75h16.5"></path>
-            </svg>
-        </button>
+  <div
+    class="mx-auto container flex items-center justify-between px-2 py-4 sm:px-4 max-w-6xl"
+  >
+    <div class="flex items-center gap-2 sm:gap-4">
+      <a aria-label="Home" href="/">
+        <img
+          src="/images/logo.svg"
+          class="flex w-[2.0625rem] mr-3 items-center justify-center"
+        />
+      </a>
     </div>
+    <div class="hidden sm:flex items-center gap-8">
+      <HeaderLink
+        href="/blog"
+        class="text-sm/6 font-medium hover:text-lime-500 transition duration-200 ease-in-out"
+        >Blog</HeaderLink
+      >
+    </div>
+    <button id="menu-toggle" class="sm:hidden rounded focus:outline-none">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 9h16.5m-16.5 6.75h16.5"></path>
+      </svg>
+    </button>
+  </div>
 
-    <nav id="mobile-menu" class="hidden lg:space-x-8 lg:py-2">
-        <div class="space-y-1 px-2 pb-3 pt-2">
-            <MobileHeaderLink
-                href="/blog"
-                class="block rounded-md px-3 py-2 text-base font-medium text-gray-900"
-                >Blog</MobileHeaderLink
-            >
-        </div>
-    </nav>
+  <nav id="mobile-menu" class="hidden lg:space-x-8 lg:py-2">
+    <div class="space-y-1 px-2 pb-3 pt-2">
+      <MobileHeaderLink
+        href="/blog"
+        class="block rounded-md px-3 py-2 text-base font-medium text-gray-900"
+        >Blog</MobileHeaderLink
+      >
+    </div>
+  </nav>
 </div>
 
 <script>
-    import "../scripts/navbar.ts";
+  import "../scripts/navbar.ts";
 </script>

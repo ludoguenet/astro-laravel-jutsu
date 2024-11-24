@@ -3,17 +3,17 @@ import HeaderLink from "./HeaderLink.astro";
 import MobileHeaderLink from "./MobileHeaderLink.astro";
 ---
 
-<div
-  class="sticky top-0 z-40 px-2 sm:px-4 lg:px-8 mb-16 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06] bg-white/95 supports-backdrop-blur:bg-white/60 dark:bg-transparent"
+<header
+  class="fixed top-0 z-50 px-4 md:px-8 w-full backdrop-blur flex-none transition-colors duration-500 lg:border-b lg:border-slate-900/10 bg-white/95 supports-backdrop-blur:bg-white/60"
 >
   <div
-    class="mx-auto container flex items-center justify-between px-2 py-4 sm:px-4 max-w-6xl"
+    class="mx-auto px-4 lg:px-8 container flex items-center justify-between py-4 max-w-6xl"
   >
     <div class="flex items-center gap-2 sm:gap-4">
       <a aria-label="Home" href="/">
         <img
           src="/images/logo.svg"
-          class="flex w-[2.0625rem] mr-3 items-center justify-center"
+          class="flex w-[2.0625rem] items-center justify-center"
         />
       </a>
     </div>
@@ -50,7 +50,7 @@ import MobileHeaderLink from "./MobileHeaderLink.astro";
       >
     </div>
   </nav>
-</div>
+</header>
 
 <script>
   import "../scripts/navbar.ts";

@@ -1,8 +1,6 @@
 import { defineConfig, passthroughImageService } from "astro/config";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
-import syntaxTheme from "./syntax-theme.json";
-
 import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config

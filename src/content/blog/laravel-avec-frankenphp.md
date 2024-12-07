@@ -3,7 +3,7 @@ title: Laravel avec FrankenPHP
 description: Comment installer une application Laravel avec FrankenPHP et Laravel Octane.
 category: Laravel
 pubDate: Dec 25 2023
-heroImage: ./images/laravel-frankenphp.png
+heroImage: "/src/content/blog/images/laravel-frankenphp.png"
 ---
 
 # Laravel avec FrankenPHP
@@ -18,7 +18,7 @@ heroImage: ./images/laravel-frankenphp.png
 
 ## Qu'est-ce que FrankenPHP ? <a name="frankenphp"></a>
 
-FrankenPHP, conçu par [Kévin Dunglas](https://twitter.com/dunglas), est un serveur d'applications basé sur [Caddy](https://caddyserver.com). Il se distingue en tant qu'alternative à Apache ou NGINX. 
+FrankenPHP, conçu par [Kévin Dunglas](https://twitter.com/dunglas), est un serveur d'applications basé sur [Caddy](https://caddyserver.com). Il se distingue en tant qu'alternative à Apache ou NGINX.
 
 Son triomphe réside dans la génération d'un serveur doté des fonctionnalités de Caddy, présenté sous la forme d'une image Docker ou d'un unique package binaire. 🏆
 

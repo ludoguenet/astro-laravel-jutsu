@@ -12,7 +12,11 @@ export async function getStaticPaths({ paginate }) {
   const posts = await getCollection("blog");
 
   return paginate(
-    posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()),
+    posts.sort((a, b) => {
+      let aDate = new Date(a.data.pubDate);
+      let bDate = new Date(b.data.pubDate);
+      return bDate.valueOf() - aDate.valueOf();
+    }),
     { pageSize: 10 }
   );
 }
@@ -134,11 +138,14 @@ const categories: Category[] = [
               </div>
 
               <a
-                href={`/blog/${firstPost.slug}`}
+                href={`/blog/${firstPost.id}`}
                 class="my-3 group flex flex-col overflow-hidden transition-all rounded-lg shadow-lg focus:outline-none"
               >
                 <div class="relative flex-shrink-0 overflow-hidden">
                   <Image
+                    inferSize
+                    height
+                    width
                     src={firstPost.data.heroImage}
                     loading="eager"
                     alt={firstPost.data.title}
@@ -160,7 +167,7 @@ const categories: Category[] = [
               >
                 <div class="flex">
                   <a
-                    href={`/blog/${firstPost.slug}`}
+                    href={`/blog/${firstPost.id}`}
                     class="text-sm font-semibold leading-6 text-lime-500 hover:text-lime-600 transition duration-200 ease-in-out"
                     aria-describedby="featured-post"
                     >Continuer de lire <span aria-hidden="true">&rarr;</span></a
@@ -197,7 +204,7 @@ const categories: Category[] = [
                           <FormattedDate date={post.data.pubDate} />
                         </time>
                         <h2 class="mt-2 text-lg font-semibold text-gray-900 group-hover:text-gray-600">
-                          <a href={`/blog/${post.slug}`}>
+                          <a href={`/blog/${post.id}`}>
                             <span class="absolute inset-0" />
                             {post.data.title}
                           </a>

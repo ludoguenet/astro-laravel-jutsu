@@ -3,7 +3,7 @@ title: Quoi de neuf dans PHP 8.3 ?
 description: PHP 8.3 a été publié le 23 novembre 2023. Il embarque des améliorations pour les classes en readonly, la nouvelle fonction json_validate() et bien plus encore.
 category: PHP
 pubDate: Nov 23 2023
-heroImage: ./images/php-83-est-sorti.png
+heroImage: "/src/content/blog/images/php-83-est-sorti.png"
 ---
 
 # Quoi de neuf dans PHP 8.3 ?
@@ -27,7 +27,7 @@ En plus de sa robustesse légendaire, il reçoit régulièrement des mises à jo
 
 Ca commence très fort avec cette fonction qui trouvera [une adaptation](https://laravel.com/docs/9.x/helpers#method-str-is-json) dans les prochaines versions de Laravel.
 
-Auparavant, la seule façon de valider si une chaîne était du JSON valide était de la décoder et de détecter si des erreurs étaient déclenchées via la fonction [`json_last_error()`](https://www.php.net/manual/en/function.json-last-error.php). 
+Auparavant, la seule façon de valider si une chaîne était du JSON valide était de la décoder et de détecter si des erreurs étaient déclenchées via la fonction [`json_last_error()`](https://www.php.net/manual/en/function.json-last-error.php).
 
 Cette nouvelle fonction `json_validate()` est bien moins gourmande que la méthode précédemment employée et tout indiquée si vous avez juste besoin de savoir si l'entrée est du JSON valide.
 
@@ -49,7 +49,7 @@ $class = new readonly class {
 
 ## Readonly amendments <a name="readonlyamendments"></a>
 
-Dans la langue de Molière, on dirait plutôt "Les amendements en lecture seule". 
+Dans la langue de Molière, on dirait plutôt "Les amendements en lecture seule".
 
 En gros, cela permet d'écraser les valeurs des propriétés dans `__clone()` afin de permettre le clonage en profondeur des propriétés en readonly.
 
@@ -59,10 +59,10 @@ readonly class User
     public function __construct(
         public HobbiesDTO $hobbies,
     ) {}
-    
+
     public function __clone()
     {
-        $this->hobbies = new HobbiesDTO(...); 
+        $this->hobbies = new HobbiesDTO(...);
         // C'est quelque chose de possible,
         // bien que `hobbies` soit une propriété en readonly.
     }
@@ -71,13 +71,13 @@ readonly class User
 
 ## Typage des constantes de classe <a name="typeconst"></a>
 
-Que dire de plus ? Vous pouvez desormais typer les constantes et c'est grandiose : 
+Que dire de plus ? Vous pouvez desormais typer les constantes et c'est grandiose :
 
 ```php
 class Invoice
 {
-    const int VALIDATION_DAYS = 5; 
-} 
+    const int VALIDATION_DAYS = 5;
+}
 ```
 
 ## L'attribut #[Override] <a name="override"></a>
@@ -85,7 +85,7 @@ class Invoice
 La version 8.3 de PHP introduit l'attribut #[Override]. Il indique qu'une méthode remplace une méthode parente, mettant en avant l'intention. Bien que cela puisse sembler redondant, cela clarifie le but de la méthode. Un petit exemple s'impose :
 
 ```php
-class Model 
+class Model
 {
     public function getTableName(): string
     {
@@ -100,13 +100,13 @@ class User extends Model
     {
         return 'children_table';
     }
-} 
+}
 ```
 
 Maintenant, imaginons qu'à un moment donné, la méthode parente change de nom :
 
 ```php
-class Model 
+class Model
 {
     public function tableName(): string
     {
@@ -147,5 +147,3 @@ C'est déjà la fin de cet article, mais réjouissons-nous, notre langage favori
 Ces changements témoignent d'un PHP plus efficace et convivial pour ceux qui cherchent à professionaliser leurs projets tout en conservant une DX du tonnerre.
 
 PHP est loin d'être mort, et cette nouvelle version n'est qu'une preuve supplémentaire qu'il était, est et restera le plus beau des mammouths. 🦣
-
-

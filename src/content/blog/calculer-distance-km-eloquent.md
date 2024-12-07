@@ -3,7 +3,7 @@ title: Calculer une distance avec Eloquent
 description: Tutoriel pour calculer la distance entre l'utilisateur connecté et les boutiques de l'application.
 category: Eloquent
 pubDate: Dec 06 2023
-heroImage: ./images/calculer-distance-eloquent.png
+heroImage: "/src/content/blog/images/calculer-distance-eloquent.png"
 ---
 
 # Calculer une distance avec Eloquent
@@ -16,7 +16,7 @@ heroImage: ./images/calculer-distance-eloquent.png
 
 ## Présentation <a name="presentation"></a>
 
-Je vais vous guider à travers le calcul de la distance entre un utilisateur et les boutiques de votre application. 
+Je vais vous guider à travers le calcul de la distance entre un utilisateur et les boutiques de votre application.
 
 Pour cela, nous utiliserons la fonction SQL `St_Distance` et créerons un scope élégant pour rassembler l'ensemble des opérations. Après tout, Noël approche ! 🎅
 
@@ -26,7 +26,7 @@ Pour cela, nous utiliserons la fonction SQL `St_Distance` et créerons un scope 
 
 ## Requête SQL avec Eloquent <a name="contenu"></a>
 
-On va ajouter un scope `addDistance`qui prendra en paramètre les coordonnées de l'utilisateur (longitude et latitude). 
+On va ajouter un scope `addDistance`qui prendra en paramètre les coordonnées de l'utilisateur (longitude et latitude).
 Je les écris en dur ici mais on peut s'imaginer les récupérer depuis le front via [l'API de Geolocalisation](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API).
 
 ```php
@@ -60,7 +60,7 @@ Pour garantir la récupération de tous les champs en plus de la distance, j'ins
                 expression: 'ST_Distance(
                     ST_SRID(Point(longitude, latitude), 4326),
                     ST_SRID(Point(?, ?), 4326)
-                ) AS distance', 
+                ) AS distance',
             bindings: $coordinates,
         );
     }
@@ -68,6 +68,6 @@ Pour garantir la récupération de tous les champs en plus de la distance, j'ins
 
 ## Conclusion <a name="conclusion"></a>
 
-Ce tutoriel a présenté une méthode efficace pour calculer la distance entre l'utilisateur et les boutiques de votre application en utilisant Eloquent. En combinant la fonction SQL `ST_Distance` et un scope personnalisé, vous pouvez désormais obtenir des résultats précis pour des fonctionnalités géospatiales. 
+Ce tutoriel a présenté une méthode efficace pour calculer la distance entre l'utilisateur et les boutiques de votre application en utilisant Eloquent. En combinant la fonction SQL `ST_Distance` et un scope personnalisé, vous pouvez désormais obtenir des résultats précis pour des fonctionnalités géospatiales.
 
 Utilisez ces concepts pour améliorer l'expérience utilisateur en offrant des informations basées sur la proximité géographique. Bonne exploration ! 🌍✨

@@ -3,7 +3,7 @@ title: "Design Pattern avec Laravel : State"
 description: "Implémentation du Design Pattern State pour gérer les statuts d'une commande."
 category: Laravel
 pubDate: Oct 5 2024
-heroImage: ./images/laravel-state.png
+heroImage: "/src/content/blog/images/laravel-state.png"
 ---
 
 # Design Pattern avec Laravel : State

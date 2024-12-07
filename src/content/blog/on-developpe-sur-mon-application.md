@@ -3,7 +3,7 @@ title: On développe une fonctionnalité sur mon application !
 description: On va écrire du code propre et testé. Pourquoi je vous montre ça ? Pour vous permettre de VOUS perfectionner.
 category: Laravel
 pubDate: Mar 30 2024
-heroImage: ./images/on-developpe-sur-mon-application.png
+heroImage: "/src/content/blog/images/on-developpe-sur-mon-application.png"
 ---
 
 # On développe une fonctionnalité sur mon application !
@@ -15,7 +15,7 @@ heroImage: ./images/on-developpe-sur-mon-application.png
 
 ## Présentation <a name="presentation"></a>
 
-Dans cette vidéo, nous explorons l'ajout d'une nouvelle fonctionnalité à l'application [Laranudge](https://laranudge.com), une plateforme développée avec Laravel pour partager des astuces et des conseils sur PHP/Laravel. Nous nous concentrons sur l'ajout d'un calcul affichant la variation du nombre total d'inscrits par rapport au mois précédent dans le panneau d'administration. 
+Dans cette vidéo, nous explorons l'ajout d'une nouvelle fonctionnalité à l'application [Laranudge](https://laranudge.com), une plateforme développée avec Laravel pour partager des astuces et des conseils sur PHP/Laravel. Nous nous concentrons sur l'ajout d'un calcul affichant la variation du nombre total d'inscrits par rapport au mois précédent dans le panneau d'administration.
 
 Je vous guide à travers les étapes de développement, de test et d'implémentation de cette fonctionnalité, en mettant l'accent sur la logique du contrôleur, la création d'une nouvelle action, l'écriture des tests et la résolution des problèmes rencontrés.
 

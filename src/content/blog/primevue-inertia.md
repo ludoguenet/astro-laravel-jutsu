@@ -3,7 +3,7 @@ title: "Utiliser Primevue avec Laravel et Inertia"
 description: "Tutoriel pour installer, configurer et personnaliser PrimeVue avec une application Laravel et Inertia."
 category: Vue
 pubDate: Jun 22 2024
-heroImage: ./images/primevue-inertia.png
+heroImage: "/src/content/blog/images/primevue-inertia.png"
 ---
 
 # Utiliser Primevue avec Laravel et Inertia

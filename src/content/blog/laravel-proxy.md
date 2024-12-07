@@ -3,7 +3,7 @@ title: "Design Pattern avec Laravel : Proxy"
 description: "Création d'un substitut de notre classe service de Podcasts pour la sécurité et mise en cache."
 category: Laravel
 pubDate: Aug 31 2024
-heroImage: ./images/laravel-proxy.png
+heroImage: "/src/content/blog/images/laravel-proxy.png"
 ---
 
 # Design Pattern avec Laravel : Proxy

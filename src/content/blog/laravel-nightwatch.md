@@ -3,7 +3,7 @@ title: "Laravel Nightwatch"
 description: "Découvrez un outil de monitoring conçu pour offrir des insights performants en un clin d'oeil."
 category: Laravel
 pubDate: Nov 7 2024
-heroImage: ./images/laravel-nightwatch.png
+heroImage: "/src/content/blog/images/laravel-nightwatch.png"
 ---
 
 # La nouvelle ère du monitoring avec Laravel Nightwatch

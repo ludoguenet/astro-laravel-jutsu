@@ -3,7 +3,7 @@ title: Comprendre watch et watchEffect avec Vue 3
 description: Les fonctions watch et watchEffect sont de véritables petits bijoux pour surveiller vos variables réactives et déclenchez vos side effects ! Jetons un coup d'oeil ensemble.
 category: Vue
 pubDate: Nov 4 2023
-heroImage: ./images/watch-vue.png
+heroImage: "/src/content/blog/images/watch-vue.png"
 ---
 
 # Comprendre watch et watchEffect avec Vue 3
@@ -65,7 +65,7 @@ Avec `watchEffect`, nous fournissons une fonction anonyme en tant qu'argument, c
 
 ## On se watch plus tard ? <a name="later"></a>
 
-L'une des fonctionnalités de l'API Composition est la possibilité de supprimer les watchers de manière programmatique. 
+L'une des fonctionnalités de l'API Composition est la possibilité de supprimer les watchers de manière programmatique.
 
 Imaginons que notre utilisateur ait terminé de modifier son article et souhaite arrêter de soumettre les modifications côté backend. À la fois `watch` et `watchEffect` renvoient une fonction qui peut être appelée pour cesser de surveiller les changements.
 
@@ -104,11 +104,11 @@ Cela peut aider à organiser votre code et communiquer clairement aux autres dé
 
 ## Désactivation et invalidation des side effects <a name="deactivate"></a>
 
-Une autre fonctionnalité, et pas des moindres, est la possibilité d'invalider nos effets secondaires. 
+Une autre fonctionnalité, et pas des moindres, est la possibilité d'invalider nos effets secondaires.
 
-Dans notre exemple, que se passe-t-il si l'utilisateur entre davantage de texte après l'appel de la fonction `save` ? 
+Dans notre exemple, que se passe-t-il si l'utilisateur entre davantage de texte après l'appel de la fonction `save` ?
 
-En utilisant l'invalidation intégrée, nous pouvons détecter quand quelque chose a changé dans notre état et annuler notre requête API en cours. 
+En utilisant l'invalidation intégrée, nous pouvons détecter quand quelque chose a changé dans notre état et annuler notre requête API en cours.
 
 Examinons à quoi cela ressemblerait :
 
@@ -142,9 +142,9 @@ Examinons à quoi cela ressemblerait :
 
 ## Gestion des effets secondaires avec `onInvalidate` <a name="sideeffect"></a>
 
-Le callback que nous avons passé à `watchEffect` a maintenant un argument `onInvalidate`. Cette fonction prend un autre callback en tant qu'argument, qui est appelé lorsque l'état surveillé a changé. 
+Le callback que nous avons passé à `watchEffect` a maintenant un argument `onInvalidate`. Cette fonction prend un autre callback en tant qu'argument, qui est appelé lorsque l'état surveillé a changé.
 
-Dans notre exemple, la fonction `save` renvoie maintenant une fonction que nous appelons `abort` qui peut être utilisée pour [interrompre la requête API](https://developer.mozilla.org/en-US/docs/Web/API/AbortController/abort). 
+Dans notre exemple, la fonction `save` renvoie maintenant une fonction que nous appelons `abort` qui peut être utilisée pour [interrompre la requête API](https://developer.mozilla.org/en-US/docs/Web/API/AbortController/abort).
 
 Lorsque `onInvalidate` est déclenché, nous appelons `abort` ce qui annule la requête API en cours car nous savons à ce moment qu'une prochaine requête API est déclenchée dans un prochain appel de `watch`.
 
@@ -152,7 +152,7 @@ Lorsque `onInvalidate` est déclenché, nous appelons `abort` ce qui annule la r
 
 Il est fondamental de noter que `watchEffect` se déclenche immédiatement tout en suivant réactivement ses dépendances et la réexécute chaque fois que les dépendances changent.
 
-Cela signifie que dès le chargement de la page, notre effet secondaire est déclenché et les données sont envoyées à notre API. Gardez cela à l'esprit ! Vous ne voulez peut-être pas sauvegarder un champ de texte vide initialement. 
+Cela signifie que dès le chargement de la page, notre effet secondaire est déclenché et les données sont envoyées à notre API. Gardez cela à l'esprit ! Vous ne voulez peut-être pas sauvegarder un champ de texte vide initialement.
 
 Si vous avez besoin de déclencher des effets de manière "lazy", utilisez la méthode `watch` à la place.
 
@@ -173,5 +173,3 @@ L'utilisation de `watch` et `watchEffect` nous permet de surveiller les variable
 Lorsque vous choisissez entre `watch` et `watchEffect`, gardez à l'esprit les différences essentielles entre les deux, notamment le moment où ils sont déclenchés et la manière dont ils gèrent les dépendances. En fonction de vos besoins spécifiques, vous pouvez choisir la méthode qui convient le mieux à votre cas d'utilisation.
 
 Plus globalement, n'oubliez pas que dans notre métier, une seule arme ne suffit pas toujours. Il est essentiel de savoir comment l'utiliser judicieusement au bon moment, et d'être curieux pour élargir notre arsenal en conséquence !
-
-

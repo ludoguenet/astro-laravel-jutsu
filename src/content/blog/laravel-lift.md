@@ -3,7 +3,7 @@ title: Boostez vos Modèles Eloquent avec Laravel Lift !
 description: Laravel Lift est une librairie qui capitalise sur les attributs PHP pour piloter un maximum de logique depuis les Modèles Eloquent.
 category: Eloquent
 pubDate: Sep 5 2023
-heroImage: ./images/laravel-lift.png
+heroImage: "/src/content/blog/images/laravel-lift.png"
 ---
 
 # Qu'est-ce que Laravel Lift ?!
@@ -24,7 +24,7 @@ Pour les utilisateurs de **PHPStorm**, le plugin **Laravel Idea** apporte mainte
 
 L'installation se fait, comme toujours, par le biais de Composer.
 
-```bash 
+```bash
 composer require wendelladriel/laravel-lift
 ```
 
@@ -39,7 +39,7 @@ class Post extends Model
 }
 ```
 
-Ensuite, il ne reste plus qu'à définir les attributs publics de votre **Modèle**. 
+Ensuite, il ne reste plus qu'à définir les attributs publics de votre **Modèle**.
 
 ```php
 use WendellAdriel\Lift\Lift;
@@ -47,15 +47,15 @@ use WendellAdriel\Lift\Lift;
 class Post extends Model
 {
     use Lift;
-   
+
     public string $uuid;
-    
+
     public string $title;
 
     public string $description;
 
     public int $views_count;
-  
+
     public Carbon $published_at;
 }
 ```
@@ -72,7 +72,7 @@ use WendellAdriel\Lift\Attributes\Relations\BelongsTo;
 class Post extends Model
 {
     use Lift;
-    
+
     ...
 }
 ```
@@ -85,7 +85,7 @@ use WendellAdriel\Lift\Attributes\Relations\HasMany;
 class User extends Authenticatable
 {
     use Lift;
-    
+
     ...
 }
 ```
@@ -108,10 +108,10 @@ use WendellAdriel\Lift\Attributes\PrimaryKey;
 class Post extends Model
 {
     use Lift;
-   
+
     #[PrimaryKey(type: 'string', incrementing: false)]
     public string $uuid;
-    
+
     ...
 }
 ```
@@ -132,20 +132,20 @@ use WendellAdriel\Lift\Attributes\PrimaryKey;
 class Post extends Model
 {
     use Lift;
-    
+
     #[PrimaryKey(type: 'string', incrementing: false)]
     #[Cast('string')]
     public string $uuid;
-    
+
     #[Fillable]
     public string $title;
-    
+
     #[Fillable]
     public string $description;
 
     #[Cast('int')]
     public int $views_count;
-    
+
     #[Cast('datetime')]
     public Carbon $published_at;
 }
@@ -170,22 +170,22 @@ use WendellAdriel\Lift\Attributes\PrimaryKey;
 class Post extends Model
 {
     use Lift;
-    
+
     #[PrimaryKey(type: 'string', incrementing: false)]
     #[Cast('string')]
     public string $uuid;
-    
+
     #[Fillable]
     #[Rules(rules: ['required', 'string', 'max:60'])]
     public string $title;
-    
+
     #[Fillable]
     #[Rules(rules: ['required', 'string'])]
     public string $description;
 
     #[Cast('int')]
     public int $views_count;
-    
+
     #[Cast('datetime')]
     public Carbon $published_at;
 }
@@ -245,15 +245,15 @@ use WendellAdriel\Lift\Attributes\CreateRules;
 class Post extends Model
 {
     use Lift;
-    
+
     ...
-    
+
     #[CreateRules(rules: ['required', 'string', 'max:60'])]
     public string $title;
-    
+
     #[CreateRules(rules: ['required', 'string'], messages: ['required' => 'The description must not be empty.'])]
     public string $description;
-    
+
     ...
 }
 ```
@@ -269,12 +269,12 @@ use WendellAdriel\Lift\Attributes\UpdateRules;
 class Post extends Model
 {
     use Lift;
-    
+
     ...
-    
+
     #[UpdateRules(['required', 'string', 'min:25'])]
     public string $description;
-    
+
     ...
 }
 ```
@@ -293,23 +293,23 @@ use WendellAdriel\Lift\Attributes\PrimaryKey;
 class Post extends Model
 {
     use Lift;
-    
+
     #[PrimaryKey(type: 'string', incrementing: false)]
     #[Cast('string')]
     public string $uuid;
-    
+
     #[Fillable]
     #[Rules(rules: ['required', 'string', 'max:60'])]
     #[Watch(TitleChangedEvent::class)]
     public string $title;
-    
+
     #[Fillable]
     #[Rules(rules: ['required', 'string'])]
     public string $description;
 
     #[Cast('int')]
     public int $views_count;
-    
+
     #[Cast('datetime')]
     public Carbon $published_at;
 }
@@ -319,7 +319,7 @@ class Post extends Model
 class TitleChangedEvent
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
-    
+
     public function __construct(
         public Post $post,
     ) {
@@ -339,20 +339,20 @@ use WendellAdriel\Lift\Attributes\Config;
 class Post extends Model
 {
     use Lift;
-    
+
     #[PrimaryKey(type: 'string', incrementing: false)]
     #[Config(cast: 'string')]
     public string $uuid;
-    
+
     #[Config(fillable: true, rules: ['required', 'string', 'max:60'], watch: TitleChangedEvent::class)]
     public string $title;
-    
+
     #[Config(fillable: true, rules: ['required', 'string'])]
     public string $description;
 
     #[Cast('int')]
     public int $views_count;
-    
+
     #[Cast('datetime')]
     public Carbon $published_at;
 }

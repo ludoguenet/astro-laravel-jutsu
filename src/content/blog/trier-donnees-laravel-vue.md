@@ -3,7 +3,7 @@ title: Trier vos données avec Laravel 10 et Vue 3
 description: Apprenez à trier vos données avec Laravel et des composants Vue 3 bien structurés grâce à l'utilisation de composables.
 category: Vue
 pubDate: Sep 23 2023
-heroImage: ./images/trier-donnees-laravel-vue.png
+heroImage: "/src/content/blog/images/trier-donnees-laravel-vue.png"
 ---
 
 # Trions nos produits comme il se doit !
@@ -168,9 +168,8 @@ export function useProducts () {
 
 ## Conclusion
 
-En combinant habilement les fonctionnalités de Laravel, Vue.js, et des composables, vous avez désormais les outils nécessaires pour trier efficacement vos données de manière organisée et conviviale pour l'utilisateur. 
+En combinant habilement les fonctionnalités de Laravel, Vue.js, et des composables, vous avez désormais les outils nécessaires pour trier efficacement vos données de manière organisée et conviviale pour l'utilisateur.
 
-La centralisation de la logique dans des composants et fichiers distincts permet de maintenir un code propre et modulaire, facilitant ainsi la gestion et l'évolutivité de votre application. 
+La centralisation de la logique dans des composants et fichiers distincts permet de maintenir un code propre et modulaire, facilitant ainsi la gestion et l'évolutivité de votre application.
 
 Avec ces compétences à votre disposition, vous êtes prêt à créer des interfaces utilisateur interactives et performantes. Bon code !
-

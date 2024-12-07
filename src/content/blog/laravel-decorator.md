@@ -3,7 +3,7 @@ title: "Design Pattern avec Laravel : Decorator"
 description: "Mise en place d'une fonctionnalité de notifications sur Laravel avec le design pattern Decorator."
 category: Laravel
 pubDate: Aug 17 2024
-heroImage: ./images/laravel-decorator.png
+heroImage: "/src/content/blog/images/laravel-decorator.png"
 ---
 
 # Design Pattern avec Laravel : Decorator

@@ -3,7 +3,7 @@ title: "Développer avec Laravel sous Linux"
 description: "Mise en place de l'environnement de développement que j'utilise quotidiennement pour mes projets professionnels."
 category: Outils
 pubDate: Sep 6 2024
-heroImage: ./images/laravel-linux-mint.png
+heroImage: "/src/content/blog/images/laravel-linux-mint.png"
 ---
 
 # Mon environnement de développement sous Linux Mint

@@ -3,7 +3,7 @@ title: "Découverte de l'extension TemPHPest"
 description: "Une véritable alternative qui enrichit l’expérience VSCode pour PHP."
 category: Outils
 pubDate: Sep 29 2024
-heroImage: ./images/extension-vscode-temphpest.png
+heroImage: "/src/content/blog/images/extension-vscode-temphpest.png"
 ---
 
 # Découverte de l'extension TemPHPest

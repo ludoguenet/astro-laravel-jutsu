@@ -3,7 +3,7 @@ title: Découvrez 3 nouveautés de Vue 3.4
 description: Amélioration du watchEffect(), defineModel() stable et shorthands sont au rendez-vous.
 category: Vue
 pubDate: Jan 14 2024
-heroImage: ./images/vue-34.png
+heroImage: "/src/content/blog/images/vue-34.png"
 ---
 
 # Découvrez 3 nouveautés de Vue 3.4
@@ -74,6 +74,6 @@ Comme en JavaScript classique, si le nom des variables sont identiques aux props
 
 ## Conclusion <a name="conclusion"></a>
 
-Plusieurs nouvelles améliorations, débogues et micro-improvement arrivent avec la version 3.4 mais nous avons fait le tour de ce qui me paraîssait crucial à connaître. 
+Plusieurs nouvelles améliorations, débogues et micro-improvement arrivent avec la version 3.4 mais nous avons fait le tour de ce qui me paraîssait crucial à connaître.
 
 N'hésitez pas à [me suivre](https://twitter.com/LaravelJutsu) et à vous abonner à [Laravel Jutsu](https://www.youtube.com/@LaravelJutsu) pour plus de contenu !

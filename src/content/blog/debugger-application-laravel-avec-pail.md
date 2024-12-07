@@ -3,12 +3,12 @@ title: Debugger son application Laravel avec Pail
 description: Découvrez Laravel Pail, l'outil ultime pour explorer les journaux de votre application Laravel depuis la ligne de commande, avec une interface conviviale et une compatibilité totale.
 category: Outils
 pubDate: Oct 14 2023
-heroImage: ./images/debugger-logs-laravel-pail.png
+heroImage: "/src/content/blog/images/debugger-logs-laravel-pail.png"
 ---
 
 # Qu'est-ce que Pail ?
 
-**Pail**, c’est peut-être ce que bon nombre d'entre nous utilisera demain pour débugger ses logs ! Encore une innovation du grand [Nuno Maduro](https://twitter.com/enunomaduro), qui nous gratifie d'un nouveau package permettant de visionner facilement les logs Laravel directement depuis la ligne de commande. 
+**Pail**, c’est peut-être ce que bon nombre d'entre nous utilisera demain pour débugger ses logs ! Encore une innovation du grand [Nuno Maduro](https://twitter.com/enunomaduro), qui nous gratifie d'un nouveau package permettant de visionner facilement les logs Laravel directement depuis la ligne de commande.
 
 Contrairement à d'autres outils de suivi de journaux, Pail est conçu pour fonctionner avec n'importe quel driver, y compris Sentry ou Flare. 🔫
 
@@ -38,9 +38,9 @@ Pour stopper le suivi un **CTRL + C** fera l'affaire !
 
 ## Filtrer les logs
 
-Vous pouvez utiliser l'option `--filter` pour trier les logs en fonction de presque n'importe quel critère, y compris leur stacktrace. 
+Vous pouvez utiliser l'option `--filter` pour trier les logs en fonction de presque n'importe quel critère, y compris leur stacktrace.
 
-Pour illustrer cela, prenons deux routes qui génèrent délibérément des erreurs de types différents. 
+Pour illustrer cela, prenons deux routes qui génèrent délibérément des erreurs de types différents.
 
 Cela peut sembler étrange, mais cela vous permettra de voir comment les filtrer.
 

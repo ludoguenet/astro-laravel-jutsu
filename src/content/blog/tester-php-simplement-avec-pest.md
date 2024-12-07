@@ -3,7 +3,7 @@ title: Apprendre à tester avec Pest
 description: "Quand on veut assurer une qualité logicielle, on se doit d'écrire des tests automatisés : ça tombe bien, Pest nous simplifie le travail !"
 category: Pest
 pubDate: Aug 25 2023
-heroImage: ./images/test-php-simple-pest.png
+heroImage: "/src/content/blog/images/test-php-simple-pest.png"
 ---
 
 # Qu'est-ce que Pest ?
@@ -55,7 +55,7 @@ expect($value)
 
 L'authentification est nécessaire durant un test lorsque vous voulez effectuer une requête qui demande un utilisateur connecté, et celà peu importe le middleware d'authentification. Les **plugins Laravel** nous gratifie d'une superbe méthode ```actingAs()```
 
-```php 
+```php
 it('can store a post', function () {
     $user = User::factory()->create();
 
@@ -76,12 +76,12 @@ it('can store a post', function () {
 
 Vous voilà investi de la sacrosainte mission de générer un système de facture pour votre application. Votre code est propre, les calculs sont bons, à la virgule prête, et le fichier PDF est généré avec succès. Seulement voilà, vous n'avez pas forcément envie de créer un PDF à chaque lancement de vos tests. La solution est aussi simple, il vous suffit de *mocker* la classe qui s'en occupe.
 
-```php 
+```php
 it('can generate an invoice', function () {
        \Pest\Laravel\mock(GenerateInvoicePdf::class, function (MockInterface $mock) {
         $mock->shouldReceive('handle')->once();
     });
-    
+
     // Code de génération de facture
  });
 ```
@@ -97,7 +97,7 @@ it('can generate an invoice', function () {
 
 Vous voici de nouveau reparti pour la création d'une API avec Laravel. Vous avez une route qui renvoie des données enrobées dans vos [Resources](https://laravel.com/docs/10.x/eloquent-resources). Comment la tester ? Encore une fois rien de plus simple, pas de magie spécifique du côté de Pest, mais c'est un passage obligé que de savoir tester les réponses d'API.
 
-```php 
+```php
 it('can list user courses', function () {
     $user = User::factory()
         ->hasCourses(5)
@@ -128,7 +128,7 @@ Tout ça c'est bien beau mais quid de l'organisation des tests, des données à 
 
 Vous avez la possibilité de passer un jeu de données via la méthode ```with()``` comme indiqué dans la [documentation](https://pestphp.com/docs/datasets), cependant si votre projet commence à grossir et que vous souhaitez réutiliser pas mal de fois les mêmes données, il est plus pratique de placer cette logique dans des fichiers. Pour ce faire, il faut créer un dossier ```Datasets``` dans lequel on place ceci :
 
-```php 
+```php
 dataset('admin', [
     'administrateur' => fn () => User::factory()->create(['role' => EnumRoles::ADMIN]),
 ]);
@@ -137,7 +137,7 @@ dataset('admin', [
 ```php
 test('admin can create a member', function ($admin) {
     actingAs($admin);
-    
+
     // Test connecté avec un administrateur
 })->with('admin');
 ```
@@ -158,11 +158,11 @@ describe('posts', function () {
     it('can create a post', function () {
         // Test pour créer un post
     });
-    
+
     it('can update a post', function () {
         // Test pour mettre à jour un post
     });
-    
+
     it('can delete a post', function () {
         // Test pour supprimer un post
     });
@@ -204,7 +204,7 @@ test('Api controllers extends nothing')
     <svg class="mt-0.5 h-5 w-5 flex-none text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
       <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd" />
     </svg>
-    Si on ne respecte pas au moins une de ces règles, les tests échoueront. 
+    Si on ne respecte pas au moins une de ces règles, les tests échoueront.
 </figcaption>
 
 ## Conclusion

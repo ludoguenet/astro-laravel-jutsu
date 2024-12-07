@@ -3,7 +3,7 @@ title: 'Générer des slugs uniques avec Laravel 11'
 description: Tutoriel pour générer automatiquement des slugs uniques pour vos modèles.
 category: Laravel
 pubDate: May 19 2024
-heroImage: ./images/generer-slugs-uniques-laravel-11.png
+heroImage: "/src/content/blog/images/generer-slugs-uniques-laravel-11.png"
 ---
 
 # Générer des slugs uniques avec Laravel 11
@@ -18,7 +18,7 @@ heroImage: ./images/generer-slugs-uniques-laravel-11.png
 
 Il est important de savoir générer des slugs uniques lorsque vous enregistrer des données. (posts, catégories, etc.)
 
-Dans ce tutoriel, nous allons voir comment le faire proprement. Votre modèle pourra implémenter l'interface `Sluggable` et automatiquement les slugs seront persister en même temps que les autres attributs. 
+Dans ce tutoriel, nous allons voir comment le faire proprement. Votre modèle pourra implémenter l'interface `Sluggable` et automatiquement les slugs seront persister en même temps que les autres attributs.
 
 ## Tutoriel vidéo <a name="tutorielvideo"></a>
 
@@ -26,7 +26,7 @@ Dans ce tutoriel, nous allons voir comment le faire proprement. Votre modèle po
 
 ## Interface et Trait <a name="interfaceettrait"></a>
 
-L'interface `Sluggable` permettra de définir le strict minimum pour que n'importe quel modèle puisse signer un contrat propre pour la génération de ses slugs. 
+L'interface `Sluggable` permettra de définir le strict minimum pour que n'importe quel modèle puisse signer un contrat propre pour la génération de ses slugs.
 
 On évite ainsi de duppliquer trop de code tout en restant flexible.
 
@@ -90,7 +90,7 @@ class Post extends Model implements Sluggable
     {
         return 'title';
     }
-    
+
     ...
 }
 ```

@@ -3,7 +3,7 @@ title: Coder proprement avec Laravel
 description: Nous allons apprendre ensemble à refactorer du code Laravel dangereux en code propre.
 category: Laravel
 pubDate: Jan 10 2024
-heroImage: ./images/laravel-clean-code.png
+heroImage: "/src/content/blog/images/laravel-clean-code.png"
 ---
 
 # CODER PROPREMENT avec LARAVEL
@@ -55,7 +55,7 @@ class WithGarnishPriceType extends AbstractPriceType
 }
 ```
 
-Il ne reste plus qu'à créer une classe `PriceTypeFactory` pour savoir quoi instancier dans le modèle `Product` via un getter personnalisé. 
+Il ne reste plus qu'à créer une classe `PriceTypeFactory` pour savoir quoi instancier dans le modèle `Product` via un getter personnalisé.
 
 ```php
 namespace App\Factories;
@@ -92,7 +92,7 @@ final class OrderController extends Controller
     public function __invoke(): void
     {
         // Récupération des produits
-        
+
         $totalPrice = $products->reduce(fn (float $sum, Product $product) => $sum + $product->getTypePrice->calculate(), 0);
     }
 ```

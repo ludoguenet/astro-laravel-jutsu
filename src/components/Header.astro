@@ -24,24 +24,32 @@ import MobileHeaderLink from "./MobileHeaderLink.astro";
         >Blog</HeaderLink
       >
     </div>
-    <button id="menu-toggle" class="sm:hidden rounded focus:outline-none">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="size-6"
+    <!-- Bouton burger -->
+    <label
+      for="menu-toggle"
+      class="sm:hidden w-9 h-10 flex flex-col items-center justify-center rounded cursor-pointer"
+    >
+      <input id="menu-toggle" type="checkbox" class="hidden peer" />
+      <div
+        class="w-[50%] h-[2px] bg-black rounded-sm transition-all duration-300 origin-left translate-y-[0.45rem] peer-checked:rotate-[-45deg]"
       >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M3.75 9h16.5m-16.5 6.75h16.5"></path>
-      </svg>
-    </button>
+      </div>
+      <div
+        class="w-[50%] h-[2px] bg-black rounded-md transition-all duration-300 origin-center peer-checked:hidden"
+      >
+      </div>
+      <div
+        class="w-[50%] h-[2px] bg-black rounded-md transition-all duration-300 origin-left -translate-y-[0.45rem] peer-checked:rotate-[45deg]"
+      >
+      </div>
+    </label>
   </div>
 
-  <nav id="mobile-menu" class="hidden lg:space-x-8 px-4 lg:py-2">
+  <!-- Menu mobile -->
+  <nav
+    id="mobile-menu"
+    class="hidden lg:space-x-8 px-4 lg:py-2 peer-checked:block"
+  >
     <div class="space-y-1 px-2 pb-3 pt-2">
       <MobileHeaderLink
         href="/blog"

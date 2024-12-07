@@ -3,7 +3,7 @@ title: Découvrez les nouveautés Laravel 11
 description: Laravel 11 sort en février 2024. Voyons ensemble ses nouveautés.
 category: Laravel
 pubDate: Jan 26 2024
-heroImage: ./images/laravel-11.png
+heroImage: "/src/content/blog/images/laravel-11.png"
 ---
 
 # Découvrez les nouveautés Laravel 11
@@ -27,13 +27,13 @@ Cette mise à jour majeure apporte son lot de nouveautés et de changements. Lev
 
 ## Laravel au régime <a name="slim"></a>
 
-Ce n'est plus un scoop, Taylor Otwell avait décidé depuis l'année dernière d'[amincir le squelette de Laravel](https://github.com/laravel/framework/pull/47309). 
+Ce n'est plus un scoop, Taylor Otwell avait décidé depuis l'année dernière d'[amincir le squelette de Laravel](https://github.com/laravel/framework/pull/47309).
 
-Le dossier de configuration se retrouve vide et les fichiers de configurations du framework retournent au vendor. 
+Le dossier de configuration se retrouve vide et les fichiers de configurations du framework retournent au vendor.
 
 Pour les publier et les éditer, vous devez passer par `php artisan config:publish`.
 
-Le dossier ***Middleware*** et le fichier `app/Http/kernel.php` n'existent plus. 
+Le dossier ***Middleware*** et le fichier `app/Http/kernel.php` n'existent plus.
 
 La personnalisation des middlewares internes à Laravel sont faites dans `AppServiceProvider` :
 

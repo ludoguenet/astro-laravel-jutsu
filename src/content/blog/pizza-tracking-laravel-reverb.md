@@ -3,7 +3,7 @@ title: "Pizza tracking avec Laravel Reverb"
 description: "Découvrez comment créer un système de tracking de pizza en temps réel."
 category: Laravel
 pubDate: Nov 9 2024
-heroImage: ./images/pizza-tracking-laravel-reverb.png
+heroImage: "/src/content/blog/images/pizza-tracking-laravel-reverb.png"
 ---
 
 # Pizza tracking avec Laravel Reverb

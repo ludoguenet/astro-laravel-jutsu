@@ -3,7 +3,7 @@ title: Docker et Laravel Sail avec Linux
 description: Tutoriel pour installer Docker proprement sur Linux et développer sous Laravel Sail.
 category: Outils
 pubDate: Dec 14 2023
-heroImage: ./images/docker-laravel-sail.png
+heroImage: "/src/content/blog/images/docker-laravel-sail.png"
 ---
 
 # Docker et Laravel Sail avec Linux
@@ -23,7 +23,7 @@ Il est indépendant de votre vrai ordinateur, permettant de développer des mill
 
 ## Installation de Docker 🐳 <a name="installdocker"></a>
 
-***Les commandes ci-dessous nécessitent souvent l'utilisation de "sudo". Je ne l'ai pas indiqué à chaque fois pour éviter les répétitions inutiles dans les lignes suivantes.*** 
+***Les commandes ci-dessous nécessitent souvent l'utilisation de "sudo". Je ne l'ai pas indiqué à chaque fois pour éviter les répétitions inutiles dans les lignes suivantes.***
 
 1. Installation des librairies nécessaires si elles ne sont pas déjà installées
 ```bash
@@ -40,7 +40,7 @@ install -m 0755 -d /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 ```
 
-4. Modifier les permissions en lecture pour la lire 
+4. Modifier les permissions en lecture pour la lire
 ```bash
 chmod a+r /etc/apt/keyrings/docker.gpg
 ```
@@ -113,7 +113,7 @@ En effet, vous vous retrouverez avec un affichage qui indique "Docker is not run
 Si vous ajouter un sudo devant bash, cela fonctionnera bien mais …
 
 ```bash
-# Ce n’est pas la bonne solution. 
+# Ce n’est pas la bonne solution.
 
 curl -s https://laravel.build/my-blog | sudo bash
 ```
@@ -126,7 +126,7 @@ Pour exécuter des commandes Docker en tant qu'utilisateur non root, vous devez 
 sudo usermod -aG docker ${USER}
 ```
 
-Dans la commande mentionnée précédemment, ${USER} est une variable d'environnement qui contient votre nom d'utilisateur. Pour activer la nouvelle appartenance au groupe, redémarrez votre machine. 
+Dans la commande mentionnée précédemment, ${USER} est une variable d'environnement qui contient votre nom d'utilisateur. Pour activer la nouvelle appartenance au groupe, redémarrez votre machine.
 
 Après cela, vous serez en mesure d'exécuter des commandes Docker sans avoir besoin de les préfixer avec sudo. 🙂
 

@@ -3,7 +3,7 @@ title: 'Générer des slugs uniques avec Laravel 11'
 description: Tutoriel pour générer automatiquement des slugs uniques pour vos modèles.
 category: Laravel
 pubDate: May 19 2024
-heroImage: "/src/content/blog/images/generer-slugs-uniques-laravel-11.png"
+heroImage: "/images/blog/generer-slugs-uniques-laravel-11.png"
 ---
 
 # Générer des slugs uniques avec Laravel 11

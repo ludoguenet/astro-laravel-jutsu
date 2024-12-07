@@ -3,7 +3,7 @@ title: "Design Pattern avec Laravel : Strategy"
 description: "Ajout de plusieurs itinéraires pour notre service de cartographie dans le respect du clean code."
 category: Laravel
 pubDate: Sep 07 2024
-heroImage: "/src/content/blog/images/laravel-strategy.png"
+heroImage: "/images/blog/laravel-strategy.png"
 ---
 
 # Design Pattern avec Laravel : Strategy

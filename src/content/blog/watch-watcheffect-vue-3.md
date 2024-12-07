@@ -3,7 +3,7 @@ title: Comprendre watch et watchEffect avec Vue 3
 description: Les fonctions watch et watchEffect sont de véritables petits bijoux pour surveiller vos variables réactives et déclenchez vos side effects ! Jetons un coup d'oeil ensemble.
 category: Vue
 pubDate: Nov 4 2023
-heroImage: "/src/content/blog/images/watch-vue.png"
+heroImage: "/images/blog/watch-vue.png"
 ---
 
 # Comprendre watch et watchEffect avec Vue 3

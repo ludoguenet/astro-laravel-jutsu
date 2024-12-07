@@ -3,7 +3,7 @@ title: "Design Pattern avec Laravel : Adapter"
 description: "Adapter le type de données reçu dans notre API pour implémenter correctement une librairie de graphiques."
 category: Laravel
 pubDate: Sep 14 2024
-heroImage: "/src/content/blog/images/laravel-adapter.png"
+heroImage: "/images/blog/laravel-adapter.png"
 ---
 
 # Design Pattern avec Laravel : Adapter

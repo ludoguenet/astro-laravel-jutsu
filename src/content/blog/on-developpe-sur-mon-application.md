@@ -3,7 +3,7 @@ title: On développe une fonctionnalité sur mon application !
 description: On va écrire du code propre et testé. Pourquoi je vous montre ça ? Pour vous permettre de VOUS perfectionner.
 category: Laravel
 pubDate: Mar 30 2024
-heroImage: "/src/content/blog/images/on-developpe-sur-mon-application.png"
+heroImage: "/images/blog/on-developpe-sur-mon-application.png"
 ---
 
 # On développe une fonctionnalité sur mon application !

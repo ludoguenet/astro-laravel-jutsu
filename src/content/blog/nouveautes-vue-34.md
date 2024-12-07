@@ -3,7 +3,7 @@ title: Découvrez 3 nouveautés de Vue 3.4
 description: Amélioration du watchEffect(), defineModel() stable et shorthands sont au rendez-vous.
 category: Vue
 pubDate: Jan 14 2024
-heroImage: "/src/content/blog/images/vue-34.png"
+heroImage: "/images/blog/vue-34.png"
 ---
 
 # Découvrez 3 nouveautés de Vue 3.4

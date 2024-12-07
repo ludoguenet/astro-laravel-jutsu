@@ -3,7 +3,7 @@ title: Quoi de neuf dans PHP 8.3 ?
 description: PHP 8.3 a été publié le 23 novembre 2023. Il embarque des améliorations pour les classes en readonly, la nouvelle fonction json_validate() et bien plus encore.
 category: PHP
 pubDate: Nov 23 2023
-heroImage: "/src/content/blog/images/php-83-est-sorti.png"
+heroImage: "/images/blog/php-83-est-sorti.png"
 ---
 
 # Quoi de neuf dans PHP 8.3 ?

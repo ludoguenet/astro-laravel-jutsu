@@ -3,7 +3,7 @@ title: "Design Pattern avec Laravel : Template"
 description: "Le Template Method permet de capturer intelligemment la logique commune dans une classe parent."
 category: Laravel
 pubDate: Sep 21 2024
-heroImage: "/src/content/blog/images/laravel-template-method.png"
+heroImage: "/images/blog/laravel-template-method.png"
 ---
 
 # Design Pattern avec Laravel : Template

@@ -3,7 +3,7 @@ title: Crée ton SaaS avec Laravel 11
 description: Je vous apprends à développer votre SaaS (Software As A Service) avec le framework Laravel 11 et la librairie Cashier.
 category: Laravel
 pubDate: Feb 10 2024
-heroImage: "/src/content/blog/images/saas-laravel-11.png"
+heroImage: "/images/blog/saas-laravel-11.png"
 ---
 
 # Crée ton SaaS avec Laravel 11

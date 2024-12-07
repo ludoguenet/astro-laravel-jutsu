@@ -3,7 +3,7 @@ title: "Organiser son fichier bootstrap/app.php"
 description: "Voyons ensemble comment extraire la configuration globale de notre application pour une plus propre."
 category: Laravel
 pubDate: Jun 29 2024
-heroImage: "/src/content/blog/images/bootstrap-app.png"
+heroImage: "/images/blog/bootstrap-app.png"
 ---
 
 # Organiser sa configuration Laravel proprement

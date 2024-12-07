@@ -3,7 +3,7 @@ title: "Design Pattern avec Laravel : Composite"
 description: "Création d'un FormBuilder sous Laravel grâce au Composite Pattern."
 category: Laravel
 pubDate: Aug 24 2024
-heroImage: "/src/content/blog/images/laravel-composite.png"
+heroImage: "/images/blog/laravel-composite.png"
 ---
 
 # Design Pattern avec Laravel : Composite

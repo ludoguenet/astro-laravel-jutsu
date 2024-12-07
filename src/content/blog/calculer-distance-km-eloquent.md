@@ -3,7 +3,7 @@ title: Calculer une distance avec Eloquent
 description: Tutoriel pour calculer la distance entre l'utilisateur connecté et les boutiques de l'application.
 category: Eloquent
 pubDate: Dec 06 2023
-heroImage: "/src/content/blog/images/calculer-distance-eloquent.png"
+heroImage: "/images/blog/calculer-distance-eloquent.png"
 ---
 
 # Calculer une distance avec Eloquent

@@ -3,7 +3,7 @@ title: Coder proprement avec Laravel
 description: Nous allons apprendre ensemble à refactorer du code Laravel dangereux en code propre.
 category: Laravel
 pubDate: Jan 10 2024
-heroImage: "/src/content/blog/images/laravel-clean-code.png"
+heroImage: "/images/blog/laravel-clean-code.png"
 ---
 
 # CODER PROPREMENT avec LARAVEL

@@ -3,7 +3,7 @@ title: Découvrez les nouveautés Laravel 11
 description: Laravel 11 sort en février 2024. Voyons ensemble ses nouveautés.
 category: Laravel
 pubDate: Jan 26 2024
-heroImage: "/images/blog/laravel-11.png"
+heroImage: "./images/laravel-11.png"
 ---
 
 # Découvrez les nouveautés Laravel 11

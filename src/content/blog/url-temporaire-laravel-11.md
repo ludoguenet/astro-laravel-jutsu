@@ -3,7 +3,7 @@ title: "Upload et Download sécurisé de fichiers"
 description: "Comment gérer l'upload et le download de fichiers de façon propre et sécurisée en utilisant Laravel 11."
 category: Laravel
 pubDate: Nov 2 2024
-heroImage: "/images/blog/url-temporaire-laravel-11.png"
+heroImage: "./images/url-temporaire-laravel-11.png"
 ---
 
 # Upload et Download sécurisé de fichiers en Laravel 11

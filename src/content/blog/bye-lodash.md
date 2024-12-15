@@ -3,7 +3,7 @@ title: "Ce n'est qu'un aurevoir Lodash."
 description: "Même si on l'aimait bien, libérons-nous de cette librairie en apprenant à créer nos propres fonctions JavScript."
 category: JavaScript
 pubDate: Jun 08 2024
-heroImage: "/images/blog/bye-lodash.png"
+heroImage: "./images/bye-lodash.png"
 ---
 
 # Bye Lodash

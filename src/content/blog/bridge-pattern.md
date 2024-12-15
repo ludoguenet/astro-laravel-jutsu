@@ -3,7 +3,7 @@ title: "Découvrir le Bridge Pattern avec PHP"
 description: "Ce design pattern fait certainement partie de mes favoris. Voyons comment le construire."
 category: Laravel
 pubDate: Jul 16 2024
-heroImage: "/images/blog/bridge-pattern.png"
+heroImage: "./images/bridge-pattern.png"
 ---
 
 # Découvrir le Bridge Pattern avec PHP

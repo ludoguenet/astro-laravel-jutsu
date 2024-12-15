@@ -3,7 +3,7 @@ title: Tout sur la relation BelongsToMany avec Laravel 11
 description: Tout ce qu vous devez savoir pour gérer la relation BelongsToMany comme un pro avec Laravel 11
 category: Laravel
 pubDate: Mar 25 2024
-heroImage: "/images/blog/laravel-11-belongs-to-many.png"
+heroImage: "./images/laravel-11-belongs-to-many.png"
 ---
 
 # Tout sur la relation BelongsToMany avec Laravel 11

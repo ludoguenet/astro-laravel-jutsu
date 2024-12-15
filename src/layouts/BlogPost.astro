@@ -1,5 +1,4 @@
 ---
-import { Image } from "astro:assets";
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
@@ -46,12 +45,11 @@ const { title, description, pubDate, heroImage } = Astro.props;
               stroke-linejoin="round"></path></svg
           >Retour au blog</a
         >
-
         <figure>
           {
             heroImage && (
               <img
-                src={heroImage}
+                src={heroImage.src}
                 alt={title}
                 class="rounded-xl bg-gray-50 object-cover"
               />

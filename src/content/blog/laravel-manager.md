@@ -3,7 +3,7 @@ title: "Design Pattern avec Laravel : Manager"
 description: "Implémentation du Design Pattern Manager pour lire différents types de fichiers."
 category: Laravel
 pubDate: Oct 12 2024
-heroImage: "/images/blog/laravel-manager.png"
+heroImage: "./images/laravel-manager.png"
 ---
 
 # Design Pattern avec Laravel : Manager

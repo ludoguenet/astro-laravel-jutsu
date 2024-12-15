@@ -3,7 +3,7 @@ title: Faire la moyenne de sommes avec Laravel
 description: Apprenez cette astuce pour effectuer la moyenne de sommes avec le Query Builder de Laravel.
 category: Laravel
 pubDate: Feb 03 2024
-heroImage: "/images/blog/moyenne-de-sommes-laravel.png"
+heroImage: "./images/moyenne-de-sommes-laravel.png"
 ---
 
 # Faire la moyenne de sommes avec Laravel

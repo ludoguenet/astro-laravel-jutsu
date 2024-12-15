@@ -3,7 +3,7 @@ title: "Les nouveautés sur Pest 3"
 description: "Tout ce que vous devez savoir sur notre framework de test préféré."
 category: Pest
 pubDate: Aug 29 2024
-heroImage: "/images/blog/pest-3.png"
+heroImage: "./images/pest-3.png"
 ---
 
 # Les nouveautés sur Pest 3

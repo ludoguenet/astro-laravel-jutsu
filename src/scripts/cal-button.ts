@@ -38,7 +38,7 @@ Cal.ns["consulting-laravel"]("floatingButton", {
   buttonPosition: "bottom-right",
   buttonTextColor: "#bef264",
   buttonColor: "#18181b",
-  buttonText: "Passez à l’étape supérieure",
+  buttonText: "Planifier ma Consultation Laravel",
   hideButtonIcon: false,
 });
 Cal.ns["consulting-laravel"]("ui", {

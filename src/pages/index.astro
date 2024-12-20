@@ -1,9 +1,9 @@
 ---
 import { Image } from "astro:assets";
+import heroImage from "../assets/hero.png";
 import { getCollection } from "astro:content";
 import IndexFormattedDate from "../components/IndexFormattedDate.astro";
 import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import "../styles/global.css";
@@ -128,11 +128,11 @@ const latestPosts = posts
             <div
               class="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4"
             >
-              <img
-                src="/images/hero.png"
-                alt="Illustration de développement"
+              <Image
+                src={heroImage}
                 width="2432"
                 height="1442"
+                alt="Image de la chaîne YouTube."
                 class="w-[76rem] rounded-md shadow-2xl ring-1 ring-gray-900/10"
               />
             </div>

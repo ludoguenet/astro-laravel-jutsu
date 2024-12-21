@@ -32,11 +32,6 @@
 })(window, "https://app.cal.com/embed/embed.js", "init");
 Cal("init", "consulting-laravel-avance", { origin: "https://cal.com" });
 
-// Important: Please add the following attributes to the element that should trigger the calendar to open upon clicking.
-// `data-cal-link="laraveljutsu/consulting-laravel-avance"`
-// data-cal-namespace="consulting-laravel-avance"
-// `data-cal-config='{"layout":"month_view"}'`
-
 Cal.ns["consulting-laravel-avance"]("ui", {
   cssVarsPerTheme: {
     light: { "cal-brand": "#18181b" },
@@ -127,11 +122,6 @@ Cal.ns["consulting-laravel-junior"]("ui", {
     };
 })(window, "https://app.cal.com/embed/embed.js", "init");
 Cal("init", "decouverte", { origin: "https://cal.com" });
-
-// Important: Please add the following attributes to the element that should trigger the calendar to open upon clicking.
-// `data-cal-link="laraveljutsu/decouverte"`
-// data-cal-namespace="decouverte"
-// `data-cal-config='{"layout":"month_view"}'`
 
 Cal.ns.decouverte("ui", {
   cssVarsPerTheme: {

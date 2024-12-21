@@ -1,11 +1,8 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
-import MobileHeaderLink from "./MobileHeaderLink.astro";
 ---
 
-<header
-  class="fixed top-0 z-50 w-full backdrop-blur flex-none transition-colors duration-500 lg:border-b lg:border-slate-400/10 bg-white/95 supports-backdrop-blur:bg-white/60"
->
+<header class="sticky top-0 z-20 shadow-sm shadow-gray-200 backdrop-blur-md">
   <div
     class="mx-auto px-8 container flex items-center justify-between py-4 max-w-7xl"
   >
@@ -17,49 +14,12 @@ import MobileHeaderLink from "./MobileHeaderLink.astro";
         />
       </a>
     </div>
-    <div class="hidden sm:flex items-center gap-8">
+    <div class="items-center">
       <HeaderLink
         href="/blog"
         class="text-sm/6 font-medium hover:text-lime-500 transition duration-200 ease-in-out"
         >Blog</HeaderLink
       >
     </div>
-    <!-- Bouton burger -->
-    <label
-      for="menu-toggle"
-      class="sm:hidden w-9 h-10 flex flex-col items-center justify-center rounded cursor-pointer"
-    >
-      <input id="menu-toggle" type="checkbox" class="hidden peer" />
-      <div
-        class="w-[50%] h-[2px] bg-black rounded-sm transition-all duration-300 origin-left translate-y-[0.45rem] peer-checked:rotate-[-45deg]"
-      >
-      </div>
-      <div
-        class="w-[50%] h-[2px] bg-black rounded-md transition-all duration-300 origin-center peer-checked:hidden"
-      >
-      </div>
-      <div
-        class="w-[50%] h-[2px] bg-black rounded-md transition-all duration-300 origin-left -translate-y-[0.45rem] peer-checked:rotate-[45deg]"
-      >
-      </div>
-    </label>
   </div>
-
-  <!-- Menu mobile -->
-  <nav
-    id="mobile-menu"
-    class="hidden lg:space-x-8 px-4 lg:py-2 peer-checked:block"
-  >
-    <div class="space-y-3 px-2 pb-3 pt-2">
-      <MobileHeaderLink
-        href="/blog"
-        class="block rounded-md px-3 py-2 text-base font-medium text-gray-900"
-        >Blog</MobileHeaderLink
-      >
-    </div>
-  </nav>
 </header>
-
-<script>
-  import "../scripts/navbar.ts";
-</script>

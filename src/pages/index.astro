@@ -16,7 +16,7 @@ const latestPosts = posts
     let bDate = new Date(b.data.pubDate);
     return bDate.valueOf() - aDate.valueOf();
   })
-  .slice(0, 8);
+  .slice(0, 9);
 ---
 
 <!doctype html>
@@ -67,7 +67,7 @@ const latestPosts = posts
             <a href="#offre-decouverte" class="inline-flex space-x-5">
               <span
                 class="rounded-full bg-lime-600/10 px-3 py-1 text-sm/6 font-semibold text-lime-600 ring-1 ring-inset ring-lime-600/10"
-                >Découverte</span
+                >Nouveautés</span
               >
               <span
                 class="inline-flex items-center space-x-2 text-sm/6 font-medium text-gray-600"
@@ -91,13 +91,13 @@ const latestPosts = posts
           <h1 class="mt-10 text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
             Maîtrisez
             <span class="relative inline-block">
-              <span class="absolute inset-0 bg-gradient-to-r from-emerald-400 to-emerald-600 rounded-lg blur opacity-25"></span>
-              <span class="relative text-transparent bg-gradient-to-r from-emerald-500 to-emerald-700 bg-clip-text">Laravel</span>
+              <span class="absolute inset-0 bg-gradient-to-r from-rose-400 to-rose-600 rounded-lg blur opacity-25"></span>
+              <span class="relative text-transparent bg-gradient-to-r from-rose-500 to-rose-700 bg-clip-text">Laravel</span>
             </span>
             et
             <span class="relative inline-block">
-              <span class="absolute inset-0 bg-gradient-to-r from-red-400 to-red-600 rounded-lg blur opacity-25"></span>
-              <span class="relative text-transparent bg-gradient-to-r from-red-500 to-red-700 bg-clip-text">Vue</span>
+              <span class="absolute inset-0 bg-gradient-to-r from-emerald-400 to-emerald-600 rounded-lg blur opacity-25"></span>
+              <span class="relative text-transparent bg-gradient-to-r from-emerald-500 to-emerald-700 bg-clip-text">Vue</span>
             </span>
           </h1>
 
@@ -564,7 +564,7 @@ const latestPosts = posts
           </p>
         </div>
         <div
-          class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 pt-6 sm:mt-8 sm:pt-8 lg:mx-0 lg:max-w-none lg:grid-cols-4"
+          class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 pt-6 sm:mt-8 sm:pt-8 lg:mx-0 lg:max-w-none lg:grid-cols-3"
         >
           {
             latestPosts.map((post) => (

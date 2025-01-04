@@ -1,12 +1,12 @@
 ---
-title: "Créer un Système d'Amis avec Laravel & Vue"
-description: "Développement d'une fonctionnalité de gestion des amis pour un réseau social."
+title: "Créer un sytème d'amis"
+description: "Fonctionnalité de gestion d'amis pour un réseau social."
 category: Laravel
 pubDate: Dec 25 2024
-heroImage: "./images/laravel-inertia-systeme-amis.png"
+heroImage: "./images/systeme-demande-amis.png"
 ---
 
-# Créer un Système d'Amis avec Laravel et Vue Inertia
+# Créer un sytème d'amis
 
 ## Sommaire
 1. [Présentation](#presentation)

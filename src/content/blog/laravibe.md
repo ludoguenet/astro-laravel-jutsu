@@ -1,53 +1,64 @@
 ---
-title: "J'ai développé LaraVibe en 3 heures"
-description: "Créer un Réseau Social avec Laravel et Inertia.js."
-category: Laravel
-pubDate: Jan 04 2025
+title: "J'ai construit Laravibe"
+description: "Comment j'ai développé un RS en 3 heures."
+category: Vue
+pubDate: Jan 01 2025
 heroImage: "./images/laravibe.png"
 ---
 
-# Créer un Réseau Social avec Laravel et Inertia.js 🚀
+# J'ai construit Laravibe
 
-## 🛠️ Les technologies utilisées
-
-Pour ce projet, j'ai utilisé :
-- **Laravel** : pour le backend.
-- **Inertia.js** avec **Vue.js** : pour la partie frontend.
-- **Tailwind CSS** : pour le design, affiné avec l'aide de l'IA.
-
-Le dépôt complet est disponible sur [mon GitHub](https://github.com/ludoguenet/laravibe). N'hésitez pas à le récupérer pour explorer le code par vous-même !
-
-## Tutoriel vidéo
----
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/8lemEoTQqC8" loading="lazy" frameborder="0" allowfullscreen></iframe>
+## Sommaire
+1. [Présentation](#presentation)
+2. [Tutoriel vidéo](#tutorielvideo)
+3. [Fonctionnalités](#features)
+4. [Conclusion](#conclusion)
 
 ## Présentation <a name="presentation"></a>
 
----
-## 🔑 Fonctionnalités principales
-### 1️⃣ Gestion des amis
-Dans une précédente vidéo, nous avons vu comment mettre en place un système d'amis. Ce système est entièrement adaptable à vos besoins.
+Bienvenue dans cette vidéo où je partage avec vous comment j’ai développé un réseau social en un temps relativement court. En utilisant Laravel, Inertia.js, et Vue.js, j'ai pu créer une base fonctionnelle avec des fonctionnalités clés comme un système de feed interactif, la gestion des pièces jointes, et une interface utilisateur réactive. Tout le code est disponible sur mon dépôt GitHub pour que vous puissiez l’explorer et l’adapter à vos besoins.
 
-### 2️⃣ Système de feed
-Aujourd'hui, nous explorons le **système de feed** :
-- **Publier un message** avec ou sans pièce jointe.
-- **Validation des publications** (ex. : contenu obligatoire).
-- **Gestion des pièces jointes** avec un système réactif.
-- **Effets visuels** comme le zoom et un tri dynamique des publications.
+## Tutoriel vidéo <a name="tutorielvideo"></a>
 
----
+<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/8lemEoTQqC8" loading="lazy" frameborder="0" allowfullscreen></iframe>
 
-## 📂 Aperçu du code
+## Fonctionnalités <a name="features"></a>
 
-### Les routes
-Dans `web.php`, voici les principales routes utilisées :
-- **DashboardController** : pour la gestion des feeds.
-- **FeedController** : pour la création des publications.
+### Le Système de Feed
+
+Le feed est le cœur de l'application, permettant aux utilisateurs de publier des messages accompagnés de pièces jointes. Voici les grandes lignes de son fonctionnement :
+
+1. **Gestion des Messages et des Pièces Jointes** :
+   - Un message doit contenir au moins une phrase.
+   - Les pièces jointes sont gérées de manière polymorphique, ce qui permet de réutiliser la même logique pour d'autres entités comme des messages privés.
+
+2. **Réactivité et Mise à Jour Automatique** :
+   - Les données du feed sont envoyées depuis le backend via des props Vue.js, permettant une mise à jour automatique des publications grâce à Inertia.js.
+
+3. **Interface Utilisateur** :
+   - Une base **Tailwind CSS** a été utilisée pour un design moderne et réactif.
+   - Les interactions utilisateur, comme la gestion des pièces jointes, sont optimisées pour offrir une expérience fluide.
+
+### Les Relations Polymorphiques pour les Pièces Jointes
+
+La table `attachments` utilise le polymorphisme pour gérer différents types de relations. Une pièce jointe peut appartenir :
+- À un feed (comme dans notre cas).
+- À un autre modèle, par exemple un message privé, en réutilisant la même logique.
+
+### Fonctionnement des Formulaires
+
+Les formulaires Vue.js gèrent à la fois le contenu textuel et les fichiers :
+- **Validation côté frontend** : Les champs sont vérifiés avant soumission.
+- **Gestion des erreurs** : Le contenu reste inchangé en cas d’erreur, améliorant l’expérience utilisateur.
+
+### Backend et Validations
+
+Au niveau du backend, la méthode `store` du contrôleur traite les publications. Voici les points clés :
+- Validation stricte des données (contenu requis, taille maximale des fichiers, etc.).
+- Gestion des fichiers via le disque public, avec stockage structuré des pièces jointes.
 
 ## Conclusion <a name="conclusion"></a>
 
-Le **Template Method Pattern** nous permet de capturer la logique commune dans une classe parent tout en permettant aux sous-classes de personnaliser certaines étapes. En éliminant les redondances, ce pattern améliore la maintenance et la lisibilité du code, tout en respectant le principe Open/Closed.
-
-Ce design pattern est un excellent moyen de structurer vos applications Laravel de manière plus propre et évolutive.
+Ce projet démontre qu’il est possible de poser les bases solides d’un réseau social en seulement quelques heures. Bien que certaines fonctionnalités, comme la messagerie, restent à implémenter, les bases sont en place : un feed réactif, une gestion efficace des pièces jointes, et une structure backend claire.
 
 N'hésitez pas à [me suivre](https://twitter.com/LaravelJutsu) et à vous abonner à [Laravel Jutsu](https://www.youtube.com/@LaravelJutsu) pour plus de contenu !

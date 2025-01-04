@@ -1,6 +1,6 @@
 ---
-title: "Simplifiez votre code avec le Service Pattern en Laravel"
-description: "Simplifiez votre code avec le Service Pattern."
+title: "Simplifiez votre code avec le Service Pattern"
+description: "Découvrez Design Pattern le plus célèbre de Laravel."
 category: Laravel
 pubDate: Dec 21, 2024
 heroImage: "./images/laravel-service-pattern.png"

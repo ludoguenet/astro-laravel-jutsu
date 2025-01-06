@@ -7,3 +7,14 @@
     @apply opacity-100;
     pointer-events: auto;
 }
+
+
+	/* Style de la sélection de texte */
+	::selection {
+		background: rgb(132 204 22 / 0.5); /* Couleur lime avec transparence */
+		color: white;
+	}
+	::-moz-selection {
+		background: rgb(132 204 22 / 0.5);
+		color: white;
+	}

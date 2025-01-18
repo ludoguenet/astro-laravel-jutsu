@@ -29,7 +29,7 @@ Visitez la [page d'accueil de Reverb](https://reverb.laravel.com/) pour plus d'i
 
 ## Tutoriel vidéo <a name="tutorielvideo"></a>
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/yWQWZNNgA20" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video rounded-md" src="https://www.youtube.com/embed/yWQWZNNgA20" frameborder="0" allowfullscreen></iframe>
 
 ## Conclusion <a name="conclusion"></a>
 

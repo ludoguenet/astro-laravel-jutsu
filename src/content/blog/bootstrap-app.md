@@ -27,7 +27,7 @@ Une solution qui s'offre à nous serait l'utilisation des **bootstrappers**. Un 
 
 ## Tutoriel vidéo <a name="tutorielvideo"></a>
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/VUholO_AEfE" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video rounded-md" src="https://www.youtube.com/embed/VUholO_AEfE" frameborder="0" allowfullscreen></iframe>
 
 ## Notre première classe Bootstrapper <a name="bootsrapper"></a>
 

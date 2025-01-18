@@ -22,7 +22,7 @@ Pour cela, nous utiliserons la fonction SQL `St_Distance` et créerons un scope 
 
 ## Tutoriel vidéo <a name="tutorielvideo"></a>
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/9uwlhR8CFvI" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video rounded-md" src="https://www.youtube.com/embed/9uwlhR8CFvI" frameborder="0" allowfullscreen></iframe>
 
 ## Requête SQL avec Eloquent <a name="contenu"></a>
 

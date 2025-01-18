@@ -26,7 +26,7 @@ Le Template Method est particulièrement utile lorsque plusieurs classes partage
 
 ## Tutoriel vidéo <a name="tutorielvideo"></a>
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/tqZTKwvXftY" loading="lazy" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video rounded-md" src="https://www.youtube.com/embed/tqZTKwvXftY" loading="lazy" frameborder="0" allowfullscreen></iframe>
 
 ## Synthèse de la vidéo <a name="synthese"></a>
 

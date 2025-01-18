@@ -24,7 +24,7 @@ Comment scinder la logique de façon à ne pas briser le second principe SOLID :
 
 ## Tutoriel vidéo <a name="tutorielvideo"></a>
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/mnj3MfNVsXo" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video rounded-md" src="https://www.youtube.com/embed/mnj3MfNVsXo" frameborder="0" allowfullscreen></iframe>
 
 ## Contenu <a name="contenu"></a>
 

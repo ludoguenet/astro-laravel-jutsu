@@ -30,7 +30,7 @@ Le Strategy Pattern est un design pattern comportemental utilisé pour générer
 
 ## Tutoriel vidéo <a name="tutorielvideo"></a>
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/zKfauNOrCFk" loading="lazy" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video rounded-md" src="https://www.youtube.com/embed/zKfauNOrCFk" loading="lazy" frameborder="0" allowfullscreen></iframe>
 
 ## Implémentation des relations <a name="relationship"></a>
 

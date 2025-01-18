@@ -28,7 +28,7 @@ Pour ce tutoriel, j’ai installé une application **Laravel** qui utilise **Ine
 
 ## Tutoriel vidéo <a name="tutorielvideo"></a>
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/ZRm5_9ACCA0" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video rounded-md" src="https://www.youtube.com/embed/ZRm5_9ACCA0" frameborder="0" allowfullscreen></iframe>
 
 ## Installation de PrimeVue <a name="installation-primevue"></a>
 Nous allons installer la librairie PrimeVue via npm. Pour cela, ouvrez une console et tapez la commande suivante :

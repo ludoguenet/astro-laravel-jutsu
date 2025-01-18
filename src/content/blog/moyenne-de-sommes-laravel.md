@@ -38,7 +38,7 @@ Cette requête vous envoie en prison. Rien que cet exemple hérisse les poils de
 
 ## Tutoriel vidéo <a name="video"></a>
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/KMh_sump1Vg" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video rounded-md" src="https://www.youtube.com/embed/KMh_sump1Vg" frameborder="0" allowfullscreen></iframe>
 
 ## Requête avec SQL <a name="sql"></a>
 

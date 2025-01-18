@@ -26,7 +26,7 @@ L'idée derrière ce pattern est de créer une architecture flexible qui permett
 
 ## Tutoriel vidéo <a name="tutorielvideo"></a>
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/68rfNKPtTTg" loading="lazy" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video rounded-md" src="https://www.youtube.com/embed/68rfNKPtTTg" loading="lazy" frameborder="0" allowfullscreen></iframe>
 
 ## Synthèse de la vidéo <a name="synthese"></a>
 

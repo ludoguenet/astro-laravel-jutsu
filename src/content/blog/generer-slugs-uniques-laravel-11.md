@@ -22,7 +22,7 @@ Dans ce tutoriel, nous allons voir comment le faire proprement. Votre modèle po
 
 ## Tutoriel vidéo <a name="tutorielvideo"></a>
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/6bNJFJ7TYCE" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video rounded-md" src="https://www.youtube.com/embed/6bNJFJ7TYCE" frameborder="0" allowfullscreen></iframe>
 
 ## Interface et Trait <a name="interfaceettrait"></a>
 

@@ -25,7 +25,7 @@ Bienvenue sur cet article où nous allons découvrir **TemPHPest**, une extensio
 
 **TemPHPest** est une véritable alternative qui **enrichit l’expérience VSCode**, en offrant un ensemble de fonctionnalités essentielles pour travailler efficacement avec **PHP**, sans avoir à quitter votre éditeur favori. Voici un aperçu des principales fonctionnalités de l'extension et pourquoi elle a conquis tant de développeurs **PHP**.
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/RK9UjWwCfPc" loading="lazy" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video rounded-md" src="https://www.youtube.com/embed/RK9UjWwCfPc" loading="lazy" frameborder="0" allowfullscreen></iframe>
 
 ## Pourquoi TemPHPest ? <a name="pourquoi"></a>
 

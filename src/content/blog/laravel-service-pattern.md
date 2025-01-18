@@ -24,7 +24,7 @@ Contexte : Nous allons utiliser un exemple concret de gestion de commandes, où 
 
 ## Tutoriel vidéo <a name="tutorielvideo"></a>
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/XQrQGtwdJNo" loading="lazy" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video rounded-md" src="https://www.youtube.com/embed/XQrQGtwdJNo" loading="lazy" frameborder="0" allowfullscreen></iframe>
 
 ## Création du service OrderProcessor <a name="order-processor"></a>
 

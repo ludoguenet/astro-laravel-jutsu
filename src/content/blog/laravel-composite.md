@@ -24,7 +24,7 @@ Le Composite Pattern est un design pattern structurel qui s'applique particuliè
 
 ## Tutoriel vidéo <a name="tutorielvideo"></a>
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/KVQLkkmrfIE" loading="lazy" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video rounded-md" src="https://www.youtube.com/embed/KVQLkkmrfIE" loading="lazy" frameborder="0" allowfullscreen></iframe>
 
 ## Synthèse de la vidéo <a name="synthese"></a>
 

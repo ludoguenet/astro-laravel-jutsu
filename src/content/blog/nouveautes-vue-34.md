@@ -22,7 +22,7 @@ Découvrons ensemble les 3 nouveautés de Vue 3.4 : Amélioration du watchEffect
 
 ## Tutoriel vidéo <a name="tutorielvideo"></a>
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/Wa9DT8xeGhs" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video rounded-md" src="https://www.youtube.com/embed/Wa9DT8xeGhs" frameborder="0" allowfullscreen></iframe>
 
 ## watcheffect() amélioré <a name="watcheffect"></a>
 

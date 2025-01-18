@@ -16,7 +16,7 @@ Et comme nous ne sommes plus des développeurs de seconde zone, nous allons test
 
 ## Tutoriel vidéo
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/GDf6a3Tenas" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video rounded-md" src="https://www.youtube.com/embed/GDf6a3Tenas" frameborder="0" allowfullscreen></iframe>
 
 ## Du côté de l'API Laravel
 

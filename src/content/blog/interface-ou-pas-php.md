@@ -19,7 +19,7 @@ Sur la chaîne YouTube de Christopher Okravi, des vidéos Masterclass ont été 
 
 ## Tutoriel vidéo <a name="tutorielvideo"></a>
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/GwEIgvbO9vQ" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video rounded-md" src="https://www.youtube.com/embed/GwEIgvbO9vQ" frameborder="0" allowfullscreen></iframe>
 
 ## Contenu
 Dans cette vidéo, nous examinons un exemple pratique dans le domaine de la modélisation des comptes bancaires et du calcul de taxes pour différents types de produits. Nous suivons les erreurs courantes décrites par Okravi et les corrigeons en appliquant ses solutions.

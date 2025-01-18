@@ -22,7 +22,7 @@ Dans ce projet, nous allons simuler un suivi de commande en temps réel. Nous ut
 
 ## Tutoriel vidéo <a name="tutorielvideo"></a>
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/_7KMIgPtkTs" loading="lazy" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video rounded-md" src="https://www.youtube.com/embed/_7KMIgPtkTs" loading="lazy" frameborder="0" allowfullscreen></iframe>
 
 ## Mise en place du projet Laravel <a name="mise-en-place-du-projet-laravel"></a>
 

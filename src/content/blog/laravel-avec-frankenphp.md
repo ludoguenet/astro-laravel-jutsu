@@ -26,7 +26,7 @@ En résumé, plus besoin de configurations superflues : vous disposez d'un serve
 
 ## Tutoriel vidéo <a name="tutorielvideo"></a>
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/CbRWYCEZOK0" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video rounded-md" src="https://www.youtube.com/embed/CbRWYCEZOK0" frameborder="0" allowfullscreen></iframe>
 
 ## Docker 🐳 <a name="docker"></a>
 

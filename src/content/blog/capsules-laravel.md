@@ -18,7 +18,7 @@ L'objectif principal de ces capsules est de fournir des bases solides pour le d�
 
 ## Tutoriel vidéo
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/YiiJeqMLOcw" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video rounded-md" src="https://www.youtube.com/embed/YiiJeqMLOcw" frameborder="0" allowfullscreen></iframe>
 
 Dans cette première étape, je vais vous guider à travers la configuration et l'installation de trois outils essentiels : **Pint**, **Larastan** et **PestPHP**. Chacun de ces outils jouera un rôle crucial dans notre démarche de développement.
 

@@ -23,7 +23,7 @@ Nous aborderons l'utilisation des **règles de validation**, le stockage des fic
 
 ## Tutoriel vidéo <a name="tutoriel-video"></a>
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/XkhN5wWinT0" loading="lazy" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video rounded-md" src="https://www.youtube.com/embed/XkhN5wWinT0" loading="lazy" frameborder="0" allowfullscreen></iframe>
 
 ## Étapes d'Implémentation <a name="etapes-implementation"></a>
 

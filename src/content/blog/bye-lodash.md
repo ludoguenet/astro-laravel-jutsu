@@ -25,7 +25,7 @@ Aujourd'hui, on met Lodash à la poubelle et on apprend à se créer soi-même n
 
 ## Tutoriel vidéo <a name="tutorielvideo"></a>
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/aZ8cAlless4" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video rounded-md" src="https://www.youtube.com/embed/aZ8cAlless4" frameborder="0" allowfullscreen></iframe>
 
 ## Debounce <a name="debounce"></a>
 

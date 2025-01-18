@@ -20,7 +20,7 @@ Bienvenue dans cette vidéo où je partage avec vous comment j’ai développé 
 
 ## Tutoriel vidéo <a name="tutorielvideo"></a>
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/8lemEoTQqC8" loading="lazy" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video rounded-md" src="https://www.youtube.com/embed/8lemEoTQqC8" loading="lazy" frameborder="0" allowfullscreen></iframe>
 
 ## Fonctionnalités <a name="features"></a>
 

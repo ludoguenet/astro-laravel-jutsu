@@ -21,7 +21,7 @@ Je vous guide à travers les étapes de développement, de test et d'implémenta
 
 ## Tutoriel vidéo <a name="tutorielvideo"></a>
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/D4uykX42ERo" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video rounded-md" src="https://www.youtube.com/embed/D4uykX42ERo" frameborder="0" allowfullscreen></iframe>
 
 ## Conclusion <a name="conclusion"></a>
 

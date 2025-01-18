@@ -26,7 +26,7 @@ L' Adapter Pattern est un design pattern structurel utilisé pour rendre compati
 
 ## Tutoriel vidéo <a name="tutorielvideo"></a>
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/4VgU_8VONz8" loading="lazy" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video rounded-md" src="https://www.youtube.com/embed/4VgU_8VONz8" loading="lazy" frameborder="0" allowfullscreen></iframe>
 
 ## Synthèse de la vidéo <a name="synthese"></a>
 

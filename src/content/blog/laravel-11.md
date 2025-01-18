@@ -23,7 +23,7 @@ heroImage: "./images/laravel-11.png"
 
 Cette mise à jour majeure apporte son lot de nouveautés et de changements. Levons le voile sans plus attendre.
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/V6fbLsdbhe8" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video rounded-md" src="https://www.youtube.com/embed/V6fbLsdbhe8" frameborder="0" allowfullscreen></iframe>
 
 ## Laravel au régime <a name="slim"></a>
 

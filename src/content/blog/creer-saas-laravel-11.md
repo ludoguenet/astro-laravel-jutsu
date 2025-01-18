@@ -25,7 +25,7 @@ Flexibilité : Le projet offre une flexibilité totale à votre créativité.
 
 ## Tutoriel vidéo <a name="tutorielvideo"></a>
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/NDmwjPAXYsE" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video rounded-md" src="https://www.youtube.com/embed/NDmwjPAXYsE" frameborder="0" allowfullscreen></iframe>
 
 ## Conclusion <a name="conclusion"></a>
 

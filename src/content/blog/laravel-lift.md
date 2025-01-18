@@ -18,7 +18,7 @@ Pour les utilisateurs de **PHPStorm**, le plugin **Laravel Idea** apporte mainte
 
 ## Tutoriel vidéo
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/Fpb18ZIiB3Y" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video rounded-md" src="https://www.youtube.com/embed/Fpb18ZIiB3Y" frameborder="0" allowfullscreen></iframe>
 
 ## Mise en place
 

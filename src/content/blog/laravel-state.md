@@ -26,7 +26,7 @@ Ce tutoriel s'appuie sur un exemple de [refactoring.guru](https://refactoring.gu
 
 ## Tutoriel vidéo <a name="tutorielvideo"></a>
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/KdBWx_sk66k" loading="lazy" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video rounded-md" src="https://www.youtube.com/embed/KdBWx_sk66k" loading="lazy" frameborder="0" allowfullscreen></iframe>
 
 ## Synthèse de la vidéo <a name="synthese"></a>
 

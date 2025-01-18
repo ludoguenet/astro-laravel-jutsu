@@ -21,7 +21,7 @@ Un grand merci à Laravel France pour l'[article original](https://laravel-franc
 
 ## Tutoriel vidéo <a name="tutorielvideo"></a>
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/EsxRimO9fZY" frameborder="0" allowfullscreen></iframe>
+<iframe class="w-full aspect-video rounded-md" src="https://www.youtube.com/embed/EsxRimO9fZY" frameborder="0" allowfullscreen></iframe>
 
 ## Conclusion <a name="conclusion"></a>
 

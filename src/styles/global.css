@@ -1,20 +1,33 @@
 .back-to-top {
-    @apply fixed z-50 opacity-0 flex items-center justify-center bottom-8 right-8 border-0 text-lg size-10 rounded-full shadow-lg bg-lime-400 hover:bg-lime-500 transition duration-300;
-    pointer-events: none;
+  @apply fixed z-50 opacity-0 flex items-center justify-center bottom-8 right-8 border-0 text-lg size-10 rounded-full shadow-lg bg-lime-400 hover:bg-lime-500 transition duration-300;
+  pointer-events: none;
 }
 
 .back-to-top.show {
-    @apply opacity-100;
-    pointer-events: auto;
+  @apply opacity-100;
+  pointer-events: auto;
 }
 
+::selection {
+  background: rgb(132 204 22 / 0.5); /* Couleur lime avec transparence */
+  color: white;
+}
+::-moz-selection {
+  background: rgb(132 204 22 / 0.5);
+  color: white;
+}
 
-	/* Style de la sélection de texte */
-	::selection {
-		background: rgb(132 204 22 / 0.5); /* Couleur lime avec transparence */
-		color: white;
-	}
-	::-moz-selection {
-		background: rgb(132 204 22 / 0.5);
-		color: white;
-	}
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d9f99d;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f7fee7;
+  padding: 1px;
+}

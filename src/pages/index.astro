@@ -59,34 +59,21 @@ const latestPosts = posts
           fill="url(#pattern-bg)"></rect>
       </svg>
       <div
-        class="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40"
+        class="mx-auto max-w-7xl px-6 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40"
       >
         <div class="mx-auto max-w-2xl lg:mx-0 lg:shrink-0 lg:pt-8">
           <img class="h-16" src="/images/logo.svg" alt="Laravel Jutsu" />
-          <div class="mt-24 sm:mt-32 lg:mt-16">
-            <a href="#offre-consulting" class="inline-flex space-x-5">
-              <span
-                class="rounded-full bg-lime-600/10 px-3 py-1 text-sm/6 font-semibold text-lime-600 ring-1 ring-inset ring-lime-600/10"
-                >Consulting</span
+          <div class="inline-flex mt-16">
+            <div
+              class="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
+            >
+              Découvrez nos offres de coaching · <a
+                href="#offre-consulting"
+                class="font-semibold text-lime-600 ml-1"
+                ><span class="absolute inset-0" aria-hidden="true"></span>Voir
+                plus <span aria-hidden="true">&rarr;</span></a
               >
-              <span
-                class="inline-flex items-center space-x-2 text-sm/6 font-medium text-gray-600"
-              >
-                <span>Voir mes offres</span>
-                <svg
-                  class="size-5 text-gray-400"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                  data-slot="icon"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
-                    clip-rule="evenodd"></path>
-                </svg>
-              </span>
-            </a>
+            </div>
           </div>
           <h1
             class="mt-10 text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl"
@@ -160,7 +147,7 @@ const latestPosts = posts
               <Image
                 src={heroImage}
                 alt="Image de la chaîne YouTube."
-                class="w-[64rem] rounded-md shadow-2xl ring-1 ring-gray-900/10"
+                class="w-[64rem] rounded-md shadow-2xl ring-1 ring-gray-900/10 hidden sm:block"
               />
             </div>
           </div>
@@ -170,7 +157,7 @@ const latestPosts = posts
 
     <section
       id="offre-consulting"
-      class="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8"
+      class="relative isolate bg-white px-6 pt-12 pb-24 sm:py-32 lg:px-8"
     >
       <div
         class="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl"

@@ -64,16 +64,25 @@ const latestPosts = posts
         <div class="mx-auto max-w-2xl lg:mx-0 lg:shrink-0 lg:pt-8">
           <img class="h-16" src="/images/logo.svg" alt="Laravel Jutsu" />
           <div class="inline-flex mt-16">
-            <div
-              class="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
+            <a
+              href="#offre-consulting"
+              class="relative rounded-full px-6 py-3 text-sm font-medium text-gray-800 bg-white border border-lime-200 hover:border-lime-400 shadow-sm hover:shadow-md transition-all duration-300 group inline-flex items-center"
             >
-              Découvrez nos offres de coaching · <a
-                href="#offre-consulting"
-                class="font-semibold text-lime-600"
-                ><span class="absolute inset-0" aria-hidden="true"></span>Voir
-                plus <span aria-hidden="true">&rarr;</span></a
-              >
-            </div>
+              <!-- Icône -->
+              <span class="mr-2 text-md">🧘</span>
+
+              <!-- Texte principal -->
+              <span>Offres de coaching</span>
+
+              <!-- Flèche avec effet de déplacement -->
+              <span class="ml-2 font-semibold text-lime-600 inline-flex items-center gap-1 transition-transform duration-300 group-hover:translate-x-1">
+                <span>Voir plus</span>
+                <span aria-hidden="true">&rarr;</span>
+              </span>
+
+              <!-- Fond gradient au survol -->
+              <div class="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-r from-lime-100/50 via-white/50 to-white/50"></div>
+            </a>
           </div>
           <h1
             class="mt-10 text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl"
@@ -107,12 +116,14 @@ const latestPosts = posts
             communauté passionnée, pour forger vos compétences efficacement !
           </p>
 
-          <div class="mt-10 flex items-center gap-x-6 cursor-pointer">
+          <div class="mt-10 flex items-center gap-x-6">
+            <!-- Bouton YouTube -->
             <a
               href="https://www.youtube.com/@LaravelJutsu"
-              class="inline-flex items-center py-2 px-4 bg-lime-500 hover:bg-lime-600 focus:ring-2 focus:ring-lime-500 focus:ring-offset-2 text-white rounded-md transition duration-200"
+              class="inline-flex items-center py-2.5 px-5 bg-lime-500 hover:bg-lime-600 text-white rounded-md shadow-md hover:shadow-lg transition-all duration-300 group"
               target="_blank"
             >
+              <!-- Icône YouTube -->
               <svg class="w-5 h-5 fill-current mr-2" viewBox="0 0 24 24">
                 <path
                   d="M21.9 5.9c-.2-.7-.7-1.2-1.4-1.4C18.3 4 12 4 12 4s-6.3 0-8.5.5c-.7.2-1.2.7-1.4 1.4C2 8.1 2 12 2 12s0 3.9.5 5.1c.2.7.7 1.2 1.4 1.4 2.2.5 8.5.5 8.5.5s6.3 0 8.5-.5c.7-.2 1.2-.7 1.4-1.4.5-1.2.5-5.1.5-5.1s0-3.9-.5-5.1zM9.5 15.5V8.5l6.5 3z"
@@ -121,15 +132,16 @@ const latestPosts = posts
               <span>S'abonner</span>
             </a>
 
+            <!-- Lien Discord -->
             <a
               href="https://discord.gg/invite/cuFxTjH"
-              class="text-sm/6 font-semibold text-gray-900 group"
+              class="text-sm font-semibold text-gray-900 hover:text-lime-600 transition-colors duration-300 group"
               target="_blank"
             >
               Rejoindre le Discord
               <span
                 aria-hidden="true"
-                class="inline-block transition-transform duration-200 group-hover:translate-x-1"
+                class="inline-block transition-transform duration-300 group-hover:translate-x-1"
               >
                 →
               </span>
@@ -138,7 +150,7 @@ const latestPosts = posts
         </div>
 
         <div
-          class="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32"
+          class="mx-auto max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32 hidden sm:flex"
         >
           <div class="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
             <div
@@ -147,7 +159,7 @@ const latestPosts = posts
               <Image
                 src={heroImage}
                 alt="Image de la chaîne YouTube."
-                class="w-[64rem] rounded-md shadow-2xl ring-1 ring-gray-900/10 hidden sm:block"
+                class="w-[64rem] rounded-md shadow-2xl ring-1 ring-gray-900/10"
               />
             </div>
           </div>
@@ -157,7 +169,7 @@ const latestPosts = posts
 
     <section
       id="offre-consulting"
-      class="relative isolate bg-white px-6 pt-12 pb-24 sm:py-32 lg:px-8"
+      class="relative isolate bg-white px-6 my-24 sm:py-32 lg:px-8"
     >
       <div
         class="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl"
@@ -170,11 +182,14 @@ const latestPosts = posts
         </div>
       </div>
       <div class="mx-auto max-w-4xl text-center">
-        <h2 class="text-base/7 font-semibold text-lime-600">
-          Maîtrisez Laravel avec un Sensei
+
+        <h2 class="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-lime-500 to-lime-700 inline-flex items-center gap-2">
+          <span>🪷</span>
+          <span>Maîtrisez Laravel avec un Sensei</span>
         </h2>
+
         <p
-          class="mt-2 text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-6xl"
+          class="mt-4 text-balance text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl transition-all duration-300 hover:scale-105 hover:bg-gradient-to-r hover:from-lime-600 hover:to-lime-800 hover:bg-clip-text hover:text-transparent"
         >
           Choisissez votre voie vers l'excellence
         </p>

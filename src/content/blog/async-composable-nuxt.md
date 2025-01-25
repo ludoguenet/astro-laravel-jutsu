@@ -19,7 +19,7 @@ heroImage: "./images/async-composable-nuxt.png"
 
 ## Introduction
 
-Cet article fait suite à une vidéo où nous explorons une erreur fréquente rencontrée avec **Nuxt.js**. Si vous avez déjà utilisé des composables comme `useHead` ou d'autres fonctionnalités nécessitant le contexte Nuxt, il est probable que vous ayez vu cette erreur :
+Cet article fait suite à une vidéo où nous explorons une erreur fréquente rencontrée avec **Nuxt.js**. Si vous avez déjà utilisé des composables intégrés à Nuxt comme `useHead` ou d'autres fonctionnalités nécessitant le contexte Nuxt, il est probable que vous ayez vu cette erreur :
 
 **"useHead requires a Nuxt instance, but it was called outside of setup or middleware."**
 
@@ -37,8 +37,7 @@ Prenons un exemple où vous voulez créer un composable pour récupérer et affi
 export default async function useProfile() {
     const username = ref('');
 
-    const data = await fetch('https://jsonplaceholder.typicode.com/users/1')
-        .then((res) => res.json());
+    const data = await $fetch$('https://jsonplaceholder.typicode.com/users/1');
 
     username.value = data.name;
 
@@ -54,44 +53,26 @@ Lors de l'exécution, une erreur se produit. Pourquoi ? Parce que `useHead` n'es
 
 ## Pourquoi le contexte est perdu ? <a name="contexte-perdu"></a>
 
-Lorsque Nuxt.js exécute un composable, il associe ce dernier à une **instance** du framework. Les appels aux composables tels que `useHead` ou `useFetch` nécessitent cette instance active pour fonctionner correctement.
+Lorsque Nuxt exécute un composable, il associe ce dernier à une **instance** du framework. Les appels aux composables tels que `useHead` ou `useFetch` nécessitent cette instance active pour fonctionner correctement.
 
-Le problème survient lorsque vous appelez ces composables en dehors d'un contexte supporté par Nuxt, comme :
+Lorsque vous travaillez avec des fonctions asynchrones dans la Composition API de Vue, il est crucial de comprendre comment Vue gère le contexte des hooks et des effets. Vue utilise une variable globale pour enregistrer l'instance actuelle du composant afin de permettre aux hooks comme `onMounted` ou `watch` de fonctionner correctement à l'intérieur du `setup`. Cependant, ce mécanisme repose sur la nature synchrone de JavaScript.
 
-- Le `setup` d'un composant Vue.
-- Un middleware Nuxt.
+Lorsqu'une fonction asynchrone (avec `await`) est utilisée dans `setup`, cela interrompt l'exécution synchronisée, provoquant une perte temporaire du contexte d'instance. Par conséquent :
+- Les hooks comme `onMounted` ou `onUnmounted` ne fonctionnent plus après un `await`.
+- Les effets comme `watch`, `computed` ou `watchEffect` continuent de fonctionner, mais ne sont plus automatiquement nettoyés à la destruction du composant, entraînant de potentielles fuites mémoire.
 
-Dans notre exemple, le composable asynchrone exécute des opérations à différents moments du cycle de vie, ce qui provoque la perte de l'instance Nuxt.
+Vue contourne cette limitation en associant les hooks à l'instance courante lors de l'exécution synchrone. Cependant, dès qu'un `await` intervient, d'autres composants peuvent modifier la variable globale d'instance, rendant impossible le suivi fiable du contexte.
 
 ## Solution recommandée <a name="solution-recommandee"></a>
 
-Pour résoudre ce problème, il faut s'assurer que toutes les opérations dépendantes du contexte Nuxt soient effectuées à l'intérieur de l'environnement prévu. Voici une approche corrigée :
+Pour pallier ce problème, vous pouvez :
+1. **Éviter d'utiliser des hooks après un `await`** et regrouper ces appels avant.
+2. **Transformer vos données asynchrones en état réactif** via des utilitaires comme `useAsyncState` ou `useFetch` de VueUse.
+3. **Lier explicitement l'instance** aux hooks grâce à des arguments supplémentaires.
+4. **Utiliser `effectScope`** pour encapsuler des effets tout en préservant leur contexte.
+5. **Exploiter les fonctionnalités de compilation dans `<script setup>`**, qui restaurent automatiquement le contexte après un `await`.
 
-```javascript
-export default function useProfile() {
-    const username = ref('');
-
-    onMounted(async () => {
-        const data = await fetch('https://jsonplaceholder.typicode.com/users/1')
-            .then((res) => res.json());
-
-        username.value = data.name;
-
-        useHead({
-            title: `Profil de ${username.value}`
-        });
-    });
-
-    return { username };
-}
-```
-
-### Pourquoi cela fonctionne-t-il ?
-
-- **`onMounted`** : garantit que le code est exécuté dans le cycle de vie du composant.
-- **Contexte actif** : `useHead` dispose du contexte Nuxt correct.
-
-Si vous utilisez un composable global, vous pouvez aussi encapsuler l'appel avec `useNuxtApp` :
+Pour ma part, j'ai décidé d'encapsuler l'appel avec `useNuxtApp` :
 
 ```javascript
 import { useNuxtApp } from '#app';
@@ -111,6 +92,6 @@ export default async function useProfile() {
 
 Les erreurs de contexte Nuxt sont courantes, mais elles peuvent être facilement résolues avec une bonne compréhension du cycle de vie et des outils comme `onMounted` ou `useNuxtApp`. Avec ces corrections, vous pourrez créer des applications Nuxt robustes et efficaces sans perdre de temps sur des problèmes techniques.
 
-Pour plus de détails, n'hésitez pas à consulter la vidéo associée ou à explorer la [documentation officielle](https://nuxt.com/docs).
+Pour plus de détails, n'hésitez pas à consulter la vidéo associée ou à explorer [le superbe article](https://antfu.me/posts/async-with-composition-api) d'Antfu à ce sujet.
 
-Restez connectés pour d'autres tutoriels et astuces Nuxt.js !
+Restez connectés pour d'autres tutoriels !

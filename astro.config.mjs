@@ -12,7 +12,7 @@ export default defineConfig({
   integrations: [mdx(), sitemap(), tailwind()],
   markdown: {
     shikiConfig: {
-      theme: "material-theme-palenight",
+      theme: "tokyo-night",
       langs: [],
       wrap: false,
     },

@@ -43,13 +43,17 @@ const latestPosts = posts
         <defs>
           <pattern
             id="pattern-bg"
-            width="200"
-            height="200"
+            width="100"
+            height="100"
             x="50%"
             y="-1"
             patternUnits="userSpaceOnUse"
           >
-            <path d="M.5 200V.5H200" fill="none"></path>
+            <path
+              d="M0 100L100 0M-50 50L50 -50M50 150L150 50"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-opacity="0.1"></path>
           </pattern>
         </defs>
         <rect
@@ -58,37 +62,38 @@ const latestPosts = posts
           stroke-width="0"
           fill="url(#pattern-bg)"></rect>
       </svg>
+
       <div
         class="mx-auto max-w-7xl px-6 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40"
       >
         <div class="mx-auto max-w-2xl lg:mx-0 lg:shrink-0 lg:pt-8">
+          <!-- Logo -->
           <img class="h-16" src="/images/logo.svg" alt="Laravel Jutsu" />
+
+          <!-- Bouton Coaching -->
           <div class="mt-16 flex">
             <a
               href="#offre-consulting"
-              class="inline-flex items-center px-5 py-2.5 text-sm font-medium text-gray-700 hover:text-gray-900 bg-transparent hover:bg-gray-50 rounded-lg transition-all duration-200 ease-in-out border border-gray-200 hover:border-gray-300"
+              class="inline-flex items-center px-5 py-2.5 text-sm font-medium text-gray-700 hover:text-gray-900 bg-white/80 backdrop-blur-sm hover:bg-white rounded-lg transition-all duration-200 ease-in-out border border-gray-200 hover:border-gray-300 shadow-xs hover:shadow-sm"
             >
-              <!-- Icône simple -->
-              <span class="mr-2">🍶</span>
-
-              <!-- Texte principal -->
+              <span class="mr-2">🥋</span>
               <span>Offres de coaching</span>
-
-              <!-- Flèche discrète -->
               <span
-                class="ml-2 text-gray-400 transition-transform duration-200 hover:translate-x-1"
+                class="ml-2 text-gray-400 transition-transform duration-200 group-hover:translate-x-1"
               >
                 &rarr;
               </span>
             </a>
           </div>
+
+          <!-- Titre Principal -->
           <h1
-            class="mt-10 text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl"
+            class="mt-10 text-5xl font-bold tracking-tight text-gray-900 sm:text-7xl"
           >
             Maîtrisez
             <span class="relative inline-block">
               <span
-                class="absolute inset-0 bg-gradient-to-r from-lime-400 to-lime-600 rounded-lg blur opacity-25"
+                class="absolute inset-0 bg-gradient-to-r from-lime-400 to-lime-600 rounded-lg blur opacity-10"
               ></span>
               <span
                 class="relative text-transparent bg-gradient-to-r from-lime-500 to-lime-700 bg-clip-text"
@@ -98,7 +103,7 @@ const latestPosts = posts
             et
             <span class="relative inline-block">
               <span
-                class="absolute inset-0 bg-gradient-to-r from-lime-400 to-lime-600 rounded-lg blur opacity-25"
+                class="absolute inset-0 bg-gradient-to-r from-lime-400 to-lime-600 rounded-lg blur opacity-10"
               ></span>
               <span
                 class="relative text-transparent bg-gradient-to-r from-lime-500 to-lime-700 bg-clip-text"
@@ -107,18 +112,20 @@ const latestPosts = posts
             </span>
           </h1>
 
+          <!-- Description -->
           <p
-            class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8"
+            class="mt-8 text-pretty text-lg font-medium text-gray-600 sm:text-xl/8"
           >
             Apprenez à votre rythme avec des tutoriels de qualité et une
             communauté passionnée, pour forger vos compétences efficacement !
           </p>
 
+          <!-- Boutons d'Action -->
           <div class="mt-10 flex items-center gap-x-6">
             <!-- Bouton YouTube -->
             <a
               href="https://www.youtube.com/@LaravelJutsu"
-              class="inline-flex items-center py-2.5 px-5 bg-lime-500 hover:bg-lime-600 text-white rounded-md shadow-md hover:shadow-lg transition-all duration-300 group"
+              class="inline-flex items-center py-2.5 px-5 bg-white/80 backdrop-blur-sm hover:bg-white text-gray-700 hover:text-gray-900 rounded-lg transition-all duration-300 ease-in-out border border-gray-200 hover:border-gray-300 shadow-xs hover:shadow-sm group"
               target="_blank"
             >
               <!-- Icône YouTube -->
@@ -133,7 +140,7 @@ const latestPosts = posts
             <!-- Lien Discord -->
             <a
               href="https://discord.gg/invite/cuFxTjH"
-              class="text-sm font-semibold text-gray-900 hover:text-lime-600 transition-colors duration-300 group"
+              class="text-sm font-semibold text-gray-700 hover:text-lime-600 transition-colors duration-300 group"
               target="_blank"
             >
               Rejoindre le Discord
@@ -152,15 +159,38 @@ const latestPosts = posts
         >
           <div class="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
             <div
-              class="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4"
+              class="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4 relative overflow-hidden backdrop-blur-sm"
             >
-              <Image
-                src={heroImage}
-                alt="Image de la chaîne YouTube."
-                class="w-[64rem] rounded-md shadow-2xl ring-1 ring-gray-900/10"
-              />
+              <div class="relative">
+                <Image
+                  src={heroImage}
+                  alt="Image de la chaîne YouTube."
+                  class="w-[64rem] rounded-md shadow-2xl ring-1 ring-white/10 backdrop-blur-sm"
+                />
+                <!-- Effet de lumière incliné et doux -->
+                <div class="absolute inset-0 overflow-hidden rounded-md">
+                  <div
+                    class="absolute top-0 left-0 w-full h-full bg-[linear-gradient(120deg,_transparent_20%,_rgba(255,255,255,0.3)_40%,_transparent_60%)] animate-moveLightInclined"
+                  >
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+
+          <style>
+            @keyframes moveLightInclined {
+              0% {
+                transform: translateX(-100%) skewX(-20deg);
+              }
+              100% {
+                transform: translateX(100%) skewX(-20deg);
+              }
+            }
+            .animate-moveLightInclined {
+              animation: moveLightInclined 4s linear infinite;
+            }
+          </style>
         </div>
       </div>
     </div>

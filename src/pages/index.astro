@@ -34,7 +34,7 @@ const latestPosts = posts
     </script>
   </head>
 
-  <body>
+  <div>
     <div class="relative isolate overflow-hidden bg-white">
       <svg
         class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
@@ -469,29 +469,38 @@ const latestPosts = posts
       </div>
     </section>
 
-    <section class="max-w-7xl mx-auto py-14 sm:pb-32">
-      <div class="px-8 pt-8 pb-10">
+    <section class="isolate relative bg-white py-14 sm:pb-32">
+      <div
+        class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
+        aria-hidden="true"
+      >
+        <div
+          class="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-lime-200 to-lime-500 opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]"
+          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+        >
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto px-8 pt-8 pb-10">
         <div class="max-w-2xl mx-auto lg:max-w-none space-y-3">
-          <h3 class="text-lime-600 font-semibold">Qui suis-je</h3>
+          <h3 class="text-lime-600 font-semibold">Outils</h3>
           <p class="text-gray-800 text-3xl font-semibold sm:text-4xl">
-            Ma passion, ton apprentissage
+            Mon équipement
           </p>
           <p class="text-gray-500 leading-relaxed">
-            Des conseils pratiques, des tutoriels et des outils pour booster tes
-            projets.
+            Ainsi que mes préférences personnelles pour le développement.
           </p>
         </div>
         <div
           class="flex flex-col lg:grid gap-8 lg:grid-cols-12 md:grid-cols-12 xl:grid-cols-12 relative mt-10"
         >
           <div
-            class="relative group isolate rounded-xl bg-gradient-to-r from-gray-100 to-gray-200 ring-1 ring-gray-200 shadow col-span-1 md:col-span-4 transition-shadow duration-200 hover:ring-lime-200"
+            class="relative group isolate rounded-xl bg-gradient-to-r from-gray-100 to-gray-200 ring-4 ring-gray-200 shadow col-span-1 md:col-span-4 transition-shadow duration-200 hover:ring-lime-200"
           >
             <div
-              class="flex-1 flex flex-col overflow-hidden rounded-xl divide-y divide-gray-200 bg-white hover:bg-opacity-90 transition-opacity duration-200"
+              class="flex-1 flex flex-col overflow-hidden h-full rounded-xl divide-y divide-gray-200 bg-white hover:bg-opacity-90 transition-opacity duration-200"
             >
               <div
-                class="rounded-xl flex-1 h-full flex items-center gap-8 flex-col px-4 py-5 sm:p-6 md:p-8"
+                class="rounded-xl bg-zinc-700 flex-1 h-full flex items-center gap-8 flex-col px-4 py-5 sm:p-6 md:p-8"
               >
                 <div>
                   <a
@@ -506,94 +515,14 @@ const latestPosts = posts
                   </a>
                 </div>
                 <div class="flex flex-col gap-y-2">
-                  <h2 class="text-2xl font-semibold">Mes outils</h2>
-                  <p class="text-gray-400">
-                    J'utilise VSCode sur mon environnement Linux Mint, ainsi que
-                    Linux Valet+ pour le serveur. Et le thème Tokyo Night pour
-                    mes tutoriels.
-                  </p>
-                </div>
-                <img
-                  width="296"
-                  height="166"
-                  alt=""
-                  srcset="/images/first.svg"
-                  class="lg:w-full lg:h-full"
-                  src="/images/first.svg"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="relative group isolate rounded-xl bg-gradient-to-r from-gray-100 to-gray-200 ring-1 ring-gray-200 shadow col-span-1 md:col-span-4 transition-shadow duration-200 hover:ring-lime-200"
-          >
-            <div
-              class="flex-1 flex flex-col overflow-hidden rounded-xl divide-y divide-gray-200 bg-white hover:bg-opacity-90 transition-opacity"
-            >
-              <div
-                class="rounded-xl flex-1 h-full flex items-center gap-8 flex-col px-4 py-5 sm:p-6 md:p-8"
-              >
-                <img
-                  width="296"
-                  height="166"
-                  alt=""
-                  srcset="/images/second.svg"
-                  class="lg:w-full lg:h-full"
-                  src="/images/second.svg"
-                />
-
-                <div>
-                  <a
-                    href="#"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    aria-label="Card link"
-                    class="focus:outline-none"
-                    tabindex="-1"
-                  >
-                    <span class="absolute inset-0" aria-hidden="true"></span>
-                  </a>
-                </div>
-                <div class="flex flex-col gap-y-2">
-                  <h2 class="text-2xl font-semibold">Frameworks</h2>
-                  <p class="text-gray-400">
-                    Je développe mes programmes avec les frameworks Laravel et
-                    Nuxt. Pour les tests fonctionnels et unitaires je me tourne
-                    toujours vers PestPHP.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="relative group isolate rounded-xl bg-gradient-to-r from-gray-100 to-gray-200 ring-1 ring-gray-200 shadow col-span-1 md:col-span-4 transition-shadow duration-200 hover:ring-lime-200"
-          >
-            <div
-              class="flex-1 flex flex-col overflow-hidden rounded-xl divide-y divide-gray-200 bg-white hover:bg-opacity-90 transition-opacity"
-            >
-              <div
-                class="rounded-xl flex-1 h-full flex items-center gap-8 flex-col px-4 py-5 sm:p-6 md:p-8"
-              >
-                <div>
-                  <a
-                    href="#"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    aria-label="Card link"
-                    class="focus:outline-none"
-                    tabindex="-1"
-                  >
-                    <span class="absolute inset-0" aria-hidden="true"></span>
-                  </a>
-                </div>
-                <div class="flex flex-col gap-y-2">
-                  <h2 class="text-2xl font-semibold">Ma philosophie</h2>
-                  <p class="text-gray-400">
-                    Je m'efforce toujours d'écrire le code le plus concis et
-                    logique possible. Je n'utilise pas de commentaires et fais
-                    plutôt confiance à mon instinct qu'à une IA.
+                  <h2 class="text-2xl font-semibold text-zinc-100">
+                    Mon éditeur de code
+                  </h2>
+                  <p class="text-zinc-50">
+                    J'utilise Visual Studio Code avec un thème personnalisé et
+                    minimaliste, conçu pour éliminer toute distraction visuelle
+                    et me permettre de me concentrer entièrement sur l’écriture
+                    et la lecture du code.
                   </p>
                 </div>
                 <img
@@ -603,6 +532,95 @@ const latestPosts = posts
                   srcset="/images/third.svg"
                   class="lg:w-full lg:h-full"
                   src="/images/third.svg"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="relative group isolate rounded-xl bg-gradient-to-r from-gray-100 to-gray-200 ring-4 ring-gray-200 shadow col-span-1 md:col-span-4 transition-shadow duration-200 hover:ring-lime-200"
+          >
+            <div
+              class="flex-1 flex flex-col overflow-hidden h-full rounded-xl divide-y divide-gray-200 bg-white hover:bg-opacity-90 transition-opacity"
+            >
+              <div
+                class="rounded-xl bg-zinc-700 flex-1 h-full flex items-center gap-8 flex-col px-4 py-5 sm:p-6 md:p-8"
+              >
+                <img
+                  width="296"
+                  height="166"
+                  alt=""
+                  srcset="/images/first.svg"
+                  class="lg:w-full lg:h-full"
+                  src="/images/first.svg"
+                />
+
+                <div>
+                  <a
+                    href="#"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    aria-label="Card link"
+                    class="focus:outline-none"
+                    tabindex="-1"
+                  >
+                    <span class="absolute inset-0" aria-hidden="true"></span>
+                  </a>
+                </div>
+                <div class="flex flex-col gap-y-2">
+                  <h2 class="text-2xl font-semibold text-zinc-100">
+                    Mon setup
+                  </h2>
+                  <p class="text-zinc-50">
+                    Je développe sous Linux Mint, un OS facile à configurer,
+                    idéal pour sa stabilité et sa compatibilité avec mes outils
+                    favoris. J’y ajoute Valet Linux+ pour simplifier la gestion
+                    de mes environnements locaux.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="relative group isolate rounded-xl bg-gradient-to-r from-gray-100 to-gray-200 ring-4 ring-gray-200 shadow col-span-1 md:col-span-4 transition-shadow duration-200 hover:ring-lime-200"
+          >
+            <div
+              class="flex-1 flex flex-col overflow-hidden h-full rounded-xl divide-y divide-gray-200 bg-white hover:bg-opacity-90 transition-opacity"
+            >
+              <div
+                class="rounded-xl bg-zinc-700 flex-1 h-full flex items-center gap-8 flex-col px-4 py-5 sm:p-6 md:p-8"
+              >
+                <div>
+                  <a
+                    href="#"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    aria-label="Card link"
+                    class="focus:outline-none"
+                    tabindex="-1"
+                  >
+                    <span class="absolute inset-0" aria-hidden="true"></span>
+                  </a>
+                </div>
+                <div class="flex flex-col gap-y-2">
+                  <h2 class="text-2xl font-semibold text-zinc-100">
+                    Ma machine
+                  </h2>
+                  <p class="text-zinc-50">
+                    Mon équipement est un ThinkPad P16s Gen 3 de Lenovo, doté
+                    d'un processeur Intel Core Ultra 9 185H 16 cœurs, offrant
+                    une puissance de calcul adaptée à mes besoins. Avec 32 Go de
+                    RAM et un SSD de 1 To.
+                  </p>
+                </div>
+                <img
+                  width="296"
+                  height="166"
+                  alt=""
+                  srcset="/images/second.svg"
+                  class="lg:w-full lg:h-full"
+                  src="/images/second.svg"
                 />
               </div>
             </div>
@@ -696,5 +714,5 @@ const latestPosts = posts
           d="m4.5 15.75 7.5-7.5 7.5 7.5"></path>
       </svg>
     </button>
-  </body>
+  </div>
 </html>

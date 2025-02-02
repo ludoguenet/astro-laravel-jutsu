@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="278" fill="none">
+  <g clip-path="url(#a)">
+    <rect width="495" height="278" y=".4" fill="url(#b)" fill-opacity=".4" rx="8"/>
+    <g filter="url(#c)">
+      <rect width="83" height="212" x="21" y="63" fill="url(#d)" fill-opacity=".2" rx="4"/>
+      <rect width="82" height="211" x="21.5" y="63.5" stroke="url(#e)" stroke-dasharray="2.99 2.99" stroke-opacity=".6" rx="3.5"/>
+    </g>
+    <g filter="url(#f)">
+      <rect width="453" height="32" x="21" y="15" fill="url(#g)" fill-opacity=".2" rx="4"/>
+      <rect width="452" height="31" x="21.5" y="15.5" stroke="#E2E8F0" stroke-dasharray="2.99 2.99" stroke-opacity=".6" rx="3.5"/>
+    </g>
+    <g filter="url(#h)">
+      <rect width="239" height="212" x="128" y="63" fill="url(#i)" fill-opacity=".2" rx="4"/>
+      <rect width="238" height="211" x="128.5" y="63.5" stroke="url(#j)" stroke-dasharray="2.99 2.99" stroke-opacity=".6" rx="3.5"/>
+    </g>
+    <g filter="url(#k)">
+      <rect width="83" height="212" x="388" y="63" fill="url(#l)" fill-opacity=".2" rx="4"/>
+      <rect width="82" height="211" x="388.5" y="63.5" stroke="url(#m)" stroke-dasharray="2.99 2.99" stroke-opacity=".6" rx="3.5"/>
+    </g>
+  </g>
+  <defs>
+    <linearGradient id="d" x1="62.5" x2="62.5" y1="63" y2="159.5" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E2E8F0"/>
+      <stop offset="1" stop-color="#E2E8F0" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="e" x1="62.5" x2="62.6" y1="63" y2="207.1" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E2E8F0"/>
+      <stop offset="1" stop-color="#E2E8F0" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="g" x1="247.5" x2="247.7" y1="15" y2="47" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E2E8F0"/>
+      <stop offset="1" stop-color="#E2E8F0" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="i" x1="247.5" x2="247.5" y1="63" y2="159.5" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E2E8F0"/>
+      <stop offset="1" stop-color="#E2E8F0" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="j" x1="247.5" x2="247.5" y1="63" y2="207.1" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E2E8F0"/>
+      <stop offset="1" stop-color="#E2E8F0" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="l" x1="429.5" x2="429.5" y1="63" y2="159.5" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E2E8F0"/>
+      <stop offset="1" stop-color="#E2E8F0" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="m" x1="429.5" x2="429.6" y1="63" y2="207.1" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E2E8F0"/>
+      <stop offset="1" stop-color="#E2E8F0" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="b" cx="0" cy="0" r="1" gradientTransform="matrix(0 424.777 -612.266 0 247.5 -161.5)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E2E8F0"/>
+      <stop offset="1" stop-color="#E2E8F0" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="a">
+      <path fill="#fff" d="M0 0h495v278H0z"/>
+    </clipPath>
+  </defs>
+</svg>
